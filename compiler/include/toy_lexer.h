@@ -1,3 +1,9 @@
+/**
+ * @file toy_lexer.h
+ * @brief
+ *
+ */
+
 #ifndef TOY_LEXER_H_
 #define TOY_LEXER_H_
 
@@ -14,10 +20,10 @@
  */
 typedef struct {
     const char *source;
-    int start;            /**< */ //start of the token
-    int current;          /**< */ //current position of the lexer
-    int line;             /**< */ //track this for error handling
-    bool commentsEnabled; /**< */ //BUGFIX: enable comments (disabled in repl)
+    int start;            /**< start of the token */
+    int current;          /**< current position of the lexer */
+    int line;             /**< track this for error handling */
+    bool commentsEnabled; /**< BUGFIX: enable comments (disabled in repl) */
 } Toy_Lexer;
 
 //tokens are intermediaries between lexers and parsers

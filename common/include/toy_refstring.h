@@ -1,3 +1,9 @@
+/**
+ * @file toy_refstring.h
+ * @brief
+ *
+ */
+
 #ifndef TOY_REFSTRING_H_
 #define TOY_REFSTRING_H_
 
@@ -28,7 +34,7 @@ TOY_API void Toy_setRefStringAllocatorFn(Toy_RefStringAllocatorFn);
 
 //the RefString structure
 /**
- * @struct Toy_RefString
+ * @typedef Toy_RefString
  * @brief
  *
  */
