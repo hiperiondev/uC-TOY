@@ -118,6 +118,7 @@
         <argsstring></argsstring>
         <name>Toy_private_dictionary_entry</name>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -131,6 +132,7 @@
         <argsstring></argsstring>
         <name>Toy_LiteralDictionary</name>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -150,6 +152,7 @@
           <declname>dictionary</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -177,6 +180,7 @@
           <declname>dictionary</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -212,6 +216,7 @@
           <declname>value</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -259,6 +264,7 @@
           <declname>key</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -300,6 +306,7 @@
           <declname>key</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -339,6 +346,7 @@
           <declname>key</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -368,6 +376,7 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>@???@ </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -383,16 +392,16 @@
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOY_DICTIONARY_MAX_LOAD<sp/>0.75</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
 <codeline lineno="21" refid="d2/d62/structToy__private__dictionary__entry" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d2/d62/structToy__private__dictionary__entry" kindref="compound">Toy_private_dictionary_entry</ref><sp/>{</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/>key;<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/>value;<sp/></highlight></codeline>
-<codeline lineno="24"><highlight class="normal">}<sp/><ref refid="d2/d62/structToy__private__dictionary__entry" kindref="compound">Toy_private_dictionary_entry</ref>;</highlight></codeline>
+<codeline lineno="22" refid="d2/d62/structToy__private__dictionary__entry_1abc6b02ae4ef3c26928d42087a5e317d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/><ref refid="d2/d62/structToy__private__dictionary__entry_1abc6b02ae4ef3c26928d42087a5e317d9" kindref="member">key</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="23" refid="d2/d62/structToy__private__dictionary__entry_1a9838a8c7a5200143aee735a7ef101172" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/><ref refid="d2/d62/structToy__private__dictionary__entry_1a9838a8c7a5200143aee735a7ef101172" kindref="member">value</ref>;<sp/></highlight></codeline>
+<codeline lineno="24" refid="dd/da4/toy__literal__dictionary_8h_1a0f479a68e450b0ce0906a5ee62233e21" refkind="member"><highlight class="normal">}<sp/><ref refid="d2/d62/structToy__private__dictionary__entry" kindref="compound">Toy_private_dictionary_entry</ref>;</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
 <codeline lineno="31" refid="d9/db5/structToy__LiteralDictionary" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d9/db5/structToy__LiteralDictionary" kindref="compound">Toy_LiteralDictionary</ref><sp/>{</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/d62/structToy__private__dictionary__entry" kindref="compound">Toy_private_dictionary_entry</ref><sp/>*entries;<sp/></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>capacity;<sp/></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count;<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>contains;<sp/><sp/></highlight><highlight class="comment">//count<sp/>+<sp/>tombstones,<sp/>for<sp/>internal<sp/>use</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal">}<sp/><ref refid="d9/db5/structToy__LiteralDictionary" kindref="compound">Toy_LiteralDictionary</ref>;</highlight></codeline>
+<codeline lineno="32" refid="d9/db5/structToy__LiteralDictionary_1ab6af73d0216b6ad3cccafa41257c1475" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/d62/structToy__private__dictionary__entry" kindref="compound">Toy_private_dictionary_entry</ref><sp/>*<ref refid="d9/db5/structToy__LiteralDictionary_1ab6af73d0216b6ad3cccafa41257c1475" kindref="member">entries</ref>;<sp/></highlight></codeline>
+<codeline lineno="33" refid="d9/db5/structToy__LiteralDictionary_1acd187f5fad312435a5b177571f271bec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d9/db5/structToy__LiteralDictionary_1acd187f5fad312435a5b177571f271bec" kindref="member">capacity</ref>;<sp/></highlight></codeline>
+<codeline lineno="34" refid="d9/db5/structToy__LiteralDictionary_1ae3b55ea909e9c47475b1f035f671d132" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d9/db5/structToy__LiteralDictionary_1ae3b55ea909e9c47475b1f035f671d132" kindref="member">count</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35" refid="d9/db5/structToy__LiteralDictionary_1a841664718804bc72fd90aedcdb26e797" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d9/db5/structToy__LiteralDictionary_1a841664718804bc72fd90aedcdb26e797" kindref="member">contains</ref>;<sp/></highlight></codeline>
+<codeline lineno="36" refid="dd/da4/toy__literal__dictionary_8h_1a5506ae8f7547cbb88ed19d604abfacd5" refkind="member"><highlight class="normal">}<sp/><ref refid="d9/db5/structToy__LiteralDictionary" kindref="compound">Toy_LiteralDictionary</ref>;</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
 <codeline lineno="44" refid="dd/da4/toy__literal__dictionary_8h_1a4b20eb9d29b1fc6b559bb459681fadef" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dd/da4/toy__literal__dictionary_8h_1a4b20eb9d29b1fc6b559bb459681fadef" kindref="member">Toy_initLiteralDictionary</ref>(<ref refid="d9/db5/structToy__LiteralDictionary" kindref="compound">Toy_LiteralDictionary</ref><sp/>*dictionary);</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>

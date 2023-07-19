@@ -12,13 +12,14 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="compiler/include/toy_ast_node.h" line="232" column="21" bodyfile="compiler/include/toy_ast_node.h" bodystart="232" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d4/d04/structToy__NodeIndex_1aec5bc70d12c26a085f8e2096e93b228e" prot="public" static="no" mutable="no">
-        <type><ref refid="d8/dcd/unionToy__private__node" kindref="compound">Toy_ASTNode</ref> *</type>
+        <type><ref refid="d3/df7/toy__ast__node_8h_1a885768195f2ff9c0a631d6cfe226e354" kindref="member">Toy_ASTNode</ref> *</type>
         <definition>Toy_ASTNode* Toy_NodeIndex::first</definition>
         <argsstring></argsstring>
         <name>first</name>
@@ -26,13 +27,14 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="compiler/include/toy_ast_node.h" line="233" column="17" bodyfile="compiler/include/toy_ast_node.h" bodystart="233" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d4/d04/structToy__NodeIndex_1a1979656ea9ccd4b0270790991f3a947c" prot="public" static="no" mutable="no">
-        <type><ref refid="d8/dcd/unionToy__private__node" kindref="compound">Toy_ASTNode</ref> *</type>
+        <type><ref refid="d3/df7/toy__ast__node_8h_1a885768195f2ff9c0a631d6cfe226e354" kindref="member">Toy_ASTNode</ref> *</type>
         <definition>Toy_ASTNode* Toy_NodeIndex::second</definition>
         <argsstring></argsstring>
         <name>second</name>
@@ -40,13 +42,14 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="compiler/include/toy_ast_node.h" line="234" column="17" bodyfile="compiler/include/toy_ast_node.h" bodystart="234" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d4/d04/structToy__NodeIndex_1a561d27a84fd19652fb8c27f21da527f7" prot="public" static="no" mutable="no">
-        <type><ref refid="d8/dcd/unionToy__private__node" kindref="compound">Toy_ASTNode</ref> *</type>
+        <type><ref refid="d3/df7/toy__ast__node_8h_1a885768195f2ff9c0a631d6cfe226e354" kindref="member">Toy_ASTNode</ref> *</type>
         <definition>Toy_ASTNode* Toy_NodeIndex::third</definition>
         <argsstring></argsstring>
         <name>third</name>
@@ -54,6 +57,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>

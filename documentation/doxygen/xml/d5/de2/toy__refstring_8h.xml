@@ -123,6 +123,7 @@
         <argsstring>)(void *pointer, size_t oldSize, size_t newSize)</argsstring>
         <name>Toy_RefStringAllocatorFn</name>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -162,6 +163,7 @@
         <argsstring></argsstring>
         <name>Toy_RefString</name>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -180,12 +182,15 @@
           <type><ref refid="d5/de2/toy__refstring_8h_1a10447e04a9114d82540f4b5254a70f60" kindref="member">Toy_RefStringAllocatorFn</ref></type>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
+<parametername>Toy_RefStringAllocatorFn</parametername>
 </parameternamelist>
 <parameterdescription>
+<para></para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -205,6 +210,7 @@
           <declname>cstring</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -238,6 +244,7 @@
           <declname>length</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -275,6 +282,7 @@
           <declname>refString</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -302,6 +310,7 @@
           <declname>refString</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -331,6 +340,7 @@
           <declname>refString</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -360,6 +370,7 @@
           <declname>refString</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -389,6 +400,7 @@
           <declname>refString</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -418,6 +430,7 @@
           <declname>refString</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -451,6 +464,7 @@
           <declname>rhs</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -492,6 +506,7 @@
           <declname>cstring</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -521,6 +536,7 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>@???@ </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -542,10 +558,10 @@
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//the<sp/>RefString<sp/>structure</highlight></codeline>
 <codeline lineno="41" refid="dd/d94/structToy__RefString" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dd/d94/structToy__RefString" kindref="compound">Toy_RefString</ref><sp/>{</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>length;<sp/></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>refCount;<sp/><sp/></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>data[];<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="45"><highlight class="normal">}<sp/><ref refid="dd/d94/structToy__RefString" kindref="compound">Toy_RefString</ref>;</highlight></codeline>
+<codeline lineno="42" refid="dd/d94/structToy__RefString_1adcdbf671cc8cf725c229cf7b1a25067d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="dd/d94/structToy__RefString_1adcdbf671cc8cf725c229cf7b1a25067d" kindref="member">length</ref>;<sp/></highlight></codeline>
+<codeline lineno="43" refid="dd/d94/structToy__RefString_1a8956294763e9ff93cf42ad206deb58a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="dd/d94/structToy__RefString_1a8956294763e9ff93cf42ad206deb58a5" kindref="member">refCount</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="44" refid="dd/d94/structToy__RefString_1a6461fcb05d046a039edb79c12f505311" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="dd/d94/structToy__RefString_1a6461fcb05d046a039edb79c12f505311" kindref="member">data</ref>[];<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45" refid="d5/de2/toy__refstring_8h_1ad37591dc274e89f53ebd696309978e4b" refkind="member"><highlight class="normal">}<sp/><ref refid="dd/d94/structToy__RefString" kindref="compound">Toy_RefString</ref>;</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//API</highlight></codeline>
 <codeline lineno="55" refid="d5/de2/toy__refstring_8h_1a997b6194df5d8253731b008f1de4fa98" refkind="member"><highlight class="comment"></highlight><highlight class="normal">TOY_API<sp/><ref refid="dd/d94/structToy__RefString" kindref="compound">Toy_RefString</ref>*<sp/><ref refid="d5/de2/toy__refstring_8h_1a997b6194df5d8253731b008f1de4fa98" kindref="member">Toy_createRefString</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*cstring);</highlight></codeline>

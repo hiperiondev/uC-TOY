@@ -1,6 +1,6 @@
 /**
  * @file toy_reffunction.h
- * @brief
+ * @brief @@???@@
  *
  */
 
@@ -14,7 +14,7 @@
 //memory allocation hook
 /**
  * @fn void* (*Toy_RefFunctionAllocatorFn)(void *pointer, size_t oldSize, size_t newSize)
- * @brief
+ * @brief @@???@@
  *
  * @param pointer
  * @param oldSize
@@ -24,28 +24,28 @@ typedef void* (*Toy_RefFunctionAllocatorFn)(void *pointer, size_t oldSize, size_
 
 /**
  * @fn void Toy_setRefFunctionAllocatorFn(Toy_RefFunctionAllocatorFn)
- * @brief
+ * @brief @@???@@
  *
- * @param
+ * @param Toy_RefFunctionAllocatorFn
  */
 TOY_API void Toy_setRefFunctionAllocatorFn(Toy_RefFunctionAllocatorFn);
 
 //the RefFunction structure
 /**
  * @typedef Toy_RefFunction
- * @brief
+ * @brief @@???@@
  *
  */
 typedef struct Toy_RefFunction {
-    size_t length;        /**< */
-    int refCount;         /**< */
-    unsigned char data[]; /**< */
+    size_t length;        /**< @@???@@ */
+    int refCount;         /**< @@???@@ */
+    unsigned char data[]; /**< @@???@@ */
 } Toy_RefFunction;
 
 //API
 /**
  * @fn Toy_RefFunction* Toy_createRefFunction(const void *data, size_t length)
- * @brief
+ * @brief @@???@@
  *
  * @param data
  * @param length
@@ -55,7 +55,7 @@ TOY_API Toy_RefFunction* Toy_createRefFunction(const void *data, size_t length);
 
 /**
  * @fn void Toy_deleteRefFunction(Toy_RefFunction *refFunction)
- * @brief
+ * @brief @@???@@
  *
  * @param refFunction
  */
@@ -63,7 +63,7 @@ TOY_API void Toy_deleteRefFunction(Toy_RefFunction *refFunction);
 
 /**
  * @fn int Toy_countRefFunction(Toy_RefFunction *refFunction)
- * @brief
+ * @brief @@???@@
  *
  * @param refFunction
  * @return
@@ -72,7 +72,7 @@ TOY_API int Toy_countRefFunction(Toy_RefFunction *refFunction);
 
 /**
  * @fn size_t Toy_lengthRefFunction(Toy_RefFunction *refFunction)
- * @brief
+ * @brief @@???@@
  *
  * @param refFunction
  * @return
@@ -81,7 +81,7 @@ TOY_API size_t Toy_lengthRefFunction(Toy_RefFunction *refFunction);
 
 /**
  * @fn Toy_RefFunction* Toy_copyRefFunction(Toy_RefFunction *refFunction)
- * @brief
+ * @brief @@???@@
  *
  * @param refFunction
  * @return
@@ -90,7 +90,7 @@ TOY_API Toy_RefFunction* Toy_copyRefFunction(Toy_RefFunction *refFunction);
 
 /**
  * @fn Toy_RefFunction* Toy_deepCopyRefFunction(Toy_RefFunction *refFunction)
- * @brief
+ * @brief @@???@@
  *
  * @param refFunction
  * @return

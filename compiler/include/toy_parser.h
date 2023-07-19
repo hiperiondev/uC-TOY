@@ -1,6 +1,6 @@
 /**
  * @file toy_parser.h
- * @brief
+ * @brief @@???@@
  *
  */
 
@@ -16,22 +16,22 @@
 //DOCS: parsers are bound to a lexer, and turn the outputted tokens into AST nodes
 /**
  * @typedef Toy_Parser
- * @brief
+ * @brief @@???@@
  *
  */
 typedef struct {
-    Toy_Lexer* lexer;
+    Toy_Lexer* lexer;   /**< @@???@@ */
     bool error;         /**< I've had an error */
     bool panic;         /**< I am processing an error */
 
     //track the last two outputs from the lexer
-    Toy_Token current;  /**< */
-    Toy_Token previous; /**< */
+    Toy_Token current;  /**< @@???@@ */
+    Toy_Token previous; /**< @@???@@ */
 } Toy_Parser;
 
 /**
  * @fn void Toy_initParser(Toy_Parser* parser, Toy_Lexer* lexer)
- * @brief
+ * @brief @@???@@
  *
  * @param parser
  * @param lexer
@@ -40,7 +40,7 @@ TOY_API void Toy_initParser(Toy_Parser* parser, Toy_Lexer* lexer);
 
 /**
  * @fn void Toy_freeParser(Toy_Parser* parser)
- * @brief
+ * @brief @@???@@
  *
  * @param parser
  */
@@ -48,7 +48,7 @@ TOY_API void Toy_freeParser(Toy_Parser* parser);
 
 /**
  * @fn Toy_ASTNode* Toy_scanParser(Toy_Parser* parser)
- * @brief
+ * @brief @@???@@
  *
  * @param parser
  * @return

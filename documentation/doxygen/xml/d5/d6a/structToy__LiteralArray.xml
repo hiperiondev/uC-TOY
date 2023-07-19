@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="d5/d6a/structToy__LiteralArray" kind="struct" language="C++" prot="public">
     <compoundname>Toy_LiteralArray</compoundname>
+    <includes refid="d0/dfc/toy__literal__array_8h" local="no">toy_literal_array.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="d5/d6a/structToy__LiteralArray_1a13be77c2d51ef60c330823d80aa17be4" prot="public" static="no" mutable="no">
         <type><ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref> *</type>
@@ -12,6 +13,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -26,6 +28,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -40,6 +43,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -47,6 +51,7 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>@????@ </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>

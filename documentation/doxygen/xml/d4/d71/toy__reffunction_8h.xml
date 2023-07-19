@@ -114,6 +114,7 @@
         <argsstring>)(void *pointer, size_t oldSize, size_t newSize)</argsstring>
         <name>Toy_RefFunctionAllocatorFn</name>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -153,6 +154,7 @@
         <argsstring></argsstring>
         <name>Toy_RefFunction</name>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -171,12 +173,15 @@
           <type><ref refid="d4/d71/toy__reffunction_8h_1a449b74030a0d110f725ddb841b0b0fc3" kindref="member">Toy_RefFunctionAllocatorFn</ref></type>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
+<parametername>Toy_RefFunctionAllocatorFn</parametername>
 </parameternamelist>
 <parameterdescription>
+<para></para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -200,6 +205,7 @@
           <declname>length</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -237,6 +243,7 @@
           <declname>refFunction</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -264,6 +271,7 @@
           <declname>refFunction</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -293,6 +301,7 @@
           <declname>refFunction</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -322,6 +331,7 @@
           <declname>refFunction</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -351,6 +361,7 @@
           <declname>refFunction</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -372,6 +383,7 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>@???@ </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -391,10 +403,10 @@
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//the<sp/>RefFunction<sp/>structure</highlight></codeline>
 <codeline lineno="39" refid="d3/d2c/structToy__RefFunction" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d3/d2c/structToy__RefFunction" kindref="compound">Toy_RefFunction</ref><sp/>{</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>length;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>refCount;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>data[];<sp/></highlight></codeline>
-<codeline lineno="43"><highlight class="normal">}<sp/><ref refid="d3/d2c/structToy__RefFunction" kindref="compound">Toy_RefFunction</ref>;</highlight></codeline>
+<codeline lineno="40" refid="d3/d2c/structToy__RefFunction_1a6492ad2fc96e1528c65d9f5dbe0c8eac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="d3/d2c/structToy__RefFunction_1a6492ad2fc96e1528c65d9f5dbe0c8eac" kindref="member">length</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41" refid="d3/d2c/structToy__RefFunction_1a9e818c9e6844dec4956672739726748a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d3/d2c/structToy__RefFunction_1a9e818c9e6844dec4956672739726748a" kindref="member">refCount</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42" refid="d3/d2c/structToy__RefFunction_1a221c894092e435ee316053b01eb5656e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="d3/d2c/structToy__RefFunction_1a221c894092e435ee316053b01eb5656e" kindref="member">data</ref>[];<sp/></highlight></codeline>
+<codeline lineno="43" refid="d4/d71/toy__reffunction_8h_1a8f549bd7fc3a8067dddeaeeab77b9d52" refkind="member"><highlight class="normal">}<sp/><ref refid="d3/d2c/structToy__RefFunction" kindref="compound">Toy_RefFunction</ref>;</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//API</highlight></codeline>
 <codeline lineno="54" refid="d4/d71/toy__reffunction_8h_1ae483f78001b6088908a89711bc1f8ebe" refkind="member"><highlight class="comment"></highlight><highlight class="normal">TOY_API<sp/><ref refid="d3/d2c/structToy__RefFunction" kindref="compound">Toy_RefFunction</ref>*<sp/><ref refid="d4/d71/toy__reffunction_8h_1ae483f78001b6088908a89711bc1f8ebe" kindref="member">Toy_createRefFunction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>length);</highlight></codeline>

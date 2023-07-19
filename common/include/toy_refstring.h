@@ -1,6 +1,6 @@
 /**
  * @file toy_refstring.h
- * @brief
+ * @brief @@???@@
  *
  */
 
@@ -16,7 +16,7 @@
 //memory allocation hook
 /**
  * @typedef void* (*Toy_RefStringAllocatorFn)(void *pointer, size_t oldSize, size_t newSize)
- * @brief
+ * @brief @@???@@
  *
  * @param pointer
  * @param oldSize
@@ -26,28 +26,28 @@ typedef void* (*Toy_RefStringAllocatorFn)(void *pointer, size_t oldSize, size_t 
 
 /**
  * @fn void Toy_setRefStringAllocatorFn(Toy_RefStringAllocatorFn)
- * @brief
+ * @brief @@???@@
  *
- * @param
+ * @param Toy_RefStringAllocatorFn
  */
 TOY_API void Toy_setRefStringAllocatorFn(Toy_RefStringAllocatorFn);
 
 //the RefString structure
 /**
  * @typedef Toy_RefString
- * @brief
+ * @brief @@???@@
  *
  */
 typedef struct Toy_RefString {
-    size_t length; /**< */
-    int refCount;  /**< */
-    char data[];   /**< */
+    size_t length; /**< @@???@@ */
+    int refCount;  /**< @@???@@ */
+    char data[];   /**< @@???@@ */
 } Toy_RefString;
 
 //API
 /**
  * @fn Toy_RefString* Toy_createRefString(const char *cstring)
- * @brief
+ * @brief @@???@@
  *
  * @param cstring
  * @return
@@ -56,7 +56,7 @@ TOY_API Toy_RefString* Toy_createRefString(const char *cstring);
 
 /**
  * @fn Toy_RefString* Toy_createRefStringLength(const char *cstring, size_t length)
- * @brief
+ * @brief @@???@@
  *
  * @param cstring
  * @param length
@@ -66,7 +66,7 @@ TOY_API Toy_RefString* Toy_createRefStringLength(const char *cstring, size_t len
 
 /**
  * @fn void Toy_deleteRefString(Toy_RefString *refString)
- * @brief
+ * @brief @@???@@
  *
  * @param refString
  */
@@ -74,7 +74,7 @@ TOY_API void Toy_deleteRefString(Toy_RefString *refString);
 
 /**
  * @fn int Toy_countRefString(Toy_RefString *refString)
- * @brief
+ * @brief @@???@@
  *
  * @param refString
  * @return
@@ -83,7 +83,7 @@ TOY_API int Toy_countRefString(Toy_RefString *refString);
 
 /**
  * @fn size_t Toy_lengthRefString(Toy_RefString *refString)
- * @brief
+ * @brief @@???@@
  *
  * @param refString
  * @return
@@ -92,7 +92,7 @@ TOY_API size_t Toy_lengthRefString(Toy_RefString *refString);
 
 /**
  * @fn Toy_RefString* Toy_copyRefString(Toy_RefString *refString)
- * @brief
+ * @brief @@???@@
  *
  * @param refString
  * @return
@@ -101,7 +101,7 @@ TOY_API Toy_RefString* Toy_copyRefString(Toy_RefString *refString);
 
 /**
  * @fn Toy_RefString* Toy_deepCopyRefString(Toy_RefString *refString)
- * @brief
+ * @brief @@???@@
  *
  * @param refString
  * @return
@@ -110,7 +110,7 @@ TOY_API Toy_RefString* Toy_deepCopyRefString(Toy_RefString *refString);
 
 /**
  * @fn const char* Toy_toCString(Toy_RefString *refString)
- * @brief
+ * @brief @@???@@
  *
  * @param refString
  * @return
@@ -119,7 +119,7 @@ TOY_API const char* Toy_toCString(Toy_RefString *refString);
 
 /**
  * @fn bool Toy_equalsRefString(Toy_RefString *lhs, Toy_RefString *rhs)
- * @brief
+ * @brief @@???@@
  *
  * @param lhs
  * @param rhs
@@ -129,7 +129,7 @@ TOY_API bool Toy_equalsRefString(Toy_RefString *lhs, Toy_RefString *rhs);
 
 /**
  * @fn bool Toy_equalsRefStringCString(Toy_RefString *lhs, char *cstring)
- * @brief
+ * @brief @@???@@
  *
  * @param lhs
  * @param cstring

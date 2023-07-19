@@ -11,14 +11,19 @@
 #include <stddef.h>
 #include <stdint.h>
 
-#define TOY_VERSION_MAJOR 1 /**< */
-#define TOY_VERSION_MINOR 1 /**< */
-#define TOY_VERSION_PATCH 6 /**< */
+#define TOY_VERSION_MAJOR 1 /**< TOY_VERSION_MAJOR */
+#define TOY_VERSION_MINOR 1 /**< TOY_VERSION_MINOR */
+#define TOY_VERSION_PATCH 6 /**< TOY_VERSION_PATCH */
 
 //platform/compiler-specific instructions
 #if defined(__linux__) || defined(__MINGW32__) || defined(__GNUC__)
 
-#define TOY_API extern /**< */
+/**
+ * @def TOY_API
+ * @brief @@???@@
+ *
+ */
+#define TOY_API extern
 
 #elif defined(_MSC_VER)
 

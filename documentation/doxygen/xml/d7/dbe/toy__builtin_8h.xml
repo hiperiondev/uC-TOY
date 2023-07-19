@@ -128,7 +128,7 @@
           <declname>arguments</declname>
         </param>
         <briefdescription>
-<para>The _index function is a historical oddity - it&apos;s used whenever a compound is indexed. </para>
+<para>@???@ The _index function is a historical oddity - it&apos;s used whenever a compound is indexed </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -170,6 +170,7 @@
           <declname>arguments</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -211,6 +212,7 @@
           <declname>arguments</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -252,6 +254,7 @@
           <declname>arguments</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -293,6 +296,7 @@
           <declname>arguments</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -334,6 +338,7 @@
           <declname>arguments</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -375,6 +380,7 @@
           <declname>arguments</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -404,6 +410,7 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>@???@ </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>

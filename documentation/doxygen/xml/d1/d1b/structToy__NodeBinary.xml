@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="d1/d1b/structToy__NodeBinary" kind="struct" language="C++" prot="public">
     <compoundname>Toy_NodeBinary</compoundname>
+    <includes refid="d3/df7/toy__ast__node_8h" local="no">toy_ast_node.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="d1/d1b/structToy__NodeBinary_1a58cd5764d9771e08597158af37599af0" prot="public" static="no" mutable="no">
         <type><ref refid="d3/df7/toy__ast__node_8h_1a3332bba26704c5d0f42d70784367d775" kindref="member">Toy_ASTNodeType</ref></type>
@@ -12,6 +13,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -26,13 +28,14 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="compiler/include/toy_ast_node.h" line="112" column="16" bodyfile="compiler/include/toy_ast_node.h" bodystart="112" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d1/d1b/structToy__NodeBinary_1a072361fac002bc10a8a95694a3fd01de" prot="public" static="no" mutable="no">
-        <type><ref refid="d8/dcd/unionToy__private__node" kindref="compound">Toy_ASTNode</ref> *</type>
+        <type><ref refid="d3/df7/toy__ast__node_8h_1a885768195f2ff9c0a631d6cfe226e354" kindref="member">Toy_ASTNode</ref> *</type>
         <definition>Toy_ASTNode* Toy_NodeBinary::left</definition>
         <argsstring></argsstring>
         <name>left</name>
@@ -40,13 +43,14 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="compiler/include/toy_ast_node.h" line="113" column="17" bodyfile="compiler/include/toy_ast_node.h" bodystart="113" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d1/d1b/structToy__NodeBinary_1a9d319ece57dcc9703f3be585ede19c5b" prot="public" static="no" mutable="no">
-        <type><ref refid="d8/dcd/unionToy__private__node" kindref="compound">Toy_ASTNode</ref> *</type>
+        <type><ref refid="d3/df7/toy__ast__node_8h_1a885768195f2ff9c0a631d6cfe226e354" kindref="member">Toy_ASTNode</ref> *</type>
         <definition>Toy_ASTNode* Toy_NodeBinary::right</definition>
         <argsstring></argsstring>
         <name>right</name>
@@ -54,6 +58,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -61,6 +66,7 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>@???@ </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>

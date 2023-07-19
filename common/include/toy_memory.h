@@ -1,6 +1,6 @@
 /**
  * @file toy_memory.h
- * @brief
+ * @brief @@???@@
  *
  */
 
@@ -11,21 +11,59 @@
 
 #include "toy_common.h"
 
-#define TOY_GROW_CAPACITY(capacity)                       ((capacity) < 8 ? 8 : (capacity) * 2) /**< */
-#define TOY_GROW_CAPACITY_FAST(capacity)                  ((capacity) < 32 ? 32 : (capacity) * 2) /**< */
+/**
+ * @def TOY_GROW_CAPACITY
+ * @brief @@???@@
+ *
+ */
+#define TOY_GROW_CAPACITY(capacity)                       ((capacity) < 8 ? 8 : (capacity) * 2)
 
-#define TOY_ALLOCATE(type, count)                         ((type*)Toy_reallocate(NULL, 0, sizeof(type) * (count))) /**< */
+/**
+ * @def TOY_GROW_CAPACITY_FAST
+ * @brief @@???@@
+ *
+ */
+#define TOY_GROW_CAPACITY_FAST(capacity)                  ((capacity) < 32 ? 32 : (capacity) * 2)
 
-#define TOY_FREE(type, pointer)                           Toy_reallocate(pointer, sizeof(type), 0) /**< */
-#define TOY_FREE_ARRAY(type, pointer, oldCount)           Toy_reallocate((type*)pointer, sizeof(type) * (oldCount), 0) /**< */
+/**
+ * @def TOY_ALLOCATE
+ * @brief @@???@@
+ *
+ */
+#define TOY_ALLOCATE(type, count)                         ((type*)Toy_reallocate(NULL, 0, sizeof(type) * (count)))
 
-#define TOY_GROW_ARRAY(type, pointer, oldCount, count)    (type*)Toy_reallocate((type*)pointer, sizeof(type) * (oldCount), sizeof(type) * (count)) /**< */
-#define TOY_SHRINK_ARRAY(type, pointer, oldCount, count)  (type*)Toy_reallocate((type*)pointer, sizeof(type) * (oldCount), sizeof(type) * (count)) /**< */
+/**
+ * @def TOY_FREE
+ * @brief @@???@@
+ *
+ */
+#define TOY_FREE(type, pointer)                           Toy_reallocate(pointer, sizeof(type), 0)
+
+/**
+ * @def TOY_FREE_ARRAY
+ * @brief @@???@@
+ *
+ */
+#define TOY_FREE_ARRAY(type, pointer, oldCount)           Toy_reallocate((type*)pointer, sizeof(type) * (oldCount), 0)
+
+/**
+ * @def TOY_GROW_ARRAY
+ * @brief @@???@@
+ *
+ */
+#define TOY_GROW_ARRAY(type, pointer, oldCount, count)    (type*)Toy_reallocate((type*)pointer, sizeof(type) * (oldCount), sizeof(type) * (count))
+
+/**
+ * @def TOY_SHRINK_ARRAY
+ * @brief @@???@@
+ *
+ */
+#define TOY_SHRINK_ARRAY(type, pointer, oldCount, count)  (type*)Toy_reallocate((type*)pointer, sizeof(type) * (oldCount), sizeof(type) * (count))
 
 //implementation details
 /**
  * @fn  void* Toy_reallocate(void *pointer, size_t oldSize, size_t newSize)
- * @brief
+ * @brief @@???@@
  *
  * @param pointer
  * @param oldSize
@@ -36,7 +74,7 @@ TOY_API void* Toy_reallocate(void *pointer, size_t oldSize, size_t newSize);
 //assign the memory allocator
 /**
  * @typedef void* (*Toy_MemoryAllocatorFn)(void *pointer, size_t oldSize, size_t newSize)
- * @brief
+ * @brief @@???@@
  *
  * @param pointer
  * @param oldSize
@@ -46,9 +84,9 @@ typedef void* (*Toy_MemoryAllocatorFn)(void *pointer, size_t oldSize, size_t new
 
 /**
  * @fn void Toy_setMemoryAllocator(Toy_MemoryAllocatorFn)
- * @brief
+ * @brief @@???@@
  *
- * @param
+ * @param Toy_MemoryAllocatorFn
  */
 TOY_API void Toy_setMemoryAllocator(Toy_MemoryAllocatorFn);
 

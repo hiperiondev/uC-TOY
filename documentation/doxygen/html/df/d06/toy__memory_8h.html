@@ -82,6 +82,9 @@ $(function() {
   <div class="headertitle"><div class="title">toy_memory.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>@???@  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="../../d7/d1d/toy__common_8h_source.html">toy_common.h</a>&quot;</code><br />
 </div>
@@ -89,40 +92,266 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a5103fc09a75cfe9b11580100571757bc"><td class="memItemLeft" align="right" valign="top"><a id="a5103fc09a75cfe9b11580100571757bc" name="a5103fc09a75cfe9b11580100571757bc"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_GROW_CAPACITY</b>(capacity)&#160;&#160;&#160;((capacity) &lt; 8 ? 8 : (capacity) * 2)</td></tr>
+<tr class="memitem:a5103fc09a75cfe9b11580100571757bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/toy__memory_8h.html#a5103fc09a75cfe9b11580100571757bc">TOY_GROW_CAPACITY</a>(capacity)&#160;&#160;&#160;((capacity) &lt; 8 ? 8 : (capacity) * 2)</td></tr>
+<tr class="memdesc:a5103fc09a75cfe9b11580100571757bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
 <tr class="separator:a5103fc09a75cfe9b11580100571757bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa255fcaf2ed9642dd5503b92da1f2f45"><td class="memItemLeft" align="right" valign="top"><a id="aa255fcaf2ed9642dd5503b92da1f2f45" name="aa255fcaf2ed9642dd5503b92da1f2f45"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_GROW_CAPACITY_FAST</b>(capacity)&#160;&#160;&#160;((capacity) &lt; 32 ? 32 : (capacity) * 2)</td></tr>
+<tr class="memitem:aa255fcaf2ed9642dd5503b92da1f2f45"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/toy__memory_8h.html#aa255fcaf2ed9642dd5503b92da1f2f45">TOY_GROW_CAPACITY_FAST</a>(capacity)&#160;&#160;&#160;((capacity) &lt; 32 ? 32 : (capacity) * 2)</td></tr>
+<tr class="memdesc:aa255fcaf2ed9642dd5503b92da1f2f45"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
 <tr class="separator:aa255fcaf2ed9642dd5503b92da1f2f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec8eb367118ebd6cdd8551c81dace6e1"><td class="memItemLeft" align="right" valign="top"><a id="aec8eb367118ebd6cdd8551c81dace6e1" name="aec8eb367118ebd6cdd8551c81dace6e1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_ALLOCATE</b>(type,  count)&#160;&#160;&#160;((type*)<a class="el" href="../../df/d06/toy__memory_8h.html#aeaee204e8f6c5b37e238c506a9199b9c">Toy_reallocate</a>(NULL, 0, sizeof(type) * (count)))</td></tr>
+<tr class="memitem:aec8eb367118ebd6cdd8551c81dace6e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/toy__memory_8h.html#aec8eb367118ebd6cdd8551c81dace6e1">TOY_ALLOCATE</a>(type,  count)&#160;&#160;&#160;((type*)<a class="el" href="../../df/d06/toy__memory_8h.html#aeaee204e8f6c5b37e238c506a9199b9c">Toy_reallocate</a>(NULL, 0, sizeof(type) * (count)))</td></tr>
+<tr class="memdesc:aec8eb367118ebd6cdd8551c81dace6e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
 <tr class="separator:aec8eb367118ebd6cdd8551c81dace6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c7739cb5a5e6d4a2df3207da8203bce"><td class="memItemLeft" align="right" valign="top"><a id="a2c7739cb5a5e6d4a2df3207da8203bce" name="a2c7739cb5a5e6d4a2df3207da8203bce"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_FREE</b>(type,  pointer)&#160;&#160;&#160;<a class="el" href="../../df/d06/toy__memory_8h.html#aeaee204e8f6c5b37e238c506a9199b9c">Toy_reallocate</a>(pointer, sizeof(type), 0)</td></tr>
+<tr class="memitem:a2c7739cb5a5e6d4a2df3207da8203bce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/toy__memory_8h.html#a2c7739cb5a5e6d4a2df3207da8203bce">TOY_FREE</a>(type,  pointer)&#160;&#160;&#160;<a class="el" href="../../df/d06/toy__memory_8h.html#aeaee204e8f6c5b37e238c506a9199b9c">Toy_reallocate</a>(pointer, sizeof(type), 0)</td></tr>
+<tr class="memdesc:a2c7739cb5a5e6d4a2df3207da8203bce"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
 <tr class="separator:a2c7739cb5a5e6d4a2df3207da8203bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1a23caf7219fa2bf9c8387ae82eb8df"><td class="memItemLeft" align="right" valign="top"><a id="ad1a23caf7219fa2bf9c8387ae82eb8df" name="ad1a23caf7219fa2bf9c8387ae82eb8df"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_FREE_ARRAY</b>(type,  pointer,  oldCount)&#160;&#160;&#160;<a class="el" href="../../df/d06/toy__memory_8h.html#aeaee204e8f6c5b37e238c506a9199b9c">Toy_reallocate</a>((type*)pointer, sizeof(type) * (oldCount), 0)</td></tr>
+<tr class="memitem:ad1a23caf7219fa2bf9c8387ae82eb8df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/toy__memory_8h.html#ad1a23caf7219fa2bf9c8387ae82eb8df">TOY_FREE_ARRAY</a>(type,  pointer,  oldCount)&#160;&#160;&#160;<a class="el" href="../../df/d06/toy__memory_8h.html#aeaee204e8f6c5b37e238c506a9199b9c">Toy_reallocate</a>((type*)pointer, sizeof(type) * (oldCount), 0)</td></tr>
+<tr class="memdesc:ad1a23caf7219fa2bf9c8387ae82eb8df"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
 <tr class="separator:ad1a23caf7219fa2bf9c8387ae82eb8df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa84157a1ad3853e02634aa83212bb8a4"><td class="memItemLeft" align="right" valign="top"><a id="aa84157a1ad3853e02634aa83212bb8a4" name="aa84157a1ad3853e02634aa83212bb8a4"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_GROW_ARRAY</b>(type,  pointer,  oldCount,  count)&#160;&#160;&#160;(type*)<a class="el" href="../../df/d06/toy__memory_8h.html#aeaee204e8f6c5b37e238c506a9199b9c">Toy_reallocate</a>((type*)pointer, sizeof(type) * (oldCount), sizeof(type) * (count))</td></tr>
+<tr class="memitem:aa84157a1ad3853e02634aa83212bb8a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/toy__memory_8h.html#aa84157a1ad3853e02634aa83212bb8a4">TOY_GROW_ARRAY</a>(type,  pointer,  oldCount,  count)&#160;&#160;&#160;(type*)<a class="el" href="../../df/d06/toy__memory_8h.html#aeaee204e8f6c5b37e238c506a9199b9c">Toy_reallocate</a>((type*)pointer, sizeof(type) * (oldCount), sizeof(type) * (count))</td></tr>
+<tr class="memdesc:aa84157a1ad3853e02634aa83212bb8a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
 <tr class="separator:aa84157a1ad3853e02634aa83212bb8a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42acc49eb6e695081e06d7cb9bd31cac"><td class="memItemLeft" align="right" valign="top"><a id="a42acc49eb6e695081e06d7cb9bd31cac" name="a42acc49eb6e695081e06d7cb9bd31cac"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_SHRINK_ARRAY</b>(type,  pointer,  oldCount,  count)&#160;&#160;&#160;(type*)<a class="el" href="../../df/d06/toy__memory_8h.html#aeaee204e8f6c5b37e238c506a9199b9c">Toy_reallocate</a>((type*)pointer, sizeof(type) * (oldCount), sizeof(type) * (count))</td></tr>
+<tr class="memitem:a42acc49eb6e695081e06d7cb9bd31cac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/toy__memory_8h.html#a42acc49eb6e695081e06d7cb9bd31cac">TOY_SHRINK_ARRAY</a>(type,  pointer,  oldCount,  count)&#160;&#160;&#160;(type*)<a class="el" href="../../df/d06/toy__memory_8h.html#aeaee204e8f6c5b37e238c506a9199b9c">Toy_reallocate</a>((type*)pointer, sizeof(type) * (oldCount), sizeof(type) * (count))</td></tr>
+<tr class="memdesc:a42acc49eb6e695081e06d7cb9bd31cac"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
 <tr class="separator:a42acc49eb6e695081e06d7cb9bd31cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a2335482fb6faca377476f53578dc29c5"><td class="memItemLeft" align="right" valign="top">typedef void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/toy__memory_8h.html#a2335482fb6faca377476f53578dc29c5">Toy_MemoryAllocatorFn</a>) (void *pointer, size_t oldSize, size_t newSize)</td></tr>
+<tr class="memdesc:a2335482fb6faca377476f53578dc29c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
 <tr class="separator:a2335482fb6faca377476f53578dc29c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aeaee204e8f6c5b37e238c506a9199b9c"><td class="memItemLeft" align="right" valign="top">TOY_API void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/toy__memory_8h.html#aeaee204e8f6c5b37e238c506a9199b9c">Toy_reallocate</a> (void *pointer, size_t oldSize, size_t newSize)</td></tr>
+<tr class="memdesc:aeaee204e8f6c5b37e238c506a9199b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
 <tr class="separator:aeaee204e8f6c5b37e238c506a9199b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b37240f4f85f7a6d6d7834754daffd6"><td class="memItemLeft" align="right" valign="top">TOY_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/toy__memory_8h.html#a9b37240f4f85f7a6d6d7834754daffd6">Toy_setMemoryAllocator</a> (<a class="el" href="../../df/d06/toy__memory_8h.html#a2335482fb6faca377476f53578dc29c5">Toy_MemoryAllocatorFn</a>)</td></tr>
+<tr class="memdesc:a9b37240f4f85f7a6d6d7834754daffd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
 <tr class="separator:a9b37240f4f85f7a6d6d7834754daffd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>@???@ </p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="aec8eb367118ebd6cdd8551c81dace6e1" name="aec8eb367118ebd6cdd8551c81dace6e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec8eb367118ebd6cdd8551c81dace6e1">&#9670;&#160;</a></span>TOY_ALLOCATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_ALLOCATE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">count&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((type*)<a class="el" href="../../df/d06/toy__memory_8h.html#aeaee204e8f6c5b37e238c506a9199b9c">Toy_reallocate</a>(NULL, 0, sizeof(type) * (count)))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="a2c7739cb5a5e6d4a2df3207da8203bce" name="a2c7739cb5a5e6d4a2df3207da8203bce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c7739cb5a5e6d4a2df3207da8203bce">&#9670;&#160;</a></span>TOY_FREE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_FREE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pointer&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="../../df/d06/toy__memory_8h.html#aeaee204e8f6c5b37e238c506a9199b9c">Toy_reallocate</a>(pointer, sizeof(type), 0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="ad1a23caf7219fa2bf9c8387ae82eb8df" name="ad1a23caf7219fa2bf9c8387ae82eb8df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1a23caf7219fa2bf9c8387ae82eb8df">&#9670;&#160;</a></span>TOY_FREE_ARRAY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_FREE_ARRAY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pointer, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">oldCount&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="../../df/d06/toy__memory_8h.html#aeaee204e8f6c5b37e238c506a9199b9c">Toy_reallocate</a>((type*)pointer, sizeof(type) * (oldCount), 0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="aa84157a1ad3853e02634aa83212bb8a4" name="aa84157a1ad3853e02634aa83212bb8a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa84157a1ad3853e02634aa83212bb8a4">&#9670;&#160;</a></span>TOY_GROW_ARRAY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_GROW_ARRAY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pointer, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">oldCount, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">count&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(type*)<a class="el" href="../../df/d06/toy__memory_8h.html#aeaee204e8f6c5b37e238c506a9199b9c">Toy_reallocate</a>((type*)pointer, sizeof(type) * (oldCount), sizeof(type) * (count))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="a5103fc09a75cfe9b11580100571757bc" name="a5103fc09a75cfe9b11580100571757bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5103fc09a75cfe9b11580100571757bc">&#9670;&#160;</a></span>TOY_GROW_CAPACITY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_GROW_CAPACITY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">capacity</td><td>)</td>
+          <td>&#160;&#160;&#160;((capacity) &lt; 8 ? 8 : (capacity) * 2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="aa255fcaf2ed9642dd5503b92da1f2f45" name="aa255fcaf2ed9642dd5503b92da1f2f45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa255fcaf2ed9642dd5503b92da1f2f45">&#9670;&#160;</a></span>TOY_GROW_CAPACITY_FAST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_GROW_CAPACITY_FAST</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">capacity</td><td>)</td>
+          <td>&#160;&#160;&#160;((capacity) &lt; 32 ? 32 : (capacity) * 2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="a42acc49eb6e695081e06d7cb9bd31cac" name="a42acc49eb6e695081e06d7cb9bd31cac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42acc49eb6e695081e06d7cb9bd31cac">&#9670;&#160;</a></span>TOY_SHRINK_ARRAY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_SHRINK_ARRAY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pointer, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">oldCount, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">count&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(type*)<a class="el" href="../../df/d06/toy__memory_8h.html#aeaee204e8f6c5b37e238c506a9199b9c">Toy_reallocate</a>((type*)pointer, sizeof(type) * (oldCount), sizeof(type) * (count))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>@???@ </p>
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a2335482fb6faca377476f53578dc29c5" name="a2335482fb6faca377476f53578dc29c5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2335482fb6faca377476f53578dc29c5">&#9670;&#160;</a></span>Toy_MemoryAllocatorFn</h2>
@@ -135,6 +364,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>@???@ </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pointer</td><td></td></tr>
@@ -178,6 +409,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>@???@ </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pointer</td><td></td></tr>
@@ -204,9 +437,11 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>@???@ </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"></td><td></td></tr>
+    <tr><td class="paramname">Toy_MemoryAllocatorFn</td><td></td></tr>
   </table>
   </dd>
 </dl>

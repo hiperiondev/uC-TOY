@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="d5/da5/structToy__NodeLiteral" kind="struct" language="C++" prot="public">
     <compoundname>Toy_NodeLiteral</compoundname>
+    <includes refid="d3/df7/toy__ast__node_8h" local="no">toy_ast_node.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="d5/da5/structToy__NodeLiteral_1a4b85bda7764031ee0f5052b9c7dec32d" prot="public" static="no" mutable="no">
         <type><ref refid="d3/df7/toy__ast__node_8h_1a3332bba26704c5d0f42d70784367d775" kindref="member">Toy_ASTNodeType</ref></type>
@@ -12,6 +13,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -26,6 +28,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -33,6 +36,7 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>@???@ </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>

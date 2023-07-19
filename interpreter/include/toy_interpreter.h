@@ -1,6 +1,6 @@
 /**
  * @file toy_interpreter.h
- * @brief
+ * @brief @@???@@
  *
  */
 
@@ -19,37 +19,37 @@
 //the interpreter acts depending on the bytecode instructions
 /**
  * @typedef Toy_Interpreter
- * @brief
+ * @brief @@???@@
  *
  */
 typedef struct Toy_Interpreter {
     //input
-    const unsigned char *bytecode; /**< */
-    int length;                    /**< */
-    int count;                     /**< */
+    const unsigned char *bytecode; /**< @@???@@ */
+    int length;                    /**< @@???@@ */
+    int count;                     /**< @@???@@ */
     int codeStart;                 /**< BUGFIX: for jumps, must be initialized to -1 */
     Toy_LiteralArray literalCache; /**< read-only - built from the bytecode, refreshed each time new bytecode is provided */
 
     //operation
-    Toy_Scope *scope;              /**< */
-    Toy_LiteralArray stack;        /**< */
+    Toy_Scope *scope;              /**< @@???@@ */
+    Toy_LiteralArray stack;        /**< @@???@@ */
 
     //Library APIs
-    Toy_LiteralDictionary *hooks;  /**< */
+    Toy_LiteralDictionary *hooks;  /**< @@???@@ */
 
     //debug outputs
-    Toy_PrintFn printOutput;       /**< */
-    Toy_PrintFn assertOutput;      /**< */
-    Toy_PrintFn errorOutput;       /**< */
+    Toy_PrintFn printOutput;       /**< @@???@@ */
+    Toy_PrintFn assertOutput;      /**< @@???@@ */
+    Toy_PrintFn errorOutput;       /**< @@???@@ */
 
     int depth;                     /**< don't overflow */
-    bool panic;                    /**< */
+    bool panic;                    /**< @@???@@ */
 } Toy_Interpreter;
 
 //native API
 /**
  * @fn bool Toy_injectNativeFn(Toy_Interpreter *interpreter, const char *name, Toy_NativeFn func)
- * @brief
+ * @brief @@???@@
  *
  * @param interpreter
  * @param name
@@ -60,7 +60,7 @@ TOY_API bool Toy_injectNativeFn(Toy_Interpreter *interpreter, const char *name, 
 
 /**
  * @fn bool Toy_injectNativeHook(Toy_Interpreter *interpreter, const char *name, Toy_HookFn hook)
- * @brief
+ * @brief @@???@@
  *
  * @param interpreter
  * @param name
@@ -71,7 +71,7 @@ TOY_API bool Toy_injectNativeHook(Toy_Interpreter *interpreter, const char *name
 
 /**
  * @fn bool Toy_callLiteralFn(Toy_Interpreter *interpreter, Toy_Literal func, Toy_LiteralArray *arguments, Toy_LiteralArray *returns)
- * @brief
+ * @brief @@???@@
  *
  * @param interpreter
  * @param func
@@ -83,7 +83,7 @@ TOY_API bool Toy_callLiteralFn(Toy_Interpreter *interpreter, Toy_Literal func, T
 
 /**
  * @fn bool Toy_callFn(Toy_Interpreter *interpreter, const char *name, Toy_LiteralArray *arguments, Toy_LiteralArray *returns)
- * @brief
+ * @brief @@???@@
  *
  * @param interpreter
  * @param name
@@ -96,7 +96,7 @@ TOY_API bool Toy_callFn(Toy_Interpreter *interpreter, const char *name, Toy_Lite
 //utilities for the host program
 /**
  * @fn bool Toy_parseIdentifierToValue(Toy_Interpreter *interpreter, Toy_Literal *literalPtr)
- * @brief
+ * @brief @@???@@
  *
  * @param interpreter
  * @param literalPtr
@@ -106,7 +106,7 @@ TOY_API bool Toy_parseIdentifierToValue(Toy_Interpreter *interpreter, Toy_Litera
 
 /**
  * @fn void Toy_setInterpreterPrint(Toy_Interpreter *interpreter, Toy_PrintFn printOutput)
- * @brief
+ * @brief @@???@@
  *
  * @param interpreter
  * @param printOutput
@@ -115,7 +115,7 @@ TOY_API void Toy_setInterpreterPrint(Toy_Interpreter *interpreter, Toy_PrintFn p
 
 /**
  * @fn void Toy_setInterpreterAssert(Toy_Interpreter *interpreter, Toy_PrintFn assertOutput)
- * @brief
+ * @brief @@???@@
  *
  * @param interpreter
  * @param assertOutput
@@ -124,7 +124,7 @@ TOY_API void Toy_setInterpreterAssert(Toy_Interpreter *interpreter, Toy_PrintFn 
 
 /**
  * @fn void Toy_setInterpreterError(Toy_Interpreter *interpreter, Toy_PrintFn errorOutput)
- * @brief
+ * @brief @@???@@
  *
  * @param interpreter
  * @param errorOutput
@@ -134,7 +134,7 @@ TOY_API void Toy_setInterpreterError(Toy_Interpreter *interpreter, Toy_PrintFn e
 //main access
 /**
  * @fn void Toy_initInterpreter(Toy_Interpreter *interpreter)
- * @brief
+ * @brief @@???@@
  *
  * @param interpreter
  */
@@ -142,7 +142,7 @@ TOY_API void Toy_initInterpreter(Toy_Interpreter *interpreter); //start of progr
 
 /**
  * @fn void Toy_runInterpreter(Toy_Interpreter *interpreter, const unsigned char *bytecode, size_t length)
- * @brief
+ * @brief @@???@@
  *
  * @param interpreter
  * @param bytecode
@@ -151,8 +151,8 @@ TOY_API void Toy_initInterpreter(Toy_Interpreter *interpreter); //start of progr
 TOY_API void Toy_runInterpreter(Toy_Interpreter *interpreter, const unsigned char *bytecode, size_t length); //run the code
 
 /**
- * @fnvoid Toy_resetInterpreter(Toy_Interpreter *interpreter)
- * @brief
+ * @fn void Toy_resetInterpreter(Toy_Interpreter *interpreter)
+ * @brief @@???@@
  *
  * @param interpreter
  */
@@ -160,7 +160,7 @@ TOY_API void Toy_resetInterpreter(Toy_Interpreter *interpreter); //use this to r
 
 /**
  * @fn void Toy_freeInterpreter(Toy_Interpreter *interpreter)
- * @brief
+ * @brief @@???@@
  *
  * @param interpreter
  */

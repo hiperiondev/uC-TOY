@@ -12,10 +12,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="compiler/include/toy_repl_common.h" line="30" column="10" bodyfile="compiler/include/toy_repl_common.h" bodystart="30" bodyend="-1"/>
+        <location file="compiler/include/toy_repl_common.h" line="35" column="10" bodyfile="compiler/include/toy_repl_common.h" bodystart="35" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d9/d63/structToy__CommandLine_1a790700ab7204a71bfadecc4cf9fc2392" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -26,10 +27,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="compiler/include/toy_repl_common.h" line="31" column="10" bodyfile="compiler/include/toy_repl_common.h" bodystart="31" bodyend="-1"/>
+        <location file="compiler/include/toy_repl_common.h" line="36" column="10" bodyfile="compiler/include/toy_repl_common.h" bodystart="36" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d9/d63/structToy__CommandLine_1ad44f9d6f56559a1752c3662323595903" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -40,10 +42,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="compiler/include/toy_repl_common.h" line="32" column="10" bodyfile="compiler/include/toy_repl_common.h" bodystart="32" bodyend="-1"/>
+        <location file="compiler/include/toy_repl_common.h" line="37" column="10" bodyfile="compiler/include/toy_repl_common.h" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d9/d63/structToy__CommandLine_1a458f3aa894791c7fd6774557e39ad45c" prot="public" static="no" mutable="no">
         <type>char *</type>
@@ -54,10 +57,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="compiler/include/toy_repl_common.h" line="33" column="10" bodyfile="compiler/include/toy_repl_common.h" bodystart="33" bodyend="-1"/>
+        <location file="compiler/include/toy_repl_common.h" line="38" column="10" bodyfile="compiler/include/toy_repl_common.h" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d9/d63/structToy__CommandLine_1a2770914457f28d0c42dce865822cccde" prot="public" static="no" mutable="no">
         <type>char *</type>
@@ -68,10 +72,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="compiler/include/toy_repl_common.h" line="34" column="10" bodyfile="compiler/include/toy_repl_common.h" bodystart="34" bodyend="-1"/>
+        <location file="compiler/include/toy_repl_common.h" line="39" column="10" bodyfile="compiler/include/toy_repl_common.h" bodystart="39" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d9/d63/structToy__CommandLine_1abaed27214f20e4a3723af67f507da47c" prot="public" static="no" mutable="no">
         <type>char *</type>
@@ -82,10 +87,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="compiler/include/toy_repl_common.h" line="35" column="10" bodyfile="compiler/include/toy_repl_common.h" bodystart="35" bodyend="-1"/>
+        <location file="compiler/include/toy_repl_common.h" line="40" column="10" bodyfile="compiler/include/toy_repl_common.h" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d9/d63/structToy__CommandLine_1ab7842da257661b0e53dcfe52cf9cf70a" prot="public" static="no" mutable="no">
         <type>char *</type>
@@ -100,7 +106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="compiler/include/toy_repl_common.h" line="36" column="10" bodyfile="compiler/include/toy_repl_common.h" bodystart="36" bodyend="-1"/>
+        <location file="compiler/include/toy_repl_common.h" line="41" column="10" bodyfile="compiler/include/toy_repl_common.h" bodystart="41" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d9/d63/structToy__CommandLine_1afe78f73b441f829233a71941de3b3192" prot="public" static="no" mutable="no">
         <type>char *</type>
@@ -111,10 +117,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="compiler/include/toy_repl_common.h" line="37" column="10" bodyfile="compiler/include/toy_repl_common.h" bodystart="37" bodyend="-1"/>
+        <location file="compiler/include/toy_repl_common.h" line="42" column="10" bodyfile="compiler/include/toy_repl_common.h" bodystart="42" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d9/d63/structToy__CommandLine_1a41e97887bb63cabd5fb3db2275fba4df" prot="public" static="no" mutable="no">
         <type>char *</type>
@@ -125,10 +132,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="compiler/include/toy_repl_common.h" line="38" column="10" bodyfile="compiler/include/toy_repl_common.h" bodystart="38" bodyend="-1"/>
+        <location file="compiler/include/toy_repl_common.h" line="43" column="10" bodyfile="compiler/include/toy_repl_common.h" bodystart="43" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d9/d63/structToy__CommandLine_1a87a182fa5818e7c8785c3c846228d7fd" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -139,10 +147,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="compiler/include/toy_repl_common.h" line="39" column="10" bodyfile="compiler/include/toy_repl_common.h" bodystart="39" bodyend="-1"/>
+        <location file="compiler/include/toy_repl_common.h" line="44" column="10" bodyfile="compiler/include/toy_repl_common.h" bodystart="44" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d9/d63/structToy__CommandLine_1a5a73d367b22e2547c7e350c5d57ea13b" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -153,10 +162,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="compiler/include/toy_repl_common.h" line="40" column="10" bodyfile="compiler/include/toy_repl_common.h" bodystart="40" bodyend="-1"/>
+        <location file="compiler/include/toy_repl_common.h" line="45" column="10" bodyfile="compiler/include/toy_repl_common.h" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d9/d63/structToy__CommandLine_1af53e063062a69d5e9658b0b6ba03b902" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -167,17 +177,18 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="compiler/include/toy_repl_common.h" line="41" column="10" bodyfile="compiler/include/toy_repl_common.h" bodystart="41" bodyend="-1"/>
+        <location file="compiler/include/toy_repl_common.h" line="46" column="10" bodyfile="compiler/include/toy_repl_common.h" bodystart="46" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="compiler/include/toy_repl_common.h" line="29" column="1" bodyfile="compiler/include/toy_repl_common.h" bodystart="29" bodyend="42"/>
+    <location file="compiler/include/toy_repl_common.h" line="34" column="1" bodyfile="compiler/include/toy_repl_common.h" bodystart="34" bodyend="47"/>
     <listofallmembers>
       <member refid="d9/d63/structToy__CommandLine_1a458f3aa894791c7fd6774557e39ad45c" prot="public" virt="non-virtual"><scope>Toy_CommandLine</scope><name>binaryfile</name></member>
       <member refid="d9/d63/structToy__CommandLine_1abaed27214f20e4a3723af67f507da47c" prot="public" virt="non-virtual"><scope>Toy_CommandLine</scope><name>compilefile</name></member>

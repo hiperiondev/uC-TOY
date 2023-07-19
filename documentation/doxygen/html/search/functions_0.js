@@ -6,7 +6,7 @@ var searchData=
   ['toy_5fcopyliteral_3',['Toy_copyLiteral',['../d3/d5f/toy__literal_8h.html#a5250042b7c6443d3aded392da08bfaa0',1,'toy_literal.h']]],
   ['toy_5fcopyreffunction_4',['Toy_copyRefFunction',['../d4/d71/toy__reffunction_8h.html#a71c76f610ee897a0b098172108922db3',1,'toy_reffunction.h']]],
   ['toy_5fcopyrefstring_5',['Toy_copyRefString',['../d5/de2/toy__refstring_8h.html#a33dfb5ecb0aaca9c02bcf1aacadc7292',1,'toy_refstring.h']]],
-  ['toy_5fcopyrightcommandline_6',['Toy_copyrightCommandLine',['../da/d63/toy__repl__common_8h.html#a292635e8b1d1e405b9c94633fd4e63e1',1,'toy_repl_common.h']]],
+  ['toy_5fcopyrightcommandline_6',['Toy_copyrightCommandLine',['../da/d63/toy__repl__common_8h.html#a63d7e449af4cb3b5825648d5c4799fb4',1,'toy_repl_common.h']]],
   ['toy_5fcopyscope_7',['Toy_copyScope',['../d2/db4/toy__scope_8h.html#a8ba99595c929450c2bf4be96cdd059f8',1,'toy_scope.h']]],
   ['toy_5fcountreffunction_8',['Toy_countRefFunction',['../d4/d71/toy__reffunction_8h.html#a1a189325be94e8fe4a04d947e1ec5a10',1,'toy_reffunction.h']]],
   ['toy_5fcountrefstring_9',['Toy_countRefString',['../d5/de2/toy__refstring_8h.html#a8df54cf7991f822c26a9feb10fda414b',1,'toy_refstring.h']]],
@@ -60,8 +60,8 @@ var searchData=
   ['toy_5fgetscopetype_57',['Toy_getScopeType',['../d2/db4/toy__scope_8h.html#a7c0f2b71796f3d7d6dbdd713270d9c2e',1,'toy_scope.h']]],
   ['toy_5fgetscopevariable_58',['Toy_getScopeVariable',['../d2/db4/toy__scope_8h.html#a9327f1f53a5e5f3fadec3775901ba8f7',1,'toy_scope.h']]],
   ['toy_5fhashliteral_59',['Toy_hashLiteral',['../d3/d5f/toy__literal_8h.html#ae3ec8788a9a921e00cd164f38b5eacbe',1,'toy_literal.h']]],
-  ['toy_5fhelpcommandline_60',['Toy_helpCommandLine',['../da/d63/toy__repl__common_8h.html#a7db53b94baa1a0964695c6608aa453b0',1,'toy_repl_common.h']]],
-  ['toy_5finitcommandline_61',['Toy_initCommandLine',['../da/d63/toy__repl__common_8h.html#a9eae93836b4575417ea34662a9927759',1,'toy_repl_common.h']]],
+  ['toy_5fhelpcommandline_60',['Toy_helpCommandLine',['../da/d63/toy__repl__common_8h.html#ac0aa410bf2db8a223c3230b7d0ede2dd',1,'toy_repl_common.h']]],
+  ['toy_5finitcommandline_61',['Toy_initCommandLine',['../da/d63/toy__repl__common_8h.html#a861c9dcd4a46351ab92edd01b614beb9',1,'toy_repl_common.h']]],
   ['toy_5finitcompiler_62',['Toy_initCompiler',['../d3/d43/toy__compiler_8h.html#ae73c00c0016b7a5bc5d9d2e1cab478c5',1,'toy_compiler.h']]],
   ['toy_5finitinterpreter_63',['Toy_initInterpreter',['../dc/dcc/toy__interpreter_8h.html#a0e1097c83258bcf4db018ee2cd4b7df4',1,'toy_interpreter.h']]],
   ['toy_5finitlexer_64',['Toy_initLexer',['../d5/d51/toy__lexer_8h.html#a5bd3c364e00001f1b8d8f89a990efaf3',1,'toy_lexer.h']]],
@@ -97,7 +97,7 @@ var searchData=
   ['toy_5fpushscope_94',['Toy_pushScope',['../d2/db4/toy__scope_8h.html#a232b2c180394b736fe4d879b64f3f223',1,'toy_scope.h']]],
   ['toy_5freallocate_95',['Toy_reallocate',['../df/d06/toy__memory_8h.html#aeaee204e8f6c5b37e238c506a9199b9c',1,'toy_memory.h']]],
   ['toy_5fremoveliteraldictionary_96',['Toy_removeLiteralDictionary',['../dd/da4/toy__literal__dictionary_8h.html#a30de52e687510e5a8e8f930ad23fa708',1,'toy_literal_dictionary.h']]],
-  ['toy_5fresetinterpreter_97',['Toy_resetInterpreter',['../dc/dcc/toy__interpreter_8h.html#ab7f3725ae698de8a5c90b332c02929bf',1,'toy_interpreter.h']]],
+  ['toy_5fresetinterpreter_97',['Toy_resetInterpreter',['../dc/dcc/toy__interpreter_8h.html#afd58b578f89fce99c1462fe0e78870e0',1,'toy_interpreter.h']]],
   ['toy_5fruninterpreter_98',['Toy_runInterpreter',['../dc/dcc/toy__interpreter_8h.html#a6866721f7636a5c5c9cd06565d8b65cd',1,'toy_interpreter.h']]],
   ['toy_5fscanparser_99',['Toy_scanParser',['../dc/d33/toy__parser_8h.html#abe4c894be4a5995a709f500e74dffe2b',1,'toy_parser.h']]],
   ['toy_5fsetastnodepair_100',['Toy_setASTNodePair',['../d3/df7/toy__ast__node_8h.html#af5cda2b8f11ee9e8e397579770ae110e',1,'toy_ast_node.h']]],
@@ -111,5 +111,5 @@ var searchData=
   ['toy_5fsetrefstringallocatorfn_108',['Toy_setRefStringAllocatorFn',['../d5/de2/toy__refstring_8h.html#a0bfd36ef49993cba205dba565b83ad1c',1,'toy_refstring.h']]],
   ['toy_5fsetscopevariable_109',['Toy_setScopeVariable',['../d2/db4/toy__scope_8h.html#a023ad033f64030b23efaa89cabc020f3',1,'toy_scope.h']]],
   ['toy_5ftocstring_110',['Toy_toCString',['../d5/de2/toy__refstring_8h.html#a312777e461f9e5ac06567eb92c84dc73',1,'toy_refstring.h']]],
-  ['toy_5fusagecommandline_111',['Toy_usageCommandLine',['../da/d63/toy__repl__common_8h.html#a43fde136646bcc840a77998ff5dbb6e6',1,'toy_repl_common.h']]]
+  ['toy_5fusagecommandline_111',['Toy_usageCommandLine',['../da/d63/toy__repl__common_8h.html#a65ed2875c32e4b91a9ae0461e3a0c475',1,'toy_repl_common.h']]]
 ];

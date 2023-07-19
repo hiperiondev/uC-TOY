@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['panic_0',['panic',['../d8/d78/structToy__Parser.html#a0c4e0a567762e5a83472325f59cfbe1e',1,'Toy_Parser']]],
-  ['ptr_1',['ptr',['../d3/da0/structToy__Literal.html#a12643673f85db726c7b11345e1a0d233',1,'Toy_Literal::ptr()'],['../d3/da0/structToy__Literal.html#a770bd064383915fdb704c1d484b25ca7',1,'Toy_Literal::ptr()'],['../d3/da0/structToy__Literal.html#a5250d503117ff7ccd5e8b4e357e9397f',1,'Toy_Literal::ptr()']]]
+  ['opaque_0',['opaque',['../d3/da0/structToy__Literal.html#aa08e9c7093a852e61e00e2886838abd3',1,'Toy_Literal']]],
+  ['opcode_1',['opcode',['../d5/de1/structToy__NodeUnary.html#a724088e67ea78413a04b5067974244de',1,'Toy_NodeUnary::opcode()'],['../d1/d1b/structToy__NodeBinary.html#a9c4b52e84c32752347ae92d0f971a193',1,'Toy_NodeBinary::opcode()']]],
+  ['outfile_2',['outfile',['../d9/d63/structToy__CommandLine.html#ab7842da257661b0e53dcfe52cf9cf70a',1,'Toy_CommandLine']]]
 ];

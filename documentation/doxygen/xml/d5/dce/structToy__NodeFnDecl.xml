@@ -12,6 +12,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -26,13 +27,14 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="compiler/include/toy_ast_node.h" line="303" column="17" bodyfile="compiler/include/toy_ast_node.h" bodystart="303" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d5/dce/structToy__NodeFnDecl_1ad07bd8f2f240b737b70e89522751a633" prot="public" static="no" mutable="no">
-        <type><ref refid="d8/dcd/unionToy__private__node" kindref="compound">Toy_ASTNode</ref> *</type>
+        <type><ref refid="d3/df7/toy__ast__node_8h_1a885768195f2ff9c0a631d6cfe226e354" kindref="member">Toy_ASTNode</ref> *</type>
         <definition>Toy_ASTNode* Toy_NodeFnDecl::arguments</definition>
         <argsstring></argsstring>
         <name>arguments</name>
@@ -40,13 +42,14 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="compiler/include/toy_ast_node.h" line="304" column="17" bodyfile="compiler/include/toy_ast_node.h" bodystart="304" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d5/dce/structToy__NodeFnDecl_1a696ff2399f4768e9f8b0a31dfc39a8fc" prot="public" static="no" mutable="no">
-        <type><ref refid="d8/dcd/unionToy__private__node" kindref="compound">Toy_ASTNode</ref> *</type>
+        <type><ref refid="d3/df7/toy__ast__node_8h_1a885768195f2ff9c0a631d6cfe226e354" kindref="member">Toy_ASTNode</ref> *</type>
         <definition>Toy_ASTNode* Toy_NodeFnDecl::returns</definition>
         <argsstring></argsstring>
         <name>returns</name>
@@ -54,13 +57,14 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="compiler/include/toy_ast_node.h" line="305" column="17" bodyfile="compiler/include/toy_ast_node.h" bodystart="305" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d5/dce/structToy__NodeFnDecl_1a11d5ec2019cc8a2f69dec5bddc79e934" prot="public" static="no" mutable="no">
-        <type><ref refid="d8/dcd/unionToy__private__node" kindref="compound">Toy_ASTNode</ref> *</type>
+        <type><ref refid="d3/df7/toy__ast__node_8h_1a885768195f2ff9c0a631d6cfe226e354" kindref="member">Toy_ASTNode</ref> *</type>
         <definition>Toy_ASTNode* Toy_NodeFnDecl::block</definition>
         <argsstring></argsstring>
         <name>block</name>
@@ -68,6 +72,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>

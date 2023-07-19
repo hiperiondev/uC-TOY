@@ -12,6 +12,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -26,6 +27,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -40,13 +42,14 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="compiler/include/toy_ast_node.h" line="258" column="17" bodyfile="compiler/include/toy_ast_node.h" bodystart="258" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d9/d84/structToy__NodeVarDecl_1ac7144646f109a29b4beb23c7580b107b" prot="public" static="no" mutable="no">
-        <type><ref refid="d8/dcd/unionToy__private__node" kindref="compound">Toy_ASTNode</ref> *</type>
+        <type><ref refid="d3/df7/toy__ast__node_8h_1a885768195f2ff9c0a631d6cfe226e354" kindref="member">Toy_ASTNode</ref> *</type>
         <definition>Toy_ASTNode* Toy_NodeVarDecl::expression</definition>
         <argsstring></argsstring>
         <name>expression</name>
@@ -54,6 +57,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>

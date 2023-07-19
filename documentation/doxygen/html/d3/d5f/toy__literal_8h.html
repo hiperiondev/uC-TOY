@@ -84,6 +84,9 @@ $(function() {
   <div class="headertitle"><div class="title">toy_literal.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>@???@  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="../../d7/d1d/toy__common_8h_source.html">toy_common.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d5/de2/toy__refstring_8h_source.html">toy_refstring.h</a>&quot;</code><br />
@@ -98,155 +101,112 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a56006f07f1246e02710a9b3ccee30d20"><td class="memItemLeft" align="right" valign="top"><a id="a56006f07f1246e02710a9b3ccee30d20" name="a56006f07f1246e02710a9b3ccee30d20"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_IS_NULL</b>(value)&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea80f774e1bb70f6d5c103a783fe749eb1">TOY_LITERAL_NULL</a>)</td></tr>
+<tr class="memitem:a56006f07f1246e02710a9b3ccee30d20"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a56006f07f1246e02710a9b3ccee30d20">TOY_IS_NULL</a>(value)&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea80f774e1bb70f6d5c103a783fe749eb1">TOY_LITERAL_NULL</a>)</td></tr>
 <tr class="separator:a56006f07f1246e02710a9b3ccee30d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9792afb8a408a0547955ac510823509e"><td class="memItemLeft" align="right" valign="top"><a id="a9792afb8a408a0547955ac510823509e" name="a9792afb8a408a0547955ac510823509e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_IS_BOOLEAN</b>(value)&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeaa932ce4da60f4ed636ae7d81bdc817d3">TOY_LITERAL_BOOLEAN</a>)</td></tr>
+<tr class="memitem:a9792afb8a408a0547955ac510823509e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a9792afb8a408a0547955ac510823509e">TOY_IS_BOOLEAN</a>(value)&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeaa932ce4da60f4ed636ae7d81bdc817d3">TOY_LITERAL_BOOLEAN</a>)</td></tr>
 <tr class="separator:a9792afb8a408a0547955ac510823509e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19e938d1230ce5422516fda8abcea413"><td class="memItemLeft" align="right" valign="top"><a id="a19e938d1230ce5422516fda8abcea413" name="a19e938d1230ce5422516fda8abcea413"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_IS_INTEGER</b>(value)&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea6e13ecc0c3735548c5864c9dee043f88">TOY_LITERAL_INTEGER</a>)</td></tr>
+<tr class="memitem:a19e938d1230ce5422516fda8abcea413"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a19e938d1230ce5422516fda8abcea413">TOY_IS_INTEGER</a>(value)&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea6e13ecc0c3735548c5864c9dee043f88">TOY_LITERAL_INTEGER</a>)</td></tr>
 <tr class="separator:a19e938d1230ce5422516fda8abcea413"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28fbc56c908b012e141f1d541e178e31"><td class="memItemLeft" align="right" valign="top"><a id="a28fbc56c908b012e141f1d541e178e31" name="a28fbc56c908b012e141f1d541e178e31"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_IS_FLOAT</b>(value)&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea9d01af7dcc732d97fe4203290010ba9a">TOY_LITERAL_FLOAT</a>)</td></tr>
+<tr class="memitem:a28fbc56c908b012e141f1d541e178e31"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a28fbc56c908b012e141f1d541e178e31">TOY_IS_FLOAT</a>(value)&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea9d01af7dcc732d97fe4203290010ba9a">TOY_LITERAL_FLOAT</a>)</td></tr>
 <tr class="separator:a28fbc56c908b012e141f1d541e178e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47318a85ed278d3437e3a928024707ae"><td class="memItemLeft" align="right" valign="top"><a id="a47318a85ed278d3437e3a928024707ae" name="a47318a85ed278d3437e3a928024707ae"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_IS_STRING</b>(value)&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeaa5bffb412094abd0c8891200242bc192">TOY_LITERAL_STRING</a>)</td></tr>
+<tr class="memitem:a47318a85ed278d3437e3a928024707ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a47318a85ed278d3437e3a928024707ae">TOY_IS_STRING</a>(value)&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeaa5bffb412094abd0c8891200242bc192">TOY_LITERAL_STRING</a>)</td></tr>
 <tr class="separator:a47318a85ed278d3437e3a928024707ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5cde11d74ac0e024b7edb72c5f0e389"><td class="memItemLeft" align="right" valign="top"><a id="ab5cde11d74ac0e024b7edb72c5f0e389" name="ab5cde11d74ac0e024b7edb72c5f0e389"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_IS_ARRAY</b>(value)&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeaf51b93d3b085e39ceec127300eb42235">TOY_LITERAL_ARRAY</a>)</td></tr>
+<tr class="memitem:ab5cde11d74ac0e024b7edb72c5f0e389"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#ab5cde11d74ac0e024b7edb72c5f0e389">TOY_IS_ARRAY</a>(value)&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeaf51b93d3b085e39ceec127300eb42235">TOY_LITERAL_ARRAY</a>)</td></tr>
 <tr class="separator:ab5cde11d74ac0e024b7edb72c5f0e389"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d52dd3509ecae0e0c9cd87132736e9f"><td class="memItemLeft" align="right" valign="top"><a id="a1d52dd3509ecae0e0c9cd87132736e9f" name="a1d52dd3509ecae0e0c9cd87132736e9f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_IS_DICTIONARY</b>(value)&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea8ba088eea2c754feef3f3237c35df9b2">TOY_LITERAL_DICTIONARY</a>)</td></tr>
+<tr class="memitem:a1d52dd3509ecae0e0c9cd87132736e9f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a1d52dd3509ecae0e0c9cd87132736e9f">TOY_IS_DICTIONARY</a>(value)&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea8ba088eea2c754feef3f3237c35df9b2">TOY_LITERAL_DICTIONARY</a>)</td></tr>
 <tr class="separator:a1d52dd3509ecae0e0c9cd87132736e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84638c62dc9fa5ca53693ec50f64b276"><td class="memItemLeft" align="right" valign="top"><a id="a84638c62dc9fa5ca53693ec50f64b276" name="a84638c62dc9fa5ca53693ec50f64b276"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_IS_FUNCTION</b>(value)&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea6847b29c6b8a361001ac951b0b6286b1">TOY_LITERAL_FUNCTION</a>)</td></tr>
+<tr class="memitem:a84638c62dc9fa5ca53693ec50f64b276"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a84638c62dc9fa5ca53693ec50f64b276">TOY_IS_FUNCTION</a>(value)&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea6847b29c6b8a361001ac951b0b6286b1">TOY_LITERAL_FUNCTION</a>)</td></tr>
 <tr class="separator:a84638c62dc9fa5ca53693ec50f64b276"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a083d94d4cbe7f0139d669104a31c6611"><td class="memItemLeft" align="right" valign="top"><a id="a083d94d4cbe7f0139d669104a31c6611" name="a083d94d4cbe7f0139d669104a31c6611"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_IS_FUNCTION_NATIVE</b>(value)&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeaf7b5ea17222c532a61e5bfda4ff1297f">TOY_LITERAL_FUNCTION_NATIVE</a>)</td></tr>
+<tr class="memitem:a083d94d4cbe7f0139d669104a31c6611"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a083d94d4cbe7f0139d669104a31c6611">TOY_IS_FUNCTION_NATIVE</a>(value)&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeaf7b5ea17222c532a61e5bfda4ff1297f">TOY_LITERAL_FUNCTION_NATIVE</a>)</td></tr>
 <tr class="separator:a083d94d4cbe7f0139d669104a31c6611"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33a1b6445ea5c840a773d9d394dca0c6"><td class="memItemLeft" align="right" valign="top"><a id="a33a1b6445ea5c840a773d9d394dca0c6" name="a33a1b6445ea5c840a773d9d394dca0c6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_IS_FUNCTION_HOOK</b>(value)&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeaf14210ac1459b8b06061353685ab59a1">TOY_LITERAL_FUNCTION_HOOK</a>)</td></tr>
+<tr class="memitem:a33a1b6445ea5c840a773d9d394dca0c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a33a1b6445ea5c840a773d9d394dca0c6">TOY_IS_FUNCTION_HOOK</a>(value)&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeaf14210ac1459b8b06061353685ab59a1">TOY_LITERAL_FUNCTION_HOOK</a>)</td></tr>
 <tr class="separator:a33a1b6445ea5c840a773d9d394dca0c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d715b3f1a82754ee0bd2c037b995274"><td class="memItemLeft" align="right" valign="top"><a id="a1d715b3f1a82754ee0bd2c037b995274" name="a1d715b3f1a82754ee0bd2c037b995274"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_IS_IDENTIFIER</b>(value)&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aead4b402669f1b40ea01dd0a800fd3e736">TOY_LITERAL_IDENTIFIER</a>)</td></tr>
+<tr class="memitem:a1d715b3f1a82754ee0bd2c037b995274"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a1d715b3f1a82754ee0bd2c037b995274">TOY_IS_IDENTIFIER</a>(value)&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aead4b402669f1b40ea01dd0a800fd3e736">TOY_LITERAL_IDENTIFIER</a>)</td></tr>
 <tr class="separator:a1d715b3f1a82754ee0bd2c037b995274"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6426fdc9082cd6ec13af389320ade05c"><td class="memItemLeft" align="right" valign="top"><a id="a6426fdc9082cd6ec13af389320ade05c" name="a6426fdc9082cd6ec13af389320ade05c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_IS_TYPE</b>(value)&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea140bb230b1f197b9b543ce5b7775767a">TOY_LITERAL_TYPE</a>)</td></tr>
+<tr class="memitem:a6426fdc9082cd6ec13af389320ade05c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a6426fdc9082cd6ec13af389320ade05c">TOY_IS_TYPE</a>(value)&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea140bb230b1f197b9b543ce5b7775767a">TOY_LITERAL_TYPE</a>)</td></tr>
 <tr class="separator:a6426fdc9082cd6ec13af389320ade05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a320537d60975afe2f29c765343b0092f"><td class="memItemLeft" align="right" valign="top"><a id="a320537d60975afe2f29c765343b0092f" name="a320537d60975afe2f29c765343b0092f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_IS_OPAQUE</b>(value)&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeabdcb6f908df16c1f5d53efff6d321bd2">TOY_LITERAL_OPAQUE</a>)</td></tr>
+<tr class="memitem:a320537d60975afe2f29c765343b0092f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a320537d60975afe2f29c765343b0092f">TOY_IS_OPAQUE</a>(value)&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeabdcb6f908df16c1f5d53efff6d321bd2">TOY_LITERAL_OPAQUE</a>)</td></tr>
 <tr class="separator:a320537d60975afe2f29c765343b0092f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1ab53e62f05bf4a7d20054295f950b3"><td class="memItemLeft" align="right" valign="top"><a id="af1ab53e62f05bf4a7d20054295f950b3" name="af1ab53e62f05bf4a7d20054295f950b3"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_AS_BOOLEAN</b>(value)&#160;&#160;&#160;((value).as.boolean)</td></tr>
+<tr class="memitem:af1ab53e62f05bf4a7d20054295f950b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#af1ab53e62f05bf4a7d20054295f950b3">TOY_AS_BOOLEAN</a>(value)&#160;&#160;&#160;((value).as.boolean)</td></tr>
 <tr class="separator:af1ab53e62f05bf4a7d20054295f950b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2dc43e15ada717bbf8d5447167b7a7f"><td class="memItemLeft" align="right" valign="top"><a id="ae2dc43e15ada717bbf8d5447167b7a7f" name="ae2dc43e15ada717bbf8d5447167b7a7f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_AS_INTEGER</b>(value)&#160;&#160;&#160;((value).as.integer)</td></tr>
+<tr class="memitem:ae2dc43e15ada717bbf8d5447167b7a7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#ae2dc43e15ada717bbf8d5447167b7a7f">TOY_AS_INTEGER</a>(value)&#160;&#160;&#160;((value).as.integer)</td></tr>
 <tr class="separator:ae2dc43e15ada717bbf8d5447167b7a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac81f0bf20743ee01773bb77012a66d27"><td class="memItemLeft" align="right" valign="top"><a id="ac81f0bf20743ee01773bb77012a66d27" name="ac81f0bf20743ee01773bb77012a66d27"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_AS_FLOAT</b>(value)&#160;&#160;&#160;((value).as.number)</td></tr>
+<tr class="memitem:ac81f0bf20743ee01773bb77012a66d27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#ac81f0bf20743ee01773bb77012a66d27">TOY_AS_FLOAT</a>(value)&#160;&#160;&#160;((value).as.number)</td></tr>
 <tr class="separator:ac81f0bf20743ee01773bb77012a66d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f2014e22323f401747a520ba94f583b"><td class="memItemLeft" align="right" valign="top"><a id="a5f2014e22323f401747a520ba94f583b" name="a5f2014e22323f401747a520ba94f583b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_AS_STRING</b>(value)&#160;&#160;&#160;((value).as.string.ptr)</td></tr>
+<tr class="memitem:a5f2014e22323f401747a520ba94f583b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a5f2014e22323f401747a520ba94f583b">TOY_AS_STRING</a>(value)&#160;&#160;&#160;((value).as.string.ptr)</td></tr>
 <tr class="separator:a5f2014e22323f401747a520ba94f583b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2574b4d9842e2142d405a550eab80816"><td class="memItemLeft" align="right" valign="top"><a id="a2574b4d9842e2142d405a550eab80816" name="a2574b4d9842e2142d405a550eab80816"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_AS_ARRAY</b>(value)&#160;&#160;&#160;((<a class="el" href="../../d5/d6a/structToy__LiteralArray.html">Toy_LiteralArray</a>*)((value).as.array))</td></tr>
+<tr class="memitem:a2574b4d9842e2142d405a550eab80816"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a2574b4d9842e2142d405a550eab80816">TOY_AS_ARRAY</a>(value)&#160;&#160;&#160;((<a class="el" href="../../d5/d6a/structToy__LiteralArray.html">Toy_LiteralArray</a>*)((value).as.array))</td></tr>
 <tr class="separator:a2574b4d9842e2142d405a550eab80816"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0db3e7a9ca2836da47431dec4bfb4fd3"><td class="memItemLeft" align="right" valign="top"><a id="a0db3e7a9ca2836da47431dec4bfb4fd3" name="a0db3e7a9ca2836da47431dec4bfb4fd3"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_AS_DICTIONARY</b>(value)&#160;&#160;&#160;((<a class="el" href="../../d9/db5/structToy__LiteralDictionary.html">Toy_LiteralDictionary</a>*)((value).as.dictionary))</td></tr>
+<tr class="memitem:a0db3e7a9ca2836da47431dec4bfb4fd3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a0db3e7a9ca2836da47431dec4bfb4fd3">TOY_AS_DICTIONARY</a>(value)&#160;&#160;&#160;((<a class="el" href="../../d9/db5/structToy__LiteralDictionary.html">Toy_LiteralDictionary</a>*)((value).as.dictionary))</td></tr>
 <tr class="separator:a0db3e7a9ca2836da47431dec4bfb4fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20ccf2cb21121a6e544155106d5193c0"><td class="memItemLeft" align="right" valign="top"><a id="a20ccf2cb21121a6e544155106d5193c0" name="a20ccf2cb21121a6e544155106d5193c0"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_AS_FUNCTION</b>(value)&#160;&#160;&#160;((value).as.function)</td></tr>
+<tr class="memitem:a20ccf2cb21121a6e544155106d5193c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a20ccf2cb21121a6e544155106d5193c0">TOY_AS_FUNCTION</a>(value)&#160;&#160;&#160;((value).as.function)</td></tr>
 <tr class="separator:a20ccf2cb21121a6e544155106d5193c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af735072539a7786f9a15650bd5e83c7a"><td class="memItemLeft" align="right" valign="top"><a id="af735072539a7786f9a15650bd5e83c7a" name="af735072539a7786f9a15650bd5e83c7a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_AS_FUNCTION_NATIVE</b>(value)&#160;&#160;&#160;((value).as.function.inner.native)</td></tr>
+<tr class="memitem:af735072539a7786f9a15650bd5e83c7a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#af735072539a7786f9a15650bd5e83c7a">TOY_AS_FUNCTION_NATIVE</a>(value)&#160;&#160;&#160;((value).as.function.inner.native)</td></tr>
 <tr class="separator:af735072539a7786f9a15650bd5e83c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3619d503e16cb573f4e3ff218149026"><td class="memItemLeft" align="right" valign="top"><a id="ac3619d503e16cb573f4e3ff218149026" name="ac3619d503e16cb573f4e3ff218149026"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_AS_FUNCTION_HOOK</b>(value)&#160;&#160;&#160;((value).as.function.inner.hook)</td></tr>
+<tr class="memitem:ac3619d503e16cb573f4e3ff218149026"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#ac3619d503e16cb573f4e3ff218149026">TOY_AS_FUNCTION_HOOK</a>(value)&#160;&#160;&#160;((value).as.function.inner.hook)</td></tr>
 <tr class="separator:ac3619d503e16cb573f4e3ff218149026"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab57ed439627f99543bcb8e3484d5bed2"><td class="memItemLeft" align="right" valign="top"><a id="ab57ed439627f99543bcb8e3484d5bed2" name="ab57ed439627f99543bcb8e3484d5bed2"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_AS_IDENTIFIER</b>(value)&#160;&#160;&#160;((value).as.identifier.ptr)</td></tr>
+<tr class="memitem:ab57ed439627f99543bcb8e3484d5bed2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#ab57ed439627f99543bcb8e3484d5bed2">TOY_AS_IDENTIFIER</a>(value)&#160;&#160;&#160;((value).as.identifier.ptr)</td></tr>
 <tr class="separator:ab57ed439627f99543bcb8e3484d5bed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62043f7f0a3cd3fddeccfea0c55f4329"><td class="memItemLeft" align="right" valign="top"><a id="a62043f7f0a3cd3fddeccfea0c55f4329" name="a62043f7f0a3cd3fddeccfea0c55f4329"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_AS_TYPE</b>(value)&#160;&#160;&#160;((value).as.type)</td></tr>
+<tr class="memitem:a62043f7f0a3cd3fddeccfea0c55f4329"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a62043f7f0a3cd3fddeccfea0c55f4329">TOY_AS_TYPE</a>(value)&#160;&#160;&#160;((value).as.type)</td></tr>
 <tr class="separator:a62043f7f0a3cd3fddeccfea0c55f4329"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a44c5f21854fb1a05c568ca1e2a6538"><td class="memItemLeft" align="right" valign="top"><a id="a6a44c5f21854fb1a05c568ca1e2a6538" name="a6a44c5f21854fb1a05c568ca1e2a6538"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_AS_OPAQUE</b>(value)&#160;&#160;&#160;((value).as.opaque.ptr)</td></tr>
+<tr class="memitem:a6a44c5f21854fb1a05c568ca1e2a6538"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a6a44c5f21854fb1a05c568ca1e2a6538">TOY_AS_OPAQUE</a>(value)&#160;&#160;&#160;((value).as.opaque.ptr)</td></tr>
 <tr class="separator:a6a44c5f21854fb1a05c568ca1e2a6538"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a437b21a2bd43bfeb2f4545e4e21d89ad"><td class="memItemLeft" align="right" valign="top"><a id="a437b21a2bd43bfeb2f4545e4e21d89ad" name="a437b21a2bd43bfeb2f4545e4e21d89ad"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_TO_NULL_LITERAL</b>&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .integer = 0 }, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea80f774e1bb70f6d5c103a783fe749eb1">TOY_LITERAL_NULL</a>})</td></tr>
+<tr class="memitem:a437b21a2bd43bfeb2f4545e4e21d89ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a437b21a2bd43bfeb2f4545e4e21d89ad">TOY_TO_NULL_LITERAL</a>&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .integer = 0 }, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea80f774e1bb70f6d5c103a783fe749eb1">TOY_LITERAL_NULL</a>})</td></tr>
 <tr class="separator:a437b21a2bd43bfeb2f4545e4e21d89ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc51b5f1157f106f1369b260e7343c0e"><td class="memItemLeft" align="right" valign="top"><a id="adc51b5f1157f106f1369b260e7343c0e" name="adc51b5f1157f106f1369b260e7343c0e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_TO_BOOLEAN_LITERAL</b>(value)&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .boolean = value }, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeaa932ce4da60f4ed636ae7d81bdc817d3">TOY_LITERAL_BOOLEAN</a>})</td></tr>
+<tr class="memitem:adc51b5f1157f106f1369b260e7343c0e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#adc51b5f1157f106f1369b260e7343c0e">TOY_TO_BOOLEAN_LITERAL</a>(value)&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .boolean = value }, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeaa932ce4da60f4ed636ae7d81bdc817d3">TOY_LITERAL_BOOLEAN</a>})</td></tr>
 <tr class="separator:adc51b5f1157f106f1369b260e7343c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a470c367a7cb484c27b7300906ff2963e"><td class="memItemLeft" align="right" valign="top"><a id="a470c367a7cb484c27b7300906ff2963e" name="a470c367a7cb484c27b7300906ff2963e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_TO_INTEGER_LITERAL</b>(value)&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .integer = value }, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea6e13ecc0c3735548c5864c9dee043f88">TOY_LITERAL_INTEGER</a>})</td></tr>
+<tr class="memitem:a470c367a7cb484c27b7300906ff2963e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a470c367a7cb484c27b7300906ff2963e">TOY_TO_INTEGER_LITERAL</a>(value)&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .integer = value }, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea6e13ecc0c3735548c5864c9dee043f88">TOY_LITERAL_INTEGER</a>})</td></tr>
 <tr class="separator:a470c367a7cb484c27b7300906ff2963e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade018b2a5cfa548589f35e1aa453bf74"><td class="memItemLeft" align="right" valign="top"><a id="ade018b2a5cfa548589f35e1aa453bf74" name="ade018b2a5cfa548589f35e1aa453bf74"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_TO_FLOAT_LITERAL</b>(value)&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .number = value }, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea9d01af7dcc732d97fe4203290010ba9a">TOY_LITERAL_FLOAT</a>})</td></tr>
+<tr class="memitem:ade018b2a5cfa548589f35e1aa453bf74"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#ade018b2a5cfa548589f35e1aa453bf74">TOY_TO_FLOAT_LITERAL</a>(value)&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .number = value }, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea9d01af7dcc732d97fe4203290010ba9a">TOY_LITERAL_FLOAT</a>})</td></tr>
 <tr class="separator:ade018b2a5cfa548589f35e1aa453bf74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e468556c58d82faaba85d0ce224f675"><td class="memItemLeft" align="right" valign="top"><a id="a0e468556c58d82faaba85d0ce224f675" name="a0e468556c58d82faaba85d0ce224f675"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_TO_STRING_LITERAL</b>(value)&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .string = { .ptr = value }},<a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeaa5bffb412094abd0c8891200242bc192">TOY_LITERAL_STRING</a>})</td></tr>
+<tr class="memitem:a0e468556c58d82faaba85d0ce224f675"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a0e468556c58d82faaba85d0ce224f675">TOY_TO_STRING_LITERAL</a>(value)&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .string = { .ptr = value }},<a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeaa5bffb412094abd0c8891200242bc192">TOY_LITERAL_STRING</a>})</td></tr>
 <tr class="separator:a0e468556c58d82faaba85d0ce224f675"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b37e311987c72e4d5704e89744f9c49"><td class="memItemLeft" align="right" valign="top"><a id="a3b37e311987c72e4d5704e89744f9c49" name="a3b37e311987c72e4d5704e89744f9c49"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_TO_ARRAY_LITERAL</b>(value)&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .array = value }, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeaf51b93d3b085e39ceec127300eb42235">TOY_LITERAL_ARRAY</a>})</td></tr>
+<tr class="memitem:a3b37e311987c72e4d5704e89744f9c49"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a3b37e311987c72e4d5704e89744f9c49">TOY_TO_ARRAY_LITERAL</a>(value)&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .array = value }, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeaf51b93d3b085e39ceec127300eb42235">TOY_LITERAL_ARRAY</a>})</td></tr>
 <tr class="separator:a3b37e311987c72e4d5704e89744f9c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30b05f8702bea257185e80a164bfe642"><td class="memItemLeft" align="right" valign="top"><a id="a30b05f8702bea257185e80a164bfe642" name="a30b05f8702bea257185e80a164bfe642"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_TO_DICTIONARY_LITERAL</b>(value)&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .dictionary = value }, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea8ba088eea2c754feef3f3237c35df9b2">TOY_LITERAL_DICTIONARY</a>})</td></tr>
+<tr class="memitem:a30b05f8702bea257185e80a164bfe642"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a30b05f8702bea257185e80a164bfe642">TOY_TO_DICTIONARY_LITERAL</a>(value)&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .dictionary = value }, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea8ba088eea2c754feef3f3237c35df9b2">TOY_LITERAL_DICTIONARY</a>})</td></tr>
 <tr class="separator:a30b05f8702bea257185e80a164bfe642"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f754ab6092ee802fec56e67bf71e72b"><td class="memItemLeft" align="right" valign="top"><a id="a1f754ab6092ee802fec56e67bf71e72b" name="a1f754ab6092ee802fec56e67bf71e72b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_TO_FUNCTION_LITERAL</b>(value)&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .function = { .inner = { .ptr = value }, .scope = NULL }}, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea6847b29c6b8a361001ac951b0b6286b1">TOY_LITERAL_FUNCTION</a>})</td></tr>
+<tr class="memitem:a1f754ab6092ee802fec56e67bf71e72b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a1f754ab6092ee802fec56e67bf71e72b">TOY_TO_FUNCTION_LITERAL</a>(value)&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .function = { .inner = { .ptr = value }, .scope = NULL }}, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea6847b29c6b8a361001ac951b0b6286b1">TOY_LITERAL_FUNCTION</a>})</td></tr>
 <tr class="separator:a1f754ab6092ee802fec56e67bf71e72b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9ccd695e38eedabd91c280ce68e9ae4"><td class="memItemLeft" align="right" valign="top"><a id="ae9ccd695e38eedabd91c280ce68e9ae4" name="ae9ccd695e38eedabd91c280ce68e9ae4"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_TO_FUNCTION_NATIVE_LITERAL</b>(value)&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .function = { .inner = { .native = value }, .scope = NULL }}, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeaf7b5ea17222c532a61e5bfda4ff1297f">TOY_LITERAL_FUNCTION_NATIVE</a>})</td></tr>
+<tr class="memitem:ae9ccd695e38eedabd91c280ce68e9ae4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#ae9ccd695e38eedabd91c280ce68e9ae4">TOY_TO_FUNCTION_NATIVE_LITERAL</a>(value)&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .function = { .inner = { .native = value }, .scope = NULL }}, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeaf7b5ea17222c532a61e5bfda4ff1297f">TOY_LITERAL_FUNCTION_NATIVE</a>})</td></tr>
 <tr class="separator:ae9ccd695e38eedabd91c280ce68e9ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a033ec3a4d0c41936d196f9e7eecb7344"><td class="memItemLeft" align="right" valign="top"><a id="a033ec3a4d0c41936d196f9e7eecb7344" name="a033ec3a4d0c41936d196f9e7eecb7344"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_TO_FUNCTION_HOOK_LITERAL</b>(value)&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .function = { .inner = { .hook = value }, .scope = NULL }}, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeaf14210ac1459b8b06061353685ab59a1">TOY_LITERAL_FUNCTION_HOOK</a>})</td></tr>
+<tr class="memitem:a033ec3a4d0c41936d196f9e7eecb7344"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a033ec3a4d0c41936d196f9e7eecb7344">TOY_TO_FUNCTION_HOOK_LITERAL</a>(value)&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .function = { .inner = { .hook = value }, .scope = NULL }}, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeaf14210ac1459b8b06061353685ab59a1">TOY_LITERAL_FUNCTION_HOOK</a>})</td></tr>
 <tr class="separator:a033ec3a4d0c41936d196f9e7eecb7344"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8d65ef9b0ebb2ebf0a8e3cf282cdb5a"><td class="memItemLeft" align="right" valign="top"><a id="af8d65ef9b0ebb2ebf0a8e3cf282cdb5a" name="af8d65ef9b0ebb2ebf0a8e3cf282cdb5a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_TO_IDENTIFIER_LITERAL</b>(value)&#160;&#160;&#160;<a class="el" href="../../d3/d5f/toy__literal_8h.html#abc7696ac618fab0f02c2ce24bdda13cf">Toy_private_toIdentifierLiteral</a>(value)</td></tr>
+<tr class="memitem:af8d65ef9b0ebb2ebf0a8e3cf282cdb5a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#af8d65ef9b0ebb2ebf0a8e3cf282cdb5a">TOY_TO_IDENTIFIER_LITERAL</a>(value)&#160;&#160;&#160;<a class="el" href="../../d3/d5f/toy__literal_8h.html#abc7696ac618fab0f02c2ce24bdda13cf">Toy_private_toIdentifierLiteral</a>(value)</td></tr>
 <tr class="separator:af8d65ef9b0ebb2ebf0a8e3cf282cdb5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a431bf7737e36bb24ddf9ee60c4e28ca3"><td class="memItemLeft" align="right" valign="top"><a id="a431bf7737e36bb24ddf9ee60c4e28ca3" name="a431bf7737e36bb24ddf9ee60c4e28ca3"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_TO_TYPE_LITERAL</b>(value,  c)&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .type = { .typeOf = value, .constant = c, .subtypes = NULL, .capacity = 0, .count = 0 }}, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea140bb230b1f197b9b543ce5b7775767a">TOY_LITERAL_TYPE</a>})</td></tr>
+<tr class="memitem:a431bf7737e36bb24ddf9ee60c4e28ca3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a431bf7737e36bb24ddf9ee60c4e28ca3">TOY_TO_TYPE_LITERAL</a>(value,  c)&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .type = { .typeOf = value, .constant = c, .subtypes = NULL, .capacity = 0, .count = 0 }}, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea140bb230b1f197b9b543ce5b7775767a">TOY_LITERAL_TYPE</a>})</td></tr>
 <tr class="separator:a431bf7737e36bb24ddf9ee60c4e28ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a231c19d4d9ee140e27192ad79650e8c2"><td class="memItemLeft" align="right" valign="top"><a id="a231c19d4d9ee140e27192ad79650e8c2" name="a231c19d4d9ee140e27192ad79650e8c2"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_TO_OPAQUE_LITERAL</b>(value,  t)&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .opaque = { .ptr = value, .tag = t }}, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeabdcb6f908df16c1f5d53efff6d321bd2">TOY_LITERAL_OPAQUE</a>})</td></tr>
+<tr class="memitem:a231c19d4d9ee140e27192ad79650e8c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a231c19d4d9ee140e27192ad79650e8c2">TOY_TO_OPAQUE_LITERAL</a>(value,  t)&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .opaque = { .ptr = value, .tag = t }}, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeabdcb6f908df16c1f5d53efff6d321bd2">TOY_LITERAL_OPAQUE</a>})</td></tr>
 <tr class="separator:a231c19d4d9ee140e27192ad79650e8c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad41c40de80719b3b236be5e3f8d38997"><td class="memItemLeft" align="right" valign="top"><a id="ad41c40de80719b3b236be5e3f8d38997" name="ad41c40de80719b3b236be5e3f8d38997"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_IS_INDEX_BLANK</b>(value)&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea5555e0674082c4422562bac72c188568">TOY_LITERAL_INDEX_BLANK</a>)</td></tr>
+<tr class="memitem:ad41c40de80719b3b236be5e3f8d38997"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#ad41c40de80719b3b236be5e3f8d38997">TOY_IS_INDEX_BLANK</a>(value)&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea5555e0674082c4422562bac72c188568">TOY_LITERAL_INDEX_BLANK</a>)</td></tr>
 <tr class="separator:ad41c40de80719b3b236be5e3f8d38997"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad51ebc4b3d2b7bae0a1c32f30baec410"><td class="memItemLeft" align="right" valign="top"><a id="ad51ebc4b3d2b7bae0a1c32f30baec410" name="ad51ebc4b3d2b7bae0a1c32f30baec410"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_TO_INDEX_BLANK_LITERAL</b>&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .integer = 0 }, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea5555e0674082c4422562bac72c188568">TOY_LITERAL_INDEX_BLANK</a>})</td></tr>
+<tr class="memitem:ad51ebc4b3d2b7bae0a1c32f30baec410"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#ad51ebc4b3d2b7bae0a1c32f30baec410">TOY_TO_INDEX_BLANK_LITERAL</a>&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .integer = 0 }, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea5555e0674082c4422562bac72c188568">TOY_LITERAL_INDEX_BLANK</a>})</td></tr>
 <tr class="separator:ad51ebc4b3d2b7bae0a1c32f30baec410"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabccb595491056818b080234d36f38f3"><td class="memItemLeft" align="right" valign="top"><a id="aabccb595491056818b080234d36f38f3" name="aabccb595491056818b080234d36f38f3"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_IS_TRUTHY</b>(x)&#160;&#160;&#160;<a class="el" href="../../d3/d5f/toy__literal_8h.html#aaa2e8962a687673fff9647f7b0a50baa">Toy_private_isTruthy</a>(x)</td></tr>
+<tr class="memitem:aabccb595491056818b080234d36f38f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#aabccb595491056818b080234d36f38f3">TOY_IS_TRUTHY</a>(x)&#160;&#160;&#160;<a class="el" href="../../d3/d5f/toy__literal_8h.html#aaa2e8962a687673fff9647f7b0a50baa">Toy_private_isTruthy</a>(x)</td></tr>
 <tr class="separator:aabccb595491056818b080234d36f38f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac75f2195b1e17fe9e90b4cc340df7e63"><td class="memItemLeft" align="right" valign="top"><a id="ac75f2195b1e17fe9e90b4cc340df7e63" name="ac75f2195b1e17fe9e90b4cc340df7e63"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_AS_FUNCTION_BYTECODE_LENGTH</b>(lit)&#160;&#160;&#160;(<a class="el" href="../../d4/d71/toy__reffunction_8h.html#ab07959ecc82c2707741ca73886510531">Toy_lengthRefFunction</a>((lit).inner.ptr))</td></tr>
+<tr class="memitem:ac75f2195b1e17fe9e90b4cc340df7e63"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#ac75f2195b1e17fe9e90b4cc340df7e63">TOY_AS_FUNCTION_BYTECODE_LENGTH</a>(lit)&#160;&#160;&#160;(<a class="el" href="../../d4/d71/toy__reffunction_8h.html#ab07959ecc82c2707741ca73886510531">Toy_lengthRefFunction</a>((lit).inner.ptr))</td></tr>
 <tr class="separator:ac75f2195b1e17fe9e90b4cc340df7e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd9679a46927d281dd48548753ad590e"><td class="memItemLeft" align="right" valign="top"><a id="afd9679a46927d281dd48548753ad590e" name="afd9679a46927d281dd48548753ad590e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_MAX_STRING_LENGTH</b>&#160;&#160;&#160;4096</td></tr>
+<tr class="memitem:afd9679a46927d281dd48548753ad590e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#afd9679a46927d281dd48548753ad590e">TOY_MAX_STRING_LENGTH</a>&#160;&#160;&#160;4096</td></tr>
 <tr class="separator:afd9679a46927d281dd48548753ad590e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a221625609a51005673cdcb2b05c08ab0"><td class="memItemLeft" align="right" valign="top"><a id="a221625609a51005673cdcb2b05c08ab0" name="a221625609a51005673cdcb2b05c08ab0"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_HASH_I</b>(lit)&#160;&#160;&#160;((lit).as.identifier.hash)</td></tr>
+<tr class="memitem:a221625609a51005673cdcb2b05c08ab0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a221625609a51005673cdcb2b05c08ab0">TOY_HASH_I</a>(lit)&#160;&#160;&#160;((lit).as.identifier.hash)</td></tr>
 <tr class="separator:a221625609a51005673cdcb2b05c08ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad36f5ae9c1e8ed019661be16784faae3"><td class="memItemLeft" align="right" valign="top"><a id="ad36f5ae9c1e8ed019661be16784faae3" name="ad36f5ae9c1e8ed019661be16784faae3"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_TYPE_PUSH_SUBTYPE</b>(lit,  subtype)&#160;&#160;&#160;<a class="el" href="../../d3/d5f/toy__literal_8h.html#a96c75bc294dcb8e8b5cda583ad4c6e58">Toy_private_typePushSubtype</a>(lit, subtype)</td></tr>
+<tr class="memitem:ad36f5ae9c1e8ed019661be16784faae3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#ad36f5ae9c1e8ed019661be16784faae3">TOY_TYPE_PUSH_SUBTYPE</a>(lit,  subtype)&#160;&#160;&#160;<a class="el" href="../../d3/d5f/toy__literal_8h.html#a96c75bc294dcb8e8b5cda583ad4c6e58">Toy_private_typePushSubtype</a>(lit, subtype)</td></tr>
 <tr class="separator:ad36f5ae9c1e8ed019661be16784faae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbea922a200e8a9e59cc40ccc0d917fc"><td class="memItemLeft" align="right" valign="top"><a id="abbea922a200e8a9e59cc40ccc0d917fc" name="abbea922a200e8a9e59cc40ccc0d917fc"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>TOY_GET_OPAQUE_TAG</b>(o)&#160;&#160;&#160;o.as.opaque.tag</td></tr>
+<tr class="memitem:abbea922a200e8a9e59cc40ccc0d917fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#abbea922a200e8a9e59cc40ccc0d917fc">TOY_GET_OPAQUE_TAG</a>(o)&#160;&#160;&#160;o.as.opaque.tag</td></tr>
 <tr class="separator:abbea922a200e8a9e59cc40ccc0d917fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a75c718108573cac8d200bf51870c522b"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a75c718108573cac8d200bf51870c522b">Toy_NativeFn</a>) (struct <a class="el" href="../../de/da4/structToy__Interpreter.html">Toy_Interpreter</a> *interpreter, struct <a class="el" href="../../d5/d6a/structToy__LiteralArray.html">Toy_LiteralArray</a> *arguments)</td></tr>
+<tr class="memdesc:a75c718108573cac8d200bf51870c522b"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
 <tr class="separator:a75c718108573cac8d200bf51870c522b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6569b94d4c6ef28b9c1f948fdd14fc4a"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a6569b94d4c6ef28b9c1f948fdd14fc4a">Toy_HookFn</a>) (struct <a class="el" href="../../de/da4/structToy__Interpreter.html">Toy_Interpreter</a> *interpreter, struct <a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> identifier, struct <a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> alias)</td></tr>
+<tr class="memdesc:a6569b94d4c6ef28b9c1f948fdd14fc4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
 <tr class="separator:a6569b94d4c6ef28b9c1f948fdd14fc4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a176336391a32bc4eb6e8d776d3e19c35"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a176336391a32bc4eb6e8d776d3e19c35">Toy_PrintFn</a>) (const char *)</td></tr>
+<tr class="memdesc:a176336391a32bc4eb6e8d776d3e19c35"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
 <tr class="separator:a176336391a32bc4eb6e8d776d3e19c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5e1570c835c4656a57697b7f8444a56"><td class="memItemLeft" align="right" valign="top"><a id="ac5e1570c835c4656a57697b7f8444a56" name="ac5e1570c835c4656a57697b7f8444a56"></a>
-typedef struct <a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Toy_Literal</b></td></tr>
+<tr class="memitem:ac5e1570c835c4656a57697b7f8444a56"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#ac5e1570c835c4656a57697b7f8444a56">Toy_Literal</a></td></tr>
+<tr class="memdesc:ac5e1570c835c4656a57697b7f8444a56"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
 <tr class="separator:ac5e1570c835c4656a57697b7f8444a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
@@ -278,29 +238,934 @@ Enumerations</h2></td></tr>
 , <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea5555e0674082c4422562bac72c188568">TOY_LITERAL_INDEX_BLANK</a>
 <br />
  }</td></tr>
+<tr class="memdesc:ae241e9fb03b2480fd4646587661870ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <a href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870ae">More...</a><br /></td></tr>
 <tr class="separator:ae241e9fb03b2480fd4646587661870ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ab26e9d53a87b73da904b5d670b10f5af"><td class="memItemLeft" align="right" valign="top">TOY_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#ab26e9d53a87b73da904b5d670b10f5af">Toy_freeLiteral</a> (<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> literal)</td></tr>
+<tr class="memdesc:ab26e9d53a87b73da904b5d670b10f5af"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
 <tr class="separator:ab26e9d53a87b73da904b5d670b10f5af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa2e8962a687673fff9647f7b0a50baa"><td class="memItemLeft" align="right" valign="top">TOY_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#aaa2e8962a687673fff9647f7b0a50baa">Toy_private_isTruthy</a> (<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> x)</td></tr>
+<tr class="memdesc:aaa2e8962a687673fff9647f7b0a50baa"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
 <tr class="separator:aaa2e8962a687673fff9647f7b0a50baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc7696ac618fab0f02c2ce24bdda13cf"><td class="memItemLeft" align="right" valign="top">TOY_API <a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#abc7696ac618fab0f02c2ce24bdda13cf">Toy_private_toIdentifierLiteral</a> (<a class="el" href="../../dd/d94/structToy__RefString.html">Toy_RefString</a> *ptr)</td></tr>
+<tr class="memdesc:abc7696ac618fab0f02c2ce24bdda13cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
 <tr class="separator:abc7696ac618fab0f02c2ce24bdda13cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96c75bc294dcb8e8b5cda583ad4c6e58"><td class="memItemLeft" align="right" valign="top">TOY_API <a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a96c75bc294dcb8e8b5cda583ad4c6e58">Toy_private_typePushSubtype</a> (<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> *lit, <a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> subtype)</td></tr>
+<tr class="memdesc:a96c75bc294dcb8e8b5cda583ad4c6e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
 <tr class="separator:a96c75bc294dcb8e8b5cda583ad4c6e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5250042b7c6443d3aded392da08bfaa0"><td class="memItemLeft" align="right" valign="top">TOY_API <a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a5250042b7c6443d3aded392da08bfaa0">Toy_copyLiteral</a> (<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> original)</td></tr>
+<tr class="memdesc:a5250042b7c6443d3aded392da08bfaa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
 <tr class="separator:a5250042b7c6443d3aded392da08bfaa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac91521046fa2aa8f462649af6cb302b2"><td class="memItemLeft" align="right" valign="top">TOY_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#ac91521046fa2aa8f462649af6cb302b2">Toy_literalsAreEqual</a> (<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> lhs, <a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> rhs)</td></tr>
+<tr class="memdesc:ac91521046fa2aa8f462649af6cb302b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
 <tr class="separator:ac91521046fa2aa8f462649af6cb302b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3ec8788a9a921e00cd164f38b5eacbe"><td class="memItemLeft" align="right" valign="top">TOY_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#ae3ec8788a9a921e00cd164f38b5eacbe">Toy_hashLiteral</a> (<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> lit)</td></tr>
+<tr class="memdesc:ae3ec8788a9a921e00cd164f38b5eacbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
 <tr class="separator:ae3ec8788a9a921e00cd164f38b5eacbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fa0bea1a678dc230a691aa6e354d35a"><td class="memItemLeft" align="right" valign="top">TOY_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a2fa0bea1a678dc230a691aa6e354d35a">Toy_printLiteral</a> (<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> literal)</td></tr>
+<tr class="memdesc:a2fa0bea1a678dc230a691aa6e354d35a"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
 <tr class="separator:a2fa0bea1a678dc230a691aa6e354d35a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abae5bd712823721a0bbb91bd0f983bac"><td class="memItemLeft" align="right" valign="top">TOY_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#abae5bd712823721a0bbb91bd0f983bac">Toy_printLiteralCustom</a> (<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> literal, <a class="el" href="../../d3/d5f/toy__literal_8h.html#a176336391a32bc4eb6e8d776d3e19c35">Toy_PrintFn</a>)</td></tr>
+<tr class="memdesc:abae5bd712823721a0bbb91bd0f983bac"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
 <tr class="separator:abae5bd712823721a0bbb91bd0f983bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>@???@ </p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a2574b4d9842e2142d405a550eab80816" name="a2574b4d9842e2142d405a550eab80816"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2574b4d9842e2142d405a550eab80816">&#9670;&#160;</a></span>TOY_AS_ARRAY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_AS_ARRAY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="../../d5/d6a/structToy__LiteralArray.html">Toy_LiteralArray</a>*)((value).as.array))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="af1ab53e62f05bf4a7d20054295f950b3" name="af1ab53e62f05bf4a7d20054295f950b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1ab53e62f05bf4a7d20054295f950b3">&#9670;&#160;</a></span>TOY_AS_BOOLEAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_AS_BOOLEAN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((value).as.boolean)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="a0db3e7a9ca2836da47431dec4bfb4fd3" name="a0db3e7a9ca2836da47431dec4bfb4fd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0db3e7a9ca2836da47431dec4bfb4fd3">&#9670;&#160;</a></span>TOY_AS_DICTIONARY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_AS_DICTIONARY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="../../d9/db5/structToy__LiteralDictionary.html">Toy_LiteralDictionary</a>*)((value).as.dictionary))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="ac81f0bf20743ee01773bb77012a66d27" name="ac81f0bf20743ee01773bb77012a66d27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac81f0bf20743ee01773bb77012a66d27">&#9670;&#160;</a></span>TOY_AS_FLOAT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_AS_FLOAT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((value).as.number)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="a20ccf2cb21121a6e544155106d5193c0" name="a20ccf2cb21121a6e544155106d5193c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20ccf2cb21121a6e544155106d5193c0">&#9670;&#160;</a></span>TOY_AS_FUNCTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_AS_FUNCTION</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((value).as.function)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="ac75f2195b1e17fe9e90b4cc340df7e63" name="ac75f2195b1e17fe9e90b4cc340df7e63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac75f2195b1e17fe9e90b4cc340df7e63">&#9670;&#160;</a></span>TOY_AS_FUNCTION_BYTECODE_LENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_AS_FUNCTION_BYTECODE_LENGTH</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">lit</td><td>)</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="../../d4/d71/toy__reffunction_8h.html#ab07959ecc82c2707741ca73886510531">Toy_lengthRefFunction</a>((lit).inner.ptr))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="ac3619d503e16cb573f4e3ff218149026" name="ac3619d503e16cb573f4e3ff218149026"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3619d503e16cb573f4e3ff218149026">&#9670;&#160;</a></span>TOY_AS_FUNCTION_HOOK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_AS_FUNCTION_HOOK</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((value).as.function.inner.hook)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="af735072539a7786f9a15650bd5e83c7a" name="af735072539a7786f9a15650bd5e83c7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af735072539a7786f9a15650bd5e83c7a">&#9670;&#160;</a></span>TOY_AS_FUNCTION_NATIVE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_AS_FUNCTION_NATIVE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((value).as.function.inner.native)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="ab57ed439627f99543bcb8e3484d5bed2" name="ab57ed439627f99543bcb8e3484d5bed2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab57ed439627f99543bcb8e3484d5bed2">&#9670;&#160;</a></span>TOY_AS_IDENTIFIER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_AS_IDENTIFIER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((value).as.identifier.ptr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="ae2dc43e15ada717bbf8d5447167b7a7f" name="ae2dc43e15ada717bbf8d5447167b7a7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2dc43e15ada717bbf8d5447167b7a7f">&#9670;&#160;</a></span>TOY_AS_INTEGER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_AS_INTEGER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((value).as.integer)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="a6a44c5f21854fb1a05c568ca1e2a6538" name="a6a44c5f21854fb1a05c568ca1e2a6538"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a44c5f21854fb1a05c568ca1e2a6538">&#9670;&#160;</a></span>TOY_AS_OPAQUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_AS_OPAQUE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((value).as.opaque.ptr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="a5f2014e22323f401747a520ba94f583b" name="a5f2014e22323f401747a520ba94f583b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f2014e22323f401747a520ba94f583b">&#9670;&#160;</a></span>TOY_AS_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_AS_STRING</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((value).as.string.ptr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="a62043f7f0a3cd3fddeccfea0c55f4329" name="a62043f7f0a3cd3fddeccfea0c55f4329"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62043f7f0a3cd3fddeccfea0c55f4329">&#9670;&#160;</a></span>TOY_AS_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_AS_TYPE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((value).as.type)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="abbea922a200e8a9e59cc40ccc0d917fc" name="abbea922a200e8a9e59cc40ccc0d917fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbea922a200e8a9e59cc40ccc0d917fc">&#9670;&#160;</a></span>TOY_GET_OPAQUE_TAG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_GET_OPAQUE_TAG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">o</td><td>)</td>
+          <td>&#160;&#160;&#160;o.as.opaque.tag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="a221625609a51005673cdcb2b05c08ab0" name="a221625609a51005673cdcb2b05c08ab0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a221625609a51005673cdcb2b05c08ab0">&#9670;&#160;</a></span>TOY_HASH_I</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_HASH_I</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">lit</td><td>)</td>
+          <td>&#160;&#160;&#160;((lit).as.identifier.hash)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="ab5cde11d74ac0e024b7edb72c5f0e389" name="ab5cde11d74ac0e024b7edb72c5f0e389"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5cde11d74ac0e024b7edb72c5f0e389">&#9670;&#160;</a></span>TOY_IS_ARRAY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_IS_ARRAY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeaf51b93d3b085e39ceec127300eb42235">TOY_LITERAL_ARRAY</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="a9792afb8a408a0547955ac510823509e" name="a9792afb8a408a0547955ac510823509e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9792afb8a408a0547955ac510823509e">&#9670;&#160;</a></span>TOY_IS_BOOLEAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_IS_BOOLEAN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeaa932ce4da60f4ed636ae7d81bdc817d3">TOY_LITERAL_BOOLEAN</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="a1d52dd3509ecae0e0c9cd87132736e9f" name="a1d52dd3509ecae0e0c9cd87132736e9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d52dd3509ecae0e0c9cd87132736e9f">&#9670;&#160;</a></span>TOY_IS_DICTIONARY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_IS_DICTIONARY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea8ba088eea2c754feef3f3237c35df9b2">TOY_LITERAL_DICTIONARY</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="a28fbc56c908b012e141f1d541e178e31" name="a28fbc56c908b012e141f1d541e178e31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28fbc56c908b012e141f1d541e178e31">&#9670;&#160;</a></span>TOY_IS_FLOAT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_IS_FLOAT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea9d01af7dcc732d97fe4203290010ba9a">TOY_LITERAL_FLOAT</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="a84638c62dc9fa5ca53693ec50f64b276" name="a84638c62dc9fa5ca53693ec50f64b276"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84638c62dc9fa5ca53693ec50f64b276">&#9670;&#160;</a></span>TOY_IS_FUNCTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_IS_FUNCTION</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea6847b29c6b8a361001ac951b0b6286b1">TOY_LITERAL_FUNCTION</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="a33a1b6445ea5c840a773d9d394dca0c6" name="a33a1b6445ea5c840a773d9d394dca0c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33a1b6445ea5c840a773d9d394dca0c6">&#9670;&#160;</a></span>TOY_IS_FUNCTION_HOOK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_IS_FUNCTION_HOOK</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeaf14210ac1459b8b06061353685ab59a1">TOY_LITERAL_FUNCTION_HOOK</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="a083d94d4cbe7f0139d669104a31c6611" name="a083d94d4cbe7f0139d669104a31c6611"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a083d94d4cbe7f0139d669104a31c6611">&#9670;&#160;</a></span>TOY_IS_FUNCTION_NATIVE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_IS_FUNCTION_NATIVE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeaf7b5ea17222c532a61e5bfda4ff1297f">TOY_LITERAL_FUNCTION_NATIVE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="a1d715b3f1a82754ee0bd2c037b995274" name="a1d715b3f1a82754ee0bd2c037b995274"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d715b3f1a82754ee0bd2c037b995274">&#9670;&#160;</a></span>TOY_IS_IDENTIFIER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_IS_IDENTIFIER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aead4b402669f1b40ea01dd0a800fd3e736">TOY_LITERAL_IDENTIFIER</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="ad41c40de80719b3b236be5e3f8d38997" name="ad41c40de80719b3b236be5e3f8d38997"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad41c40de80719b3b236be5e3f8d38997">&#9670;&#160;</a></span>TOY_IS_INDEX_BLANK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_IS_INDEX_BLANK</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea5555e0674082c4422562bac72c188568">TOY_LITERAL_INDEX_BLANK</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="a19e938d1230ce5422516fda8abcea413" name="a19e938d1230ce5422516fda8abcea413"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19e938d1230ce5422516fda8abcea413">&#9670;&#160;</a></span>TOY_IS_INTEGER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_IS_INTEGER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea6e13ecc0c3735548c5864c9dee043f88">TOY_LITERAL_INTEGER</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="a56006f07f1246e02710a9b3ccee30d20" name="a56006f07f1246e02710a9b3ccee30d20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56006f07f1246e02710a9b3ccee30d20">&#9670;&#160;</a></span>TOY_IS_NULL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_IS_NULL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea80f774e1bb70f6d5c103a783fe749eb1">TOY_LITERAL_NULL</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="a320537d60975afe2f29c765343b0092f" name="a320537d60975afe2f29c765343b0092f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a320537d60975afe2f29c765343b0092f">&#9670;&#160;</a></span>TOY_IS_OPAQUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_IS_OPAQUE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeabdcb6f908df16c1f5d53efff6d321bd2">TOY_LITERAL_OPAQUE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="a47318a85ed278d3437e3a928024707ae" name="a47318a85ed278d3437e3a928024707ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47318a85ed278d3437e3a928024707ae">&#9670;&#160;</a></span>TOY_IS_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_IS_STRING</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeaa5bffb412094abd0c8891200242bc192">TOY_LITERAL_STRING</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="aabccb595491056818b080234d36f38f3" name="aabccb595491056818b080234d36f38f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabccb595491056818b080234d36f38f3">&#9670;&#160;</a></span>TOY_IS_TRUTHY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_IS_TRUTHY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="../../d3/d5f/toy__literal_8h.html#aaa2e8962a687673fff9647f7b0a50baa">Toy_private_isTruthy</a>(x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="a6426fdc9082cd6ec13af389320ade05c" name="a6426fdc9082cd6ec13af389320ade05c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6426fdc9082cd6ec13af389320ade05c">&#9670;&#160;</a></span>TOY_IS_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_IS_TYPE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((value).type == <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea140bb230b1f197b9b543ce5b7775767a">TOY_LITERAL_TYPE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="afd9679a46927d281dd48548753ad590e" name="afd9679a46927d281dd48548753ad590e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd9679a46927d281dd48548753ad590e">&#9670;&#160;</a></span>TOY_MAX_STRING_LENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_MAX_STRING_LENGTH&#160;&#160;&#160;4096</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="a3b37e311987c72e4d5704e89744f9c49" name="a3b37e311987c72e4d5704e89744f9c49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b37e311987c72e4d5704e89744f9c49">&#9670;&#160;</a></span>TOY_TO_ARRAY_LITERAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_TO_ARRAY_LITERAL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .array = value }, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeaf51b93d3b085e39ceec127300eb42235">TOY_LITERAL_ARRAY</a>})</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="adc51b5f1157f106f1369b260e7343c0e" name="adc51b5f1157f106f1369b260e7343c0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc51b5f1157f106f1369b260e7343c0e">&#9670;&#160;</a></span>TOY_TO_BOOLEAN_LITERAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_TO_BOOLEAN_LITERAL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .boolean = value }, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeaa932ce4da60f4ed636ae7d81bdc817d3">TOY_LITERAL_BOOLEAN</a>})</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="a30b05f8702bea257185e80a164bfe642" name="a30b05f8702bea257185e80a164bfe642"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30b05f8702bea257185e80a164bfe642">&#9670;&#160;</a></span>TOY_TO_DICTIONARY_LITERAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_TO_DICTIONARY_LITERAL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .dictionary = value }, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea8ba088eea2c754feef3f3237c35df9b2">TOY_LITERAL_DICTIONARY</a>})</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="ade018b2a5cfa548589f35e1aa453bf74" name="ade018b2a5cfa548589f35e1aa453bf74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade018b2a5cfa548589f35e1aa453bf74">&#9670;&#160;</a></span>TOY_TO_FLOAT_LITERAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_TO_FLOAT_LITERAL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .number = value }, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea9d01af7dcc732d97fe4203290010ba9a">TOY_LITERAL_FLOAT</a>})</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="a033ec3a4d0c41936d196f9e7eecb7344" name="a033ec3a4d0c41936d196f9e7eecb7344"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a033ec3a4d0c41936d196f9e7eecb7344">&#9670;&#160;</a></span>TOY_TO_FUNCTION_HOOK_LITERAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_TO_FUNCTION_HOOK_LITERAL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .function = { .inner = { .hook = value }, .scope = NULL }}, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeaf14210ac1459b8b06061353685ab59a1">TOY_LITERAL_FUNCTION_HOOK</a>})</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="a1f754ab6092ee802fec56e67bf71e72b" name="a1f754ab6092ee802fec56e67bf71e72b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f754ab6092ee802fec56e67bf71e72b">&#9670;&#160;</a></span>TOY_TO_FUNCTION_LITERAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_TO_FUNCTION_LITERAL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .function = { .inner = { .ptr = value }, .scope = NULL }}, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea6847b29c6b8a361001ac951b0b6286b1">TOY_LITERAL_FUNCTION</a>})</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="ae9ccd695e38eedabd91c280ce68e9ae4" name="ae9ccd695e38eedabd91c280ce68e9ae4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9ccd695e38eedabd91c280ce68e9ae4">&#9670;&#160;</a></span>TOY_TO_FUNCTION_NATIVE_LITERAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_TO_FUNCTION_NATIVE_LITERAL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .function = { .inner = { .native = value }, .scope = NULL }}, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeaf7b5ea17222c532a61e5bfda4ff1297f">TOY_LITERAL_FUNCTION_NATIVE</a>})</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="af8d65ef9b0ebb2ebf0a8e3cf282cdb5a" name="af8d65ef9b0ebb2ebf0a8e3cf282cdb5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8d65ef9b0ebb2ebf0a8e3cf282cdb5a">&#9670;&#160;</a></span>TOY_TO_IDENTIFIER_LITERAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_TO_IDENTIFIER_LITERAL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="../../d3/d5f/toy__literal_8h.html#abc7696ac618fab0f02c2ce24bdda13cf">Toy_private_toIdentifierLiteral</a>(value)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="ad51ebc4b3d2b7bae0a1c32f30baec410" name="ad51ebc4b3d2b7bae0a1c32f30baec410"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad51ebc4b3d2b7bae0a1c32f30baec410">&#9670;&#160;</a></span>TOY_TO_INDEX_BLANK_LITERAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_TO_INDEX_BLANK_LITERAL&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .integer = 0 }, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea5555e0674082c4422562bac72c188568">TOY_LITERAL_INDEX_BLANK</a>})</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="a470c367a7cb484c27b7300906ff2963e" name="a470c367a7cb484c27b7300906ff2963e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a470c367a7cb484c27b7300906ff2963e">&#9670;&#160;</a></span>TOY_TO_INTEGER_LITERAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_TO_INTEGER_LITERAL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .integer = value }, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea6e13ecc0c3735548c5864c9dee043f88">TOY_LITERAL_INTEGER</a>})</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="a437b21a2bd43bfeb2f4545e4e21d89ad" name="a437b21a2bd43bfeb2f4545e4e21d89ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a437b21a2bd43bfeb2f4545e4e21d89ad">&#9670;&#160;</a></span>TOY_TO_NULL_LITERAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_TO_NULL_LITERAL&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .integer = 0 }, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea80f774e1bb70f6d5c103a783fe749eb1">TOY_LITERAL_NULL</a>})</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="a231c19d4d9ee140e27192ad79650e8c2" name="a231c19d4d9ee140e27192ad79650e8c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a231c19d4d9ee140e27192ad79650e8c2">&#9670;&#160;</a></span>TOY_TO_OPAQUE_LITERAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_TO_OPAQUE_LITERAL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">t&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .opaque = { .ptr = value, .tag = t }}, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeabdcb6f908df16c1f5d53efff6d321bd2">TOY_LITERAL_OPAQUE</a>})</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="a0e468556c58d82faaba85d0ce224f675" name="a0e468556c58d82faaba85d0ce224f675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e468556c58d82faaba85d0ce224f675">&#9670;&#160;</a></span>TOY_TO_STRING_LITERAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_TO_STRING_LITERAL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value</td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .string = { .ptr = value }},<a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aeaa5bffb412094abd0c8891200242bc192">TOY_LITERAL_STRING</a>})</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="a431bf7737e36bb24ddf9ee60c4e28ca3" name="a431bf7737e36bb24ddf9ee60c4e28ca3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a431bf7737e36bb24ddf9ee60c4e28ca3">&#9670;&#160;</a></span>TOY_TO_TYPE_LITERAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_TO_TYPE_LITERAL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">c&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>){{ .type = { .typeOf = value, .constant = c, .subtypes = NULL, .capacity = 0, .count = 0 }}, <a class="el" href="../../d3/d5f/toy__literal_8h.html#ae241e9fb03b2480fd4646587661870aea140bb230b1f197b9b543ce5b7775767a">TOY_LITERAL_TYPE</a>})</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
+<a id="ad36f5ae9c1e8ed019661be16784faae3" name="ad36f5ae9c1e8ed019661be16784faae3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad36f5ae9c1e8ed019661be16784faae3">&#9670;&#160;</a></span>TOY_TYPE_PUSH_SUBTYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOY_TYPE_PUSH_SUBTYPE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">lit, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">subtype&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="../../d3/d5f/toy__literal_8h.html#a96c75bc294dcb8e8b5cda583ad4c6e58">Toy_private_typePushSubtype</a>(lit, subtype)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>@???@ </p>
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a6569b94d4c6ef28b9c1f948fdd14fc4a" name="a6569b94d4c6ef28b9c1f948fdd14fc4a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6569b94d4c6ef28b9c1f948fdd14fc4a">&#9670;&#160;</a></span>Toy_HookFn</h2>
@@ -313,6 +1178,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>@???@ </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">interpreter</td><td></td></tr>
@@ -322,6 +1189,22 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="ac5e1570c835c4656a57697b7f8444a56" name="ac5e1570c835c4656a57697b7f8444a56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5e1570c835c4656a57697b7f8444a56">&#9670;&#160;</a></span>Toy_Literal</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>@???@ </p>
 
 </div>
 </div>
@@ -336,6 +1219,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>@???@ </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">interpreter</td><td></td></tr>
@@ -358,12 +1243,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname"></td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+
+<p>@???@ </p>
 
 </div>
 </div>
@@ -379,6 +1260,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>@???@ </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae241e9fb03b2480fd4646587661870aea80f774e1bb70f6d5c103a783fe749eb1" name="ae241e9fb03b2480fd4646587661870aea80f774e1bb70f6d5c103a783fe749eb1"></a>TOY_LITERAL_NULL&#160;</td><td class="fielddoc"><p>TOY_LITERAL_NULL </p>
 </td></tr>
@@ -440,6 +1323,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>@???@ </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">original</td><td></td></tr>
@@ -465,6 +1350,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>@???@ </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">literal</td><td></td></tr>
@@ -489,6 +1376,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>@???@ </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lit</td><td></td></tr>
@@ -524,6 +1413,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>@???@ </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lhs</td><td></td></tr>
@@ -550,6 +1441,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>@???@ </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">literal</td><td></td></tr>
@@ -584,10 +1477,12 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>@???@ </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">literal</td><td></td></tr>
-    <tr><td class="paramname"></td><td></td></tr>
+    <tr><td class="paramname">Toy_PrintFn</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -609,6 +1504,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>@???@ </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td></td></tr>
@@ -634,6 +1531,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>@???@ </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ptr</td><td></td></tr>
@@ -669,6 +1568,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>@???@ </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lit</td><td></td></tr>

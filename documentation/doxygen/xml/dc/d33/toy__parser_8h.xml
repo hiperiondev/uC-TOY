@@ -120,6 +120,7 @@
           <declname>lexer</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -155,6 +156,7 @@
           <declname>parser</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -173,7 +175,7 @@
         <location file="compiler/include/toy_parser.h" line="47" column="14" declfile="compiler/include/toy_parser.h" declline="47" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="dc/d33/toy__parser_8h_1abe4c894be4a5995a709f500e74dffe2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>TOY_API <ref refid="d8/dcd/unionToy__private__node" kindref="compound">Toy_ASTNode</ref> *</type>
+        <type>TOY_API <ref refid="d3/df7/toy__ast__node_8h_1a885768195f2ff9c0a631d6cfe226e354" kindref="member">Toy_ASTNode</ref> *</type>
         <definition>Toy_ASTNode * Toy_scanParser</definition>
         <argsstring>(Toy_Parser *parser)</argsstring>
         <name>Toy_scanParser</name>
@@ -182,6 +184,7 @@
           <declname>parser</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -203,6 +206,7 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>@???@ </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -219,12 +223,12 @@
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//DOCS:<sp/>parsers<sp/>are<sp/>bound<sp/>to<sp/>a<sp/>lexer,<sp/>and<sp/>turn<sp/>the<sp/>outputted<sp/>tokens<sp/>into<sp/>AST<sp/>nodes</highlight></codeline>
 <codeline lineno="22" refid="d8/d78/structToy__Parser" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d6d/structToy__Lexer" kindref="compound">Toy_Lexer</ref>*<sp/>lexer;</highlight></codeline>
+<codeline lineno="23" refid="d8/d78/structToy__Parser_1a5c0b960eea0e620ec1cdc18f50dd1640" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d6d/structToy__Lexer" kindref="compound">Toy_Lexer</ref>*<sp/><ref refid="d8/d78/structToy__Parser_1a5c0b960eea0e620ec1cdc18f50dd1640" kindref="member">lexer</ref>;<sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="24" refid="d8/d78/structToy__Parser_1a12bea4913748bbcd24df2590d17791a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d8/d78/structToy__Parser_1a12bea4913748bbcd24df2590d17791a1" kindref="member">error</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="25" refid="d8/d78/structToy__Parser_1a0c4e0a567762e5a83472325f59cfbe1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d8/d78/structToy__Parser_1a0c4e0a567762e5a83472325f59cfbe1e" kindref="member">panic</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//track<sp/>the<sp/>last<sp/>two<sp/>outputs<sp/>from<sp/>the<sp/>lexer</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/d78/structToy__Token" kindref="compound">Toy_Token</ref><sp/>current;<sp/><sp/></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/d78/structToy__Token" kindref="compound">Toy_Token</ref><sp/>previous;<sp/></highlight></codeline>
+<codeline lineno="28" refid="d8/d78/structToy__Parser_1a2829f9503b1f99011bdadee418488106" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/d78/structToy__Token" kindref="compound">Toy_Token</ref><sp/><ref refid="d8/d78/structToy__Parser_1a2829f9503b1f99011bdadee418488106" kindref="member">current</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="29" refid="d8/d78/structToy__Parser_1aeb40d8ec44f82482bc362510433ddfc2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/d78/structToy__Token" kindref="compound">Toy_Token</ref><sp/><ref refid="d8/d78/structToy__Parser_1aeb40d8ec44f82482bc362510433ddfc2" kindref="member">previous</ref>;<sp/></highlight></codeline>
 <codeline lineno="30"><highlight class="normal">}<sp/><ref refid="d8/d78/structToy__Parser" kindref="compound">Toy_Parser</ref>;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
 <codeline lineno="39" refid="dc/d33/toy__parser_8h_1a37fceb423abe4c03b806c4660cef2069" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d33/toy__parser_8h_1a37fceb423abe4c03b806c4660cef2069" kindref="member">Toy_initParser</ref>(<ref refid="d8/d78/structToy__Parser" kindref="compound">Toy_Parser</ref>*<sp/>parser,<sp/><ref refid="d9/d6d/structToy__Lexer" kindref="compound">Toy_Lexer</ref>*<sp/>lexer);</highlight></codeline>

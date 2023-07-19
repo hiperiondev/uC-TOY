@@ -133,6 +133,7 @@
           <declname>array</declname>
         </param>
         <briefdescription>
+<para>@????@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -160,6 +161,7 @@
           <declname>array</declname>
         </param>
         <briefdescription>
+<para>@????@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -191,6 +193,7 @@
           <declname>literal</declname>
         </param>
         <briefdescription>
+<para>@????@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -228,6 +231,7 @@
           <declname>array</declname>
         </param>
         <briefdescription>
+<para>@????@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -265,6 +269,7 @@
           <declname>value</declname>
         </param>
         <briefdescription>
+<para>@????@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -314,6 +319,7 @@
           <declname>index</declname>
         </param>
         <briefdescription>
+<para>@????@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -355,6 +361,7 @@
           <declname>literal</declname>
         </param>
         <briefdescription>
+<para>@????@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -384,6 +391,7 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>@????@ </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -398,9 +406,9 @@
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d5f/toy__literal_8h" kindref="compound">toy_literal.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
 <codeline lineno="20" refid="d5/d6a/structToy__LiteralArray" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d5/d6a/structToy__LiteralArray" kindref="compound">Toy_LiteralArray</ref><sp/>{</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/>*literals;<sp/></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>capacity;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="21" refid="d5/d6a/structToy__LiteralArray_1a13be77c2d51ef60c330823d80aa17be4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/>*<ref refid="d5/d6a/structToy__LiteralArray_1a13be77c2d51ef60c330823d80aa17be4" kindref="member">literals</ref>;<sp/></highlight></codeline>
+<codeline lineno="22" refid="d5/d6a/structToy__LiteralArray_1af09ac41c521e3d673848d4d019f2ab0e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d5/d6a/structToy__LiteralArray_1af09ac41c521e3d673848d4d019f2ab0e" kindref="member">capacity</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="23" refid="d5/d6a/structToy__LiteralArray_1a7921894446c581c39ff12a9499c67154" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d5/d6a/structToy__LiteralArray_1a7921894446c581c39ff12a9499c67154" kindref="member">count</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="24"><highlight class="normal">}<sp/><ref refid="d5/d6a/structToy__LiteralArray" kindref="compound">Toy_LiteralArray</ref>;</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
 <codeline lineno="32" refid="d0/dfc/toy__literal__array_8h_1a841d502cbb65c1d4e8b683ffaf593cc7" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/dfc/toy__literal__array_8h_1a841d502cbb65c1d4e8b683ffaf593cc7" kindref="member">Toy_initLiteralArray</ref>(<ref refid="d5/d6a/structToy__LiteralArray" kindref="compound">Toy_LiteralArray</ref><sp/>*array);</highlight></codeline>

@@ -1,6 +1,6 @@
 /**
  * @file toy_scope.h
- * @brief
+ * @brief @@???@@
  *
  */
 
@@ -15,19 +15,19 @@
 
 /**
  * @typedef Toy_Scope
- * @brief
+ * @brief @@???@@
  *
  */
 typedef struct Toy_Scope {
     Toy_LiteralDictionary variables; /**< only allow identifiers as the keys */
     Toy_LiteralDictionary types;     /**< the types, indexed by identifiers */
-    struct Toy_Scope *ancestor;      /**< */
+    struct Toy_Scope *ancestor;      /**< @@???@@ */
     int references;                  /**< how many scopes point here */
 } Toy_Scope;
 
 /**
  * @fn Toy_Scope* Toy_pushScope(Toy_Scope *scope)
- * @brief
+ * @brief @@???@@
  *
  * @param scope
  * @return
@@ -36,7 +36,7 @@ TOY_API Toy_Scope* Toy_pushScope(Toy_Scope *scope);
 
 /**
  * @fn Toy_Scope* Toy_popScope(Toy_Scope *scope)
- * @brief
+ * @brief @@???@@
  *
  * @param scope
  * @return
@@ -45,7 +45,7 @@ TOY_API Toy_Scope* Toy_popScope(Toy_Scope *scope);
 
 /**
  * @fn Toy_Scope* Toy_copyScope(Toy_Scope *original)
- * @brief
+ * @brief @@???@@
  *
  * @param original
  * @return
@@ -55,7 +55,7 @@ TOY_API Toy_Scope* Toy_copyScope(Toy_Scope *original);
 //returns false if error
 /**
  * @fn bool Toy_declareScopeVariable(Toy_Scope *scope, Toy_Literal key, Toy_Literal type)
- * @brief
+ * @brief @@???@@
  *
  * @param scope
  * @param key
@@ -66,7 +66,7 @@ TOY_API bool Toy_declareScopeVariable(Toy_Scope *scope, Toy_Literal key, Toy_Lit
 
 /**
  * @fn bool Toy_isDelcaredScopeVariable(Toy_Scope *scope, Toy_Literal key)
- * @brief
+ * @brief @@???@@
  *
  * @param scope
  * @param key
@@ -77,7 +77,7 @@ TOY_API bool Toy_isDelcaredScopeVariable(Toy_Scope *scope, Toy_Literal key);
 //return false if undefined
 /**
  * @fn bool Toy_setScopeVariable(Toy_Scope *scope, Toy_Literal key, Toy_Literal value, bool constCheck)
- * @brief
+ * @brief @@???@@
  *
  * @param scope
  * @param key
@@ -89,7 +89,7 @@ TOY_API bool Toy_setScopeVariable(Toy_Scope *scope, Toy_Literal key, Toy_Literal
 
 /**
  * @fn bool Toy_getScopeVariable(Toy_Scope *scope, Toy_Literal key, Toy_Literal *value)
- * @brief
+ * @brief @@???@@
  *
  * @param scope
  * @param key
@@ -100,7 +100,7 @@ TOY_API bool Toy_getScopeVariable(Toy_Scope *scope, Toy_Literal key, Toy_Literal
 
 /**
  * @fn Toy_Literal Toy_getScopeType(Toy_Scope *scope, Toy_Literal key)
- * @brief
+ * @brief @@???@@
  *
  * @param scope
  * @param key

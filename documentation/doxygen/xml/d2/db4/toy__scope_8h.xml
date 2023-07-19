@@ -119,6 +119,7 @@
         <argsstring></argsstring>
         <name>Toy_Scope</name>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -138,6 +139,7 @@
           <declname>scope</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -167,6 +169,7 @@
           <declname>scope</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -196,6 +199,7 @@
           <declname>original</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -233,6 +237,7 @@
           <declname>type</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -282,6 +287,7 @@
           <declname>key</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -331,6 +337,7 @@
           <declname>constCheck</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -392,6 +399,7 @@
           <declname>value</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -441,6 +449,7 @@
           <declname>key</declname>
         </param>
         <briefdescription>
+<para>@???@ </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -470,6 +479,7 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>@???@ </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -487,9 +497,9 @@
 <codeline lineno="21" refid="de/de6/structToy__Scope" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="de/de6/structToy__Scope" kindref="compound">Toy_Scope</ref><sp/>{</highlight></codeline>
 <codeline lineno="22" refid="de/de6/structToy__Scope_1a69803137bbec26c36ce436cbf6c1c42d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/db5/structToy__LiteralDictionary" kindref="compound">Toy_LiteralDictionary</ref><sp/><ref refid="de/de6/structToy__Scope_1a69803137bbec26c36ce436cbf6c1c42d" kindref="member">variables</ref>;<sp/></highlight></codeline>
 <codeline lineno="23" refid="de/de6/structToy__Scope_1ad65ba5620a2a1d28228843d22b7a08af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/db5/structToy__LiteralDictionary" kindref="compound">Toy_LiteralDictionary</ref><sp/><ref refid="de/de6/structToy__Scope_1ad65ba5620a2a1d28228843d22b7a08af" kindref="member">types</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="de/de6/structToy__Scope" kindref="compound">Toy_Scope</ref><sp/>*ancestor;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="24" refid="de/de6/structToy__Scope_1a4970bdc3ada46b6446c23f220fb61276" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="de/de6/structToy__Scope" kindref="compound">Toy_Scope</ref><sp/>*<ref refid="de/de6/structToy__Scope_1a4970bdc3ada46b6446c23f220fb61276" kindref="member">ancestor</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="25" refid="de/de6/structToy__Scope_1abd611f55050b4fea5d6f193f06ba5554" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="de/de6/structToy__Scope_1abd611f55050b4fea5d6f193f06ba5554" kindref="member">references</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="26"><highlight class="normal">}<sp/><ref refid="de/de6/structToy__Scope" kindref="compound">Toy_Scope</ref>;</highlight></codeline>
+<codeline lineno="26" refid="d2/db4/toy__scope_8h_1abd9abd95bd90461afcb7255c6c29f052" refkind="member"><highlight class="normal">}<sp/><ref refid="de/de6/structToy__Scope" kindref="compound">Toy_Scope</ref>;</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
 <codeline lineno="35" refid="d2/db4/toy__scope_8h_1a232b2c180394b736fe4d879b64f3f223" refkind="member"><highlight class="normal">TOY_API<sp/><ref refid="de/de6/structToy__Scope" kindref="compound">Toy_Scope</ref>*<sp/><ref refid="d2/db4/toy__scope_8h_1a232b2c180394b736fe4d879b64f3f223" kindref="member">Toy_pushScope</ref>(<ref refid="de/de6/structToy__Scope" kindref="compound">Toy_Scope</ref><sp/>*scope);</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>

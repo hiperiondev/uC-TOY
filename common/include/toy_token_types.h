@@ -1,6 +1,6 @@
 /**
  * @file toy_token_types.h
- * @brief
+ * @brief @@???@@
  *
  */
 
@@ -8,8 +8,8 @@
 #define TOY_TOKEN_TYPES_H_
 
 /**
- * @typedef Toy_TokenType
- * @brief
+ * @enum Toy_TokenType
+ * @brief @@???@@
  *
  */
 typedef enum Toy_TokenType {

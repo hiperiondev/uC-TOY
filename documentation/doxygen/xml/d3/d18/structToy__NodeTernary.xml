@@ -12,13 +12,14 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="compiler/include/toy_ast_node.h" line="135" column="21" bodyfile="compiler/include/toy_ast_node.h" bodystart="135" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d3/d18/structToy__NodeTernary_1a1562776a4670acabf45e8a9eb3890bd4" prot="public" static="no" mutable="no">
-        <type><ref refid="d8/dcd/unionToy__private__node" kindref="compound">Toy_ASTNode</ref> *</type>
+        <type><ref refid="d3/df7/toy__ast__node_8h_1a885768195f2ff9c0a631d6cfe226e354" kindref="member">Toy_ASTNode</ref> *</type>
         <definition>Toy_ASTNode* Toy_NodeTernary::condition</definition>
         <argsstring></argsstring>
         <name>condition</name>
@@ -26,13 +27,14 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="compiler/include/toy_ast_node.h" line="136" column="17" bodyfile="compiler/include/toy_ast_node.h" bodystart="136" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d3/d18/structToy__NodeTernary_1a1e2aa13e3ca0e34eb91c7066ed801fbb" prot="public" static="no" mutable="no">
-        <type><ref refid="d8/dcd/unionToy__private__node" kindref="compound">Toy_ASTNode</ref> *</type>
+        <type><ref refid="d3/df7/toy__ast__node_8h_1a885768195f2ff9c0a631d6cfe226e354" kindref="member">Toy_ASTNode</ref> *</type>
         <definition>Toy_ASTNode* Toy_NodeTernary::thenPath</definition>
         <argsstring></argsstring>
         <name>thenPath</name>
@@ -40,13 +42,14 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="compiler/include/toy_ast_node.h" line="137" column="17" bodyfile="compiler/include/toy_ast_node.h" bodystart="137" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d3/d18/structToy__NodeTernary_1a6d0eb02e05281287702570618dbc199e" prot="public" static="no" mutable="no">
-        <type><ref refid="d8/dcd/unionToy__private__node" kindref="compound">Toy_ASTNode</ref> *</type>
+        <type><ref refid="d3/df7/toy__ast__node_8h_1a885768195f2ff9c0a631d6cfe226e354" kindref="member">Toy_ASTNode</ref> *</type>
         <definition>Toy_ASTNode* Toy_NodeTernary::elsePath</definition>
         <argsstring></argsstring>
         <name>elsePath</name>
@@ -54,6 +57,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>

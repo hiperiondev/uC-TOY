@@ -578,10 +578,10 @@
     <member refid="da/d63/toy__repl__common_8h_1ac5d32cd460bbb99a09c29215b8430c77" kind="define"><name>TOY_VERSION_BUILD</name></member>
     <member refid="da/d63/toy__repl__common_8h_1ae2336f79785e849dc7ec81e015135420" kind="variable"><name>Toy_commandLine</name></member>
     <member refid="da/d63/toy__repl__common_8h_1aa5f6051f01a1b39e60f2c3a488eb2c08" kind="function"><name>Toy_private_version_build</name></member>
-    <member refid="da/d63/toy__repl__common_8h_1a9eae93836b4575417ea34662a9927759" kind="function"><name>Toy_initCommandLine</name></member>
-    <member refid="da/d63/toy__repl__common_8h_1a43fde136646bcc840a77998ff5dbb6e6" kind="function"><name>Toy_usageCommandLine</name></member>
-    <member refid="da/d63/toy__repl__common_8h_1a7db53b94baa1a0964695c6608aa453b0" kind="function"><name>Toy_helpCommandLine</name></member>
-    <member refid="da/d63/toy__repl__common_8h_1a292635e8b1d1e405b9c94633fd4e63e1" kind="function"><name>Toy_copyrightCommandLine</name></member>
+    <member refid="da/d63/toy__repl__common_8h_1a861c9dcd4a46351ab92edd01b614beb9" kind="function"><name>Toy_initCommandLine</name></member>
+    <member refid="da/d63/toy__repl__common_8h_1a65ed2875c32e4b91a9ae0461e3a0c475" kind="function"><name>Toy_usageCommandLine</name></member>
+    <member refid="da/d63/toy__repl__common_8h_1ac0aa410bf2db8a223c3230b7d0ede2dd" kind="function"><name>Toy_helpCommandLine</name></member>
+    <member refid="da/d63/toy__repl__common_8h_1a63d7e449af4cb3b5825648d5c4799fb4" kind="function"><name>Toy_copyrightCommandLine</name></member>
   </compound>
   <compound refid="d7/dbe/toy__builtin_8h" kind="file"><name>toy_builtin.h</name>
     <member refid="d7/dbe/toy__builtin_8h_1a5b8691df127539d9ef995999c6904389" kind="function"><name>Toy_private_index</name></member>
@@ -604,7 +604,7 @@
     <member refid="dc/dcc/toy__interpreter_8h_1afb7992b14204638895b6a8c121d7bd5b" kind="function"><name>Toy_setInterpreterError</name></member>
     <member refid="dc/dcc/toy__interpreter_8h_1a0e1097c83258bcf4db018ee2cd4b7df4" kind="function"><name>Toy_initInterpreter</name></member>
     <member refid="dc/dcc/toy__interpreter_8h_1a6866721f7636a5c5c9cd06565d8b65cd" kind="function"><name>Toy_runInterpreter</name></member>
-    <member refid="dc/dcc/toy__interpreter_8h_1ab7f3725ae698de8a5c90b332c02929bf" kind="function"><name>Toy_resetInterpreter</name></member>
+    <member refid="dc/dcc/toy__interpreter_8h_1afd58b578f89fce99c1462fe0e78870e0" kind="function"><name>Toy_resetInterpreter</name></member>
     <member refid="dc/dcc/toy__interpreter_8h_1add7aa4a348b6b0ac3775014653bd816a" kind="function"><name>Toy_freeInterpreter</name></member>
   </compound>
   <compound refid="d8/d4f/toy__keyword__types_8h" kind="file"><name>toy_keyword_types.h</name>

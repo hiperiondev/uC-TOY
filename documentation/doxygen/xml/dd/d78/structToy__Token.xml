@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="dd/d78/structToy__Token" kind="struct" language="C++" prot="public">
     <compoundname>Toy_Token</compoundname>
+    <includes refid="d5/d51/toy__lexer_8h" local="no">toy_lexer.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="dd/d78/structToy__Token_1a0fd8a155621571012e0f3d497245f3f9" prot="public" static="no" mutable="no">
         <type><ref refid="d8/de7/toy__token__types_8h_1a2f0b4502e3d37ef79801c9ce7570c09f" kindref="member">Toy_TokenType</ref></type>
@@ -12,6 +13,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -26,6 +28,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -40,6 +43,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -54,6 +58,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>@???@ </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -61,6 +66,7 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>@???@ </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
