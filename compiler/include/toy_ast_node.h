@@ -21,7 +21,7 @@
 typedef union Toy_private_node Toy_ASTNode;
 
 /**
- * @enum Toy_ASTNodeType
+ * @typedef Toy_ASTNodeType
  * @brief
  *
  */

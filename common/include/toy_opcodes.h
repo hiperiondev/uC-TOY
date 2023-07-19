@@ -8,7 +8,7 @@
 #define TOY_OPCODES_H_
 
 /**
- * @enum Toy_Opcode
+ * @typedef Toy_Opcode
  * @brief
  *
  */

@@ -8,7 +8,7 @@
 #define TOY_TOKEN_TYPES_H_
 
 /**
- * @enum Toy_TokenType
+ * @typedef Toy_TokenType
  * @brief
  *
  */

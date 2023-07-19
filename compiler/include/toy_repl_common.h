@@ -11,7 +11,7 @@
 #include <stddef.h>
 #include <stdint.h>
 
-#define TOY_VERSION_BUILD Toy_private_version_build()
+#define TOY_VERSION_BUILD Toy_private_version_build() /**< */
 
 /**
  * @fn const char* Toy_private_version_build(void)

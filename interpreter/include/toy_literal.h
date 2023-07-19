@@ -49,7 +49,7 @@ typedef int (*Toy_HookFn)(struct Toy_Interpreter* interpreter, struct Toy_Litera
 typedef void (*Toy_PrintFn)(const char*);
 
 /**
- * @enum Toy_LiteralType
+ * @typedef Toy_LiteralType
  * @brief
  *
  */
