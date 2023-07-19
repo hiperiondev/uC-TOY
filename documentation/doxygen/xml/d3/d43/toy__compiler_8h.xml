@@ -138,7 +138,7 @@
           <declname>compiler</declname>
         </param>
         <briefdescription>
-<para>@???@ </para>
+<para>initializes the given <ref refid="d3/ddc/structToy__Compiler" kindref="compound">Toy_Compiler</ref>. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -187,7 +187,7 @@
           <declname>compiler</declname>
         </param>
         <briefdescription>
-<para>@???@ </para>
+<para>Frees a <ref refid="d3/ddc/structToy__Compiler" kindref="compound">Toy_Compiler</ref>. Calling this on a compiler which has not been collated will free that compiler as expected - anything written to it will be lost. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -219,7 +219,7 @@
           <declname>size</declname>
         </param>
         <briefdescription>
-<para>@???@ </para>
+<para>Returns a buffer of bytes, known as &quot;bytecode&quot;, created from the given <ref refid="d3/ddc/structToy__Compiler" kindref="compound">Toy_Compiler</ref>; it also stores the size of the bytecode in the variable pointed to by size. Calling Toy_collateCompiler multiple times on the same compiler will produce undefined behaviour. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -245,7 +245,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="compiler/include/toy_compiler.h" line="66" column="23" declfile="compiler/include/toy_compiler.h" declline="66" declcolumn="23"/>
+        <location file="compiler/include/toy_compiler.h" line="67" column="23" declfile="compiler/include/toy_compiler.h" declline="67" declcolumn="23"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -282,9 +282,9 @@
 <codeline lineno="55" refid="d3/d43/toy__compiler_8h_1aac31f3ed708d2f43038fbb435a95a6ce" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/d43/toy__compiler_8h_1aac31f3ed708d2f43038fbb435a95a6ce" kindref="member">Toy_freeCompiler</ref>(<ref refid="d3/ddc/structToy__Compiler" kindref="compound">Toy_Compiler</ref><sp/>*compiler);</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//embed<sp/>the<sp/>header,<sp/>data<sp/>section,<sp/>code<sp/>section,<sp/>function<sp/>section,<sp/>etc.</highlight></codeline>
-<codeline lineno="66" refid="d3/d43/toy__compiler_8h_1aae29ddadf9f379737141831d48ccd9a0" refkind="member"><highlight class="comment"></highlight><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="d3/d43/toy__compiler_8h_1aae29ddadf9f379737141831d48ccd9a0" kindref="member">Toy_collateCompiler</ref>(<ref refid="d3/ddc/structToy__Compiler" kindref="compound">Toy_Compiler</ref><sp/>*compiler,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*size);</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TOY_COMPILER_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="67" refid="d3/d43/toy__compiler_8h_1aae29ddadf9f379737141831d48ccd9a0" refkind="member"><highlight class="comment"></highlight><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="d3/d43/toy__compiler_8h_1aae29ddadf9f379737141831d48ccd9a0" kindref="member">Toy_collateCompiler</ref>(<ref refid="d3/ddc/structToy__Compiler" kindref="compound">Toy_Compiler</ref><sp/>*compiler,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*size);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TOY_COMPILER_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
     <location file="compiler/include/toy_compiler.h"/>
   </compounddef>

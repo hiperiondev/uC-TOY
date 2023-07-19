@@ -31,7 +31,7 @@ typedef struct {
 
 /**
  * @fn void Toy_initParser(Toy_Parser* parser, Toy_Lexer* lexer)
- * @brief @@???@@
+ * @brief Initializes a Toy_Parser, binding the given Toy_Lexer to it.
  *
  * @param parser
  * @param lexer
@@ -40,7 +40,7 @@ TOY_API void Toy_initParser(Toy_Parser* parser, Toy_Lexer* lexer);
 
 /**
  * @fn void Toy_freeParser(Toy_Parser* parser)
- * @brief @@???@@
+ * @brief Frees a Toy_Parser once its task is completed.
  *
  * @param parser
  */
@@ -48,7 +48,8 @@ TOY_API void Toy_freeParser(Toy_Parser* parser);
 
 /**
  * @fn Toy_ASTNode* Toy_scanParser(Toy_Parser* parser)
- * @brief @@???@@
+ * @brief Returns an abstract syntax tree representing part of the program, or an error node. The abstract syntax tree must be passed to Toy_writeCompiler and/or Toy_freeASTNode.
+ *        This function should be called repeatedly until it returns NULL, indicating the end of the program.
  *
  * @param parser
  * @return

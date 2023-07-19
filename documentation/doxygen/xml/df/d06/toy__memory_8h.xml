@@ -39,7 +39,7 @@
         <param><defname>capacity</defname></param>
         <initializer>((capacity) &lt; 8 ? 8 : (capacity) * 2)</initializer>
         <briefdescription>
-<para>@???@ </para>
+<para>calculates, in place, what size of memory should be allocated based on the previous size. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -52,7 +52,7 @@
         <param><defname>capacity</defname></param>
         <initializer>((capacity) &lt; 32 ? 32 : (capacity) * 2)</initializer>
         <briefdescription>
-<para>@???@ </para>
+<para>Calculates, in place, what size of memory should be allocated based on the previous size. It grows faster than TOY_GROW_CAPACITY. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -66,13 +66,13 @@
         <param><defname>count</defname></param>
         <initializer>((type*)<ref refid="df/d06/toy__memory_8h_1aeaee204e8f6c5b37e238c506a9199b9c" kindref="member">Toy_reallocate</ref>(NULL, 0, sizeof(type) * (count)))</initializer>
         <briefdescription>
-<para>@???@ </para>
+<para>Wraps Toy_reallocate, which itself calls the allocator function. type is the type that will be allocated, and count is the number which will be needed (usually calculated with TOY_GROW_CAPACITY). returns a pointer of type. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="common/include/toy_memory.h" line="33" column="9" bodyfile="common/include/toy_memory.h" bodystart="33" bodyend="-1"/>
+        <location file="common/include/toy_memory.h" line="34" column="9" bodyfile="common/include/toy_memory.h" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/d06/toy__memory_8h_1a2c7739cb5a5e6d4a2df3207da8203bce" prot="public" static="no">
         <name>TOY_FREE</name>
@@ -80,13 +80,13 @@
         <param><defname>pointer</defname></param>
         <initializer><ref refid="df/d06/toy__memory_8h_1aeaee204e8f6c5b37e238c506a9199b9c" kindref="member">Toy_reallocate</ref>(pointer, sizeof(type), 0)</initializer>
         <briefdescription>
-<para>@???@ </para>
+<para>Wraps Toy_reallocate, which itself calls the allocator function. type is the type that will be freed, and pointer is to what is being freed. This should only be used when a single element has been allocated, as opposed to an array. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="common/include/toy_memory.h" line="40" column="9" bodyfile="common/include/toy_memory.h" bodystart="40" bodyend="-1"/>
+        <location file="common/include/toy_memory.h" line="41" column="9" bodyfile="common/include/toy_memory.h" bodystart="41" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/d06/toy__memory_8h_1ad1a23caf7219fa2bf9c8387ae82eb8df" prot="public" static="no">
         <name>TOY_FREE_ARRAY</name>
@@ -95,13 +95,13 @@
         <param><defname>oldCount</defname></param>
         <initializer><ref refid="df/d06/toy__memory_8h_1aeaee204e8f6c5b37e238c506a9199b9c" kindref="member">Toy_reallocate</ref>((type*)pointer, sizeof(type) * (oldCount), 0)</initializer>
         <briefdescription>
-<para>@???@ </para>
+<para>Wraps Toy_reallocate, which itself calls the allocator function. type is the type that will be freed, pointer is a reference to what is being freed, and oldCount is the size of the array being freed. This should only be used when an array has been allocated, as opposed to a single element. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="common/include/toy_memory.h" line="47" column="9" bodyfile="common/include/toy_memory.h" bodystart="47" bodyend="-1"/>
+        <location file="common/include/toy_memory.h" line="48" column="9" bodyfile="common/include/toy_memory.h" bodystart="48" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/d06/toy__memory_8h_1aa84157a1ad3853e02634aa83212bb8a4" prot="public" static="no">
         <name>TOY_GROW_ARRAY</name>
@@ -111,13 +111,13 @@
         <param><defname>count</defname></param>
         <initializer>(type*)<ref refid="df/d06/toy__memory_8h_1aeaee204e8f6c5b37e238c506a9199b9c" kindref="member">Toy_reallocate</ref>((type*)pointer, sizeof(type) * (oldCount), sizeof(type) * (count))</initializer>
         <briefdescription>
-<para>@???@ </para>
+<para>Wraps Toy_reallocate, which itself calls the allocator function. type is the type that is being operated on, pointer is what is being resized, oldCount is the previous size of the array and count is the new size of the array (usually calculated with TOY_GROW_CAPACITY). </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="common/include/toy_memory.h" line="54" column="9" bodyfile="common/include/toy_memory.h" bodystart="54" bodyend="-1"/>
+        <location file="common/include/toy_memory.h" line="55" column="9" bodyfile="common/include/toy_memory.h" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="df/d06/toy__memory_8h_1a42acc49eb6e695081e06d7cb9bd31cac" prot="public" static="no">
         <name>TOY_SHRINK_ARRAY</name>
@@ -127,13 +127,13 @@
         <param><defname>count</defname></param>
         <initializer>(type*)<ref refid="df/d06/toy__memory_8h_1aeaee204e8f6c5b37e238c506a9199b9c" kindref="member">Toy_reallocate</ref>((type*)pointer, sizeof(type) * (oldCount), sizeof(type) * (count))</initializer>
         <briefdescription>
-<para>@???@ </para>
+<para>Wraps Toy_reallocate, which itself calls the allocator function. type is the type that is being operated on, pointer is what is being resized, oldCount is the previous size of the array and count is the new size of the array. This returns a pointer of type. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="common/include/toy_memory.h" line="61" column="9" bodyfile="common/include/toy_memory.h" bodystart="61" bodyend="-1"/>
+        <location file="common/include/toy_memory.h" line="63" column="9" bodyfile="common/include/toy_memory.h" bodystart="63" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -143,9 +143,17 @@
         <argsstring>)(void *pointer, size_t oldSize, size_t newSize)</argsstring>
         <name>Toy_MemoryAllocatorFn</name>
         <briefdescription>
-<para>@???@ </para>
+<para>This function interface is used for defining any memory allocator functions. Any and all memory allocator functions should: </para>
         </briefdescription>
         <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Take a pointer to a previously allocated block of memory, or NULL</para>
+</listitem><listitem><para>Take the oldSize, which is the previous size of the pointer allocated, in bytes (oldSize can be 0)</para>
+</listitem><listitem><para>Take the newSize, which is the new size of the buffer to be allocaated, in bytes (newSize can be 0)</para>
+</listitem><listitem><para>Return the newly allocated buffer, or NULL if newSize is zero</para>
+</listitem><listitem><para>Return NULL on error</para>
+</listitem></itemizedlist>
+</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pointer</parametername>
@@ -175,7 +183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="common/include/toy_memory.h" line="83" column="9" bodyfile="common/include/toy_memory.h" bodystart="83" bodyend="-1"/>
+        <location file="common/include/toy_memory.h" line="92" column="9" bodyfile="common/include/toy_memory.h" bodystart="92" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -197,7 +205,7 @@
           <declname>newSize</declname>
         </param>
         <briefdescription>
-<para>@???@ </para>
+<para>Wraps a call to the internal assigned memory allocator. This function shouldn&apos;t be called directly. Instead, use one of the given macros. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -229,7 +237,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="common/include/toy_memory.h" line="72" column="14" declfile="common/include/toy_memory.h" declline="72" declcolumn="14"/>
+        <location file="common/include/toy_memory.h" line="75" column="14" declfile="common/include/toy_memory.h" declline="75" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="df/d06/toy__memory_8h_1a9b37240f4f85f7a6d6d7834754daffd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>TOY_API void</type>
@@ -240,7 +248,7 @@
           <type><ref refid="df/d06/toy__memory_8h_1a2335482fb6faca377476f53578dc29c5" kindref="member">Toy_MemoryAllocatorFn</ref></type>
         </param>
         <briefdescription>
-<para>@???@ </para>
+<para>Sets the memory allocator, replacing the default memory allocator. This function also overwrites any given refstring memory allocator, see <ref refid="d5/de2/toy__refstring_8h" kindref="compound">toy_refstring.h</ref>. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -256,7 +264,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="common/include/toy_memory.h" line="91" column="14" declfile="common/include/toy_memory.h" declline="91" declcolumn="14"/>
+        <location file="common/include/toy_memory.h" line="101" column="14" declfile="common/include/toy_memory.h" declline="101" declcolumn="14"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -277,25 +285,25 @@
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
 <codeline lineno="26" refid="df/d06/toy__memory_8h_1aa255fcaf2ed9642dd5503b92da1f2f45" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOY_GROW_CAPACITY_FAST(capacity)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((capacity)<sp/>&lt;<sp/>32<sp/>?<sp/>32<sp/>:<sp/>(capacity)<sp/>*<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33" refid="df/d06/toy__memory_8h_1aec8eb367118ebd6cdd8551c81dace6e1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOY_ALLOCATE(type,<sp/>count)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((type*)Toy_reallocate(NULL,<sp/>0,<sp/>sizeof(type)<sp/>*<sp/>(count)))</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="40" refid="df/d06/toy__memory_8h_1a2c7739cb5a5e6d4a2df3207da8203bce" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOY_FREE(type,<sp/>pointer)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Toy_reallocate(pointer,<sp/>sizeof(type),<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight></codeline>
-<codeline lineno="47" refid="df/d06/toy__memory_8h_1ad1a23caf7219fa2bf9c8387ae82eb8df" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOY_FREE_ARRAY(type,<sp/>pointer,<sp/>oldCount)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Toy_reallocate((type*)pointer,<sp/>sizeof(type)<sp/>*<sp/>(oldCount),<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="48"><highlight class="normal"></highlight></codeline>
-<codeline lineno="54" refid="df/d06/toy__memory_8h_1aa84157a1ad3853e02634aa83212bb8a4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOY_GROW_ARRAY(type,<sp/>pointer,<sp/>oldCount,<sp/>count)<sp/><sp/><sp/><sp/>(type*)Toy_reallocate((type*)pointer,<sp/>sizeof(type)<sp/>*<sp/>(oldCount),<sp/>sizeof(type)<sp/>*<sp/>(count))</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"></highlight></codeline>
-<codeline lineno="61" refid="df/d06/toy__memory_8h_1a42acc49eb6e695081e06d7cb9bd31cac" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOY_SHRINK_ARRAY(type,<sp/>pointer,<sp/>oldCount,<sp/>count)<sp/><sp/>(type*)Toy_reallocate((type*)pointer,<sp/>sizeof(type)<sp/>*<sp/>(oldCount),<sp/>sizeof(type)<sp/>*<sp/>(count))</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"></highlight></codeline>
-<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//implementation<sp/>details</highlight></codeline>
-<codeline lineno="72" refid="df/d06/toy__memory_8h_1aeaee204e8f6c5b37e238c506a9199b9c" refkind="member"><highlight class="comment"></highlight><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="df/d06/toy__memory_8h_1aeaee204e8f6c5b37e238c506a9199b9c" kindref="member">Toy_reallocate</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pointer,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>oldSize,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>newSize);</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">//assign<sp/>the<sp/>memory<sp/>allocator</highlight></codeline>
-<codeline lineno="83" refid="df/d06/toy__memory_8h_1a2335482fb6faca377476f53578dc29c5" refkind="member"><highlight class="comment"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>(*Toy_MemoryAllocatorFn)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pointer,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>oldSize,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>newSize);</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"></highlight></codeline>
-<codeline lineno="91" refid="df/d06/toy__memory_8h_1a9b37240f4f85f7a6d6d7834754daffd6" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d06/toy__memory_8h_1a9b37240f4f85f7a6d6d7834754daffd6" kindref="member">Toy_setMemoryAllocator</ref>(<ref refid="df/d06/toy__memory_8h_1a2335482fb6faca377476f53578dc29c5" kindref="member">Toy_MemoryAllocatorFn</ref>);</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"></highlight></codeline>
-<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TOY_MEMORY_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="34" refid="df/d06/toy__memory_8h_1aec8eb367118ebd6cdd8551c81dace6e1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOY_ALLOCATE(type,<sp/>count)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((type*)Toy_reallocate(NULL,<sp/>0,<sp/>sizeof(type)<sp/>*<sp/>(count)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="df/d06/toy__memory_8h_1a2c7739cb5a5e6d4a2df3207da8203bce" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOY_FREE(type,<sp/>pointer)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Toy_reallocate(pointer,<sp/>sizeof(type),<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="df/d06/toy__memory_8h_1ad1a23caf7219fa2bf9c8387ae82eb8df" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOY_FREE_ARRAY(type,<sp/>pointer,<sp/>oldCount)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Toy_reallocate((type*)pointer,<sp/>sizeof(type)<sp/>*<sp/>(oldCount),<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="df/d06/toy__memory_8h_1aa84157a1ad3853e02634aa83212bb8a4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOY_GROW_ARRAY(type,<sp/>pointer,<sp/>oldCount,<sp/>count)<sp/><sp/><sp/><sp/>(type*)Toy_reallocate((type*)pointer,<sp/>sizeof(type)<sp/>*<sp/>(oldCount),<sp/>sizeof(type)<sp/>*<sp/>(count))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="df/d06/toy__memory_8h_1a42acc49eb6e695081e06d7cb9bd31cac" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOY_SHRINK_ARRAY(type,<sp/>pointer,<sp/>oldCount,<sp/>count)<sp/><sp/>(type*)Toy_reallocate((type*)pointer,<sp/>sizeof(type)<sp/>*<sp/>(oldCount),<sp/>sizeof(type)<sp/>*<sp/>(count))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//implementation<sp/>details</highlight></codeline>
+<codeline lineno="75" refid="df/d06/toy__memory_8h_1aeaee204e8f6c5b37e238c506a9199b9c" refkind="member"><highlight class="comment"></highlight><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="df/d06/toy__memory_8h_1aeaee204e8f6c5b37e238c506a9199b9c" kindref="member">Toy_reallocate</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pointer,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>oldSize,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>newSize);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">//assign<sp/>the<sp/>memory<sp/>allocator</highlight></codeline>
+<codeline lineno="92" refid="df/d06/toy__memory_8h_1a2335482fb6faca377476f53578dc29c5" refkind="member"><highlight class="comment"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>(*Toy_MemoryAllocatorFn)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pointer,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>oldSize,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>newSize);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="df/d06/toy__memory_8h_1a9b37240f4f85f7a6d6d7834754daffd6" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d06/toy__memory_8h_1a9b37240f4f85f7a6d6d7834754daffd6" kindref="member">Toy_setMemoryAllocator</ref>(<ref refid="df/d06/toy__memory_8h_1a2335482fb6faca377476f53578dc29c5" kindref="member">Toy_MemoryAllocatorFn</ref>);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TOY_MEMORY_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
     <location file="common/include/toy_memory.h"/>
   </compounddef>

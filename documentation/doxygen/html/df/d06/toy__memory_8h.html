@@ -93,40 +93,40 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a5103fc09a75cfe9b11580100571757bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/toy__memory_8h.html#a5103fc09a75cfe9b11580100571757bc">TOY_GROW_CAPACITY</a>(capacity)&#160;&#160;&#160;((capacity) &lt; 8 ? 8 : (capacity) * 2)</td></tr>
-<tr class="memdesc:a5103fc09a75cfe9b11580100571757bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:a5103fc09a75cfe9b11580100571757bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculates, in place, what size of memory should be allocated based on the previous size.  <br /></td></tr>
 <tr class="separator:a5103fc09a75cfe9b11580100571757bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa255fcaf2ed9642dd5503b92da1f2f45"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/toy__memory_8h.html#aa255fcaf2ed9642dd5503b92da1f2f45">TOY_GROW_CAPACITY_FAST</a>(capacity)&#160;&#160;&#160;((capacity) &lt; 32 ? 32 : (capacity) * 2)</td></tr>
-<tr class="memdesc:aa255fcaf2ed9642dd5503b92da1f2f45"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:aa255fcaf2ed9642dd5503b92da1f2f45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates, in place, what size of memory should be allocated based on the previous size. It grows faster than TOY_GROW_CAPACITY.  <br /></td></tr>
 <tr class="separator:aa255fcaf2ed9642dd5503b92da1f2f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec8eb367118ebd6cdd8551c81dace6e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/toy__memory_8h.html#aec8eb367118ebd6cdd8551c81dace6e1">TOY_ALLOCATE</a>(type,  count)&#160;&#160;&#160;((type*)<a class="el" href="../../df/d06/toy__memory_8h.html#aeaee204e8f6c5b37e238c506a9199b9c">Toy_reallocate</a>(NULL, 0, sizeof(type) * (count)))</td></tr>
-<tr class="memdesc:aec8eb367118ebd6cdd8551c81dace6e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:aec8eb367118ebd6cdd8551c81dace6e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps Toy_reallocate, which itself calls the allocator function. type is the type that will be allocated, and count is the number which will be needed (usually calculated with TOY_GROW_CAPACITY). returns a pointer of type.  <br /></td></tr>
 <tr class="separator:aec8eb367118ebd6cdd8551c81dace6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c7739cb5a5e6d4a2df3207da8203bce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/toy__memory_8h.html#a2c7739cb5a5e6d4a2df3207da8203bce">TOY_FREE</a>(type,  pointer)&#160;&#160;&#160;<a class="el" href="../../df/d06/toy__memory_8h.html#aeaee204e8f6c5b37e238c506a9199b9c">Toy_reallocate</a>(pointer, sizeof(type), 0)</td></tr>
-<tr class="memdesc:a2c7739cb5a5e6d4a2df3207da8203bce"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:a2c7739cb5a5e6d4a2df3207da8203bce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps Toy_reallocate, which itself calls the allocator function. type is the type that will be freed, and pointer is to what is being freed. This should only be used when a single element has been allocated, as opposed to an array.  <br /></td></tr>
 <tr class="separator:a2c7739cb5a5e6d4a2df3207da8203bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1a23caf7219fa2bf9c8387ae82eb8df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/toy__memory_8h.html#ad1a23caf7219fa2bf9c8387ae82eb8df">TOY_FREE_ARRAY</a>(type,  pointer,  oldCount)&#160;&#160;&#160;<a class="el" href="../../df/d06/toy__memory_8h.html#aeaee204e8f6c5b37e238c506a9199b9c">Toy_reallocate</a>((type*)pointer, sizeof(type) * (oldCount), 0)</td></tr>
-<tr class="memdesc:ad1a23caf7219fa2bf9c8387ae82eb8df"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:ad1a23caf7219fa2bf9c8387ae82eb8df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps Toy_reallocate, which itself calls the allocator function. type is the type that will be freed, pointer is a reference to what is being freed, and oldCount is the size of the array being freed. This should only be used when an array has been allocated, as opposed to a single element.  <br /></td></tr>
 <tr class="separator:ad1a23caf7219fa2bf9c8387ae82eb8df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa84157a1ad3853e02634aa83212bb8a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/toy__memory_8h.html#aa84157a1ad3853e02634aa83212bb8a4">TOY_GROW_ARRAY</a>(type,  pointer,  oldCount,  count)&#160;&#160;&#160;(type*)<a class="el" href="../../df/d06/toy__memory_8h.html#aeaee204e8f6c5b37e238c506a9199b9c">Toy_reallocate</a>((type*)pointer, sizeof(type) * (oldCount), sizeof(type) * (count))</td></tr>
-<tr class="memdesc:aa84157a1ad3853e02634aa83212bb8a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:aa84157a1ad3853e02634aa83212bb8a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps Toy_reallocate, which itself calls the allocator function. type is the type that is being operated on, pointer is what is being resized, oldCount is the previous size of the array and count is the new size of the array (usually calculated with TOY_GROW_CAPACITY).  <br /></td></tr>
 <tr class="separator:aa84157a1ad3853e02634aa83212bb8a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42acc49eb6e695081e06d7cb9bd31cac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/toy__memory_8h.html#a42acc49eb6e695081e06d7cb9bd31cac">TOY_SHRINK_ARRAY</a>(type,  pointer,  oldCount,  count)&#160;&#160;&#160;(type*)<a class="el" href="../../df/d06/toy__memory_8h.html#aeaee204e8f6c5b37e238c506a9199b9c">Toy_reallocate</a>((type*)pointer, sizeof(type) * (oldCount), sizeof(type) * (count))</td></tr>
-<tr class="memdesc:a42acc49eb6e695081e06d7cb9bd31cac"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:a42acc49eb6e695081e06d7cb9bd31cac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps Toy_reallocate, which itself calls the allocator function. type is the type that is being operated on, pointer is what is being resized, oldCount is the previous size of the array and count is the new size of the array. This returns a pointer of type.  <br /></td></tr>
 <tr class="separator:a42acc49eb6e695081e06d7cb9bd31cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a2335482fb6faca377476f53578dc29c5"><td class="memItemLeft" align="right" valign="top">typedef void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/toy__memory_8h.html#a2335482fb6faca377476f53578dc29c5">Toy_MemoryAllocatorFn</a>) (void *pointer, size_t oldSize, size_t newSize)</td></tr>
-<tr class="memdesc:a2335482fb6faca377476f53578dc29c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:a2335482fb6faca377476f53578dc29c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function interface is used for defining any memory allocator functions. Any and all memory allocator functions should:  <br /></td></tr>
 <tr class="separator:a2335482fb6faca377476f53578dc29c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aeaee204e8f6c5b37e238c506a9199b9c"><td class="memItemLeft" align="right" valign="top">TOY_API void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/toy__memory_8h.html#aeaee204e8f6c5b37e238c506a9199b9c">Toy_reallocate</a> (void *pointer, size_t oldSize, size_t newSize)</td></tr>
-<tr class="memdesc:aeaee204e8f6c5b37e238c506a9199b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:aeaee204e8f6c5b37e238c506a9199b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps a call to the internal assigned memory allocator. This function shouldn't be called directly. Instead, use one of the given macros.  <br /></td></tr>
 <tr class="separator:aeaee204e8f6c5b37e238c506a9199b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b37240f4f85f7a6d6d7834754daffd6"><td class="memItemLeft" align="right" valign="top">TOY_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d06/toy__memory_8h.html#a9b37240f4f85f7a6d6d7834754daffd6">Toy_setMemoryAllocator</a> (<a class="el" href="../../df/d06/toy__memory_8h.html#a2335482fb6faca377476f53578dc29c5">Toy_MemoryAllocatorFn</a>)</td></tr>
-<tr class="memdesc:a9b37240f4f85f7a6d6d7834754daffd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:a9b37240f4f85f7a6d6d7834754daffd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the memory allocator, replacing the default memory allocator. This function also overwrites any given refstring memory allocator, see <a class="el" href="../../d5/de2/toy__refstring_8h.html" title="@???@">toy_refstring.h</a>.  <br /></td></tr>
 <tr class="separator:a9b37240f4f85f7a6d6d7834754daffd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -158,7 +158,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Wraps Toy_reallocate, which itself calls the allocator function. type is the type that will be allocated, and count is the number which will be needed (usually calculated with TOY_GROW_CAPACITY). returns a pointer of type. </p>
 
 </div>
 </div>
@@ -188,7 +188,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Wraps Toy_reallocate, which itself calls the allocator function. type is the type that will be freed, and pointer is to what is being freed. This should only be used when a single element has been allocated, as opposed to an array. </p>
 
 </div>
 </div>
@@ -224,7 +224,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Wraps Toy_reallocate, which itself calls the allocator function. type is the type that will be freed, pointer is a reference to what is being freed, and oldCount is the size of the array being freed. This should only be used when an array has been allocated, as opposed to a single element. </p>
 
 </div>
 </div>
@@ -266,7 +266,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Wraps Toy_reallocate, which itself calls the allocator function. type is the type that is being operated on, pointer is what is being resized, oldCount is the previous size of the array and count is the new size of the array (usually calculated with TOY_GROW_CAPACITY). </p>
 
 </div>
 </div>
@@ -286,7 +286,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>calculates, in place, what size of memory should be allocated based on the previous size. </p>
 
 </div>
 </div>
@@ -306,7 +306,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Calculates, in place, what size of memory should be allocated based on the previous size. It grows faster than TOY_GROW_CAPACITY. </p>
 
 </div>
 </div>
@@ -348,7 +348,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Wraps Toy_reallocate, which itself calls the allocator function. type is the type that is being operated on, pointer is what is being resized, oldCount is the previous size of the array and count is the new size of the array. This returns a pointer of type. </p>
 
 </div>
 </div>
@@ -365,7 +365,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>This function interface is used for defining any memory allocator functions. Any and all memory allocator functions should: </p>
+<ul>
+<li>Take a pointer to a previously allocated block of memory, or NULL</li>
+<li>Take the oldSize, which is the previous size of the pointer allocated, in bytes (oldSize can be 0)</li>
+<li>Take the newSize, which is the new size of the buffer to be allocaated, in bytes (newSize can be 0)</li>
+<li>Return the newly allocated buffer, or NULL if newSize is zero</li>
+<li>Return NULL on error</li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pointer</td><td></td></tr>
@@ -410,7 +417,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Wraps a call to the internal assigned memory allocator. This function shouldn't be called directly. Instead, use one of the given macros. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pointer</td><td></td></tr>
@@ -438,7 +445,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Sets the memory allocator, replacing the default memory allocator. This function also overwrites any given refstring memory allocator, see <a class="el" href="../../d5/de2/toy__refstring_8h.html" title="@???@">toy_refstring.h</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Toy_MemoryAllocatorFn</td><td></td></tr>

@@ -158,7 +158,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>TOY_VERSION_MAJOR </para>
+<para>current major version of Toy </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -170,7 +170,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>TOY_VERSION_MINOR </para>
+<para>current minor version of Toy </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -182,7 +182,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>TOY_VERSION_PATCH </para>
+<para>current patch version of Toy </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>

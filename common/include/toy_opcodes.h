@@ -9,7 +9,7 @@
 
 /**
  * @enum Toy_Opcode
- * @brief @@???@@
+ * @brief Interpreter opcodes
  *
  */
 typedef enum Toy_Opcode {

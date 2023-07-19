@@ -41,7 +41,7 @@ typedef struct {
 
 /**
  * @fn void Toy_initLexer(Toy_Lexer *lexer, const char *source)
- * @brief @@???@@
+ * @brief Initializes a lexer, binding it to the source parameter; the lexer is now ready to be passed to the parser.
  *
  * @param lexer
  * @param source

@@ -116,22 +116,22 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a4b20eb9d29b1fc6b559bb459681fadef"><td class="memItemLeft" align="right" valign="top">TOY_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/da4/toy__literal__dictionary_8h.html#a4b20eb9d29b1fc6b559bb459681fadef">Toy_initLiteralDictionary</a> (<a class="el" href="../../d9/db5/structToy__LiteralDictionary.html">Toy_LiteralDictionary</a> *dictionary)</td></tr>
-<tr class="memdesc:a4b20eb9d29b1fc6b559bb459681fadef"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:a4b20eb9d29b1fc6b559bb459681fadef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the <a class="el" href="../../d9/db5/structToy__LiteralDictionary.html">Toy_LiteralDictionary</a> pointed to by dictionary.  <br /></td></tr>
 <tr class="separator:a4b20eb9d29b1fc6b559bb459681fadef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab737491ee33ccade8aae3424860d336f"><td class="memItemLeft" align="right" valign="top">TOY_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/da4/toy__literal__dictionary_8h.html#ab737491ee33ccade8aae3424860d336f">Toy_freeLiteralDictionary</a> (<a class="el" href="../../d9/db5/structToy__LiteralDictionary.html">Toy_LiteralDictionary</a> *dictionary)</td></tr>
-<tr class="memdesc:ab737491ee33ccade8aae3424860d336f"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:ab737491ee33ccade8aae3424860d336f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees a <a class="el" href="../../d9/db5/structToy__LiteralDictionary.html">Toy_LiteralDictionary</a> pointed to by dictionary. Every literal within is passed to Toy_freeLiteral before its memory is released.  <br /></td></tr>
 <tr class="separator:ab737491ee33ccade8aae3424860d336f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9f9b0cf8cd32cf9129516ab5ecbade1"><td class="memItemLeft" align="right" valign="top">TOY_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/da4/toy__literal__dictionary_8h.html#ae9f9b0cf8cd32cf9129516ab5ecbade1">Toy_setLiteralDictionary</a> (<a class="el" href="../../d9/db5/structToy__LiteralDictionary.html">Toy_LiteralDictionary</a> *dictionary, <a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> key, <a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> value)</td></tr>
-<tr class="memdesc:ae9f9b0cf8cd32cf9129516ab5ecbade1"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:ae9f9b0cf8cd32cf9129516ab5ecbade1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts the given key-value pair of literals into dictionary, creating it if it doesn't exist, or freeing and overwriting it if key is already present. This function may also expand the memory buffer if needed. Literal functions and opaques cannot be used as keys.  <br /></td></tr>
 <tr class="separator:ae9f9b0cf8cd32cf9129516ab5ecbade1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79eb15e96139f78e6dad70e637a234de"><td class="memItemLeft" align="right" valign="top">TOY_API <a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/da4/toy__literal__dictionary_8h.html#a79eb15e96139f78e6dad70e637a234de">Toy_getLiteralDictionary</a> (<a class="el" href="../../d9/db5/structToy__LiteralDictionary.html">Toy_LiteralDictionary</a> *dictionary, <a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> key)</td></tr>
-<tr class="memdesc:a79eb15e96139f78e6dad70e637a234de"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:a79eb15e96139f78e6dad70e637a234de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of the literal within dictionary identified by key, or a null literal if it doesn't exist. Literal functions and opaques cannot be used as keys.  <br /></td></tr>
 <tr class="separator:a79eb15e96139f78e6dad70e637a234de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30de52e687510e5a8e8f930ad23fa708"><td class="memItemLeft" align="right" valign="top">TOY_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/da4/toy__literal__dictionary_8h.html#a30de52e687510e5a8e8f930ad23fa708">Toy_removeLiteralDictionary</a> (<a class="el" href="../../d9/db5/structToy__LiteralDictionary.html">Toy_LiteralDictionary</a> *dictionary, <a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> key)</td></tr>
-<tr class="memdesc:a30de52e687510e5a8e8f930ad23fa708"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:a30de52e687510e5a8e8f930ad23fa708"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the key-value pair of literals from dictionary identified by key, if it exists. Literal functions and opaques cannot be used as keys.  <br /></td></tr>
 <tr class="separator:a30de52e687510e5a8e8f930ad23fa708"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad00ff343089d2c8284c4691492022d2c"><td class="memItemLeft" align="right" valign="top">TOY_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/da4/toy__literal__dictionary_8h.html#ad00ff343089d2c8284c4691492022d2c">Toy_existsLiteralDictionary</a> (<a class="el" href="../../d9/db5/structToy__LiteralDictionary.html">Toy_LiteralDictionary</a> *dictionary, <a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> key)</td></tr>
-<tr class="memdesc:ad00ff343089d2c8284c4691492022d2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:ad00ff343089d2c8284c4691492022d2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the key-value pair identified by key exists within dictionary, otherwise it returns false.  <br /></td></tr>
 <tr class="separator:ad00ff343089d2c8284c4691492022d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -196,7 +196,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Returns true if the key-value pair identified by key exists within dictionary, otherwise it returns false. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dictionary</td><td></td></tr>
@@ -224,7 +224,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Frees a <a class="el" href="../../d9/db5/structToy__LiteralDictionary.html">Toy_LiteralDictionary</a> pointed to by dictionary. Every literal within is passed to Toy_freeLiteral before its memory is released. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dictionary</td><td></td></tr>
@@ -260,7 +260,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Returns the value of the literal within dictionary identified by key, or a null literal if it doesn't exist. Literal functions and opaques cannot be used as keys. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dictionary</td><td></td></tr>
@@ -288,7 +288,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Initializes the <a class="el" href="../../d9/db5/structToy__LiteralDictionary.html">Toy_LiteralDictionary</a> pointed to by dictionary. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dictionary</td><td></td></tr>
@@ -324,7 +324,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Removes the key-value pair of literals from dictionary identified by key, if it exists. Literal functions and opaques cannot be used as keys. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dictionary</td><td></td></tr>
@@ -367,7 +367,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Inserts the given key-value pair of literals into dictionary, creating it if it doesn't exist, or freeing and overwriting it if key is already present. This function may also expand the memory buffer if needed. Literal functions and opaques cannot be used as keys. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dictionary</td><td></td></tr>

@@ -1155,7 +1155,7 @@
           <declname>original</declname>
         </param>
         <briefdescription>
-<para>@???@ </para>
+<para>Returns a copy of the given literal. Literals should never be copied without this function, as it handles a lot of internal memory allocations. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -1189,7 +1189,7 @@
           <declname>rhs</declname>
         </param>
         <briefdescription>
-<para>@???@ </para>
+<para>Checks to see if two given literals are equal. When an integer and a float are compared, the integer is cooerced into a float for the duration of the call. Arrays and dictionaries are equal only if their keys and values all equal. Likewise, types only equal if all subtypes are equal, in order. Functions and opaques are never equal to anything, while values with the type TOY_LITERAL_ANY are always equal. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -1215,7 +1215,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interpreter/include/toy_literal.h" line="243" column="14" declfile="interpreter/include/toy_literal.h" declline="243" declcolumn="14"/>
+        <location file="interpreter/include/toy_literal.h" line="246" column="14" declfile="interpreter/include/toy_literal.h" declline="246" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="d3/d5f/toy__literal_8h_1ae3ec8788a9a921e00cd164f38b5eacbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>TOY_API int</type>
@@ -1227,9 +1227,16 @@
           <declname>lit</declname>
         </param>
         <briefdescription>
-<para>@???@ </para>
+<para>Finds the hash of a literal, for various purposes. Different hashing algorithms are used for different types, and some types can&apos;t be hashed at all. Types that can&apos;t be hashed: </para>
         </briefdescription>
         <detaileddescription>
+<para><itemizedlist>
+<listitem><para>all kinds of functions</para>
+</listitem><listitem><para>type</para>
+</listitem><listitem><para>opaque</para>
+</listitem><listitem><para>any In the case of identifiers, their hashes are precomputed on creation and are stored within the literal.</para>
+</listitem></itemizedlist>
+</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>lit</parametername>
@@ -1245,7 +1252,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interpreter/include/toy_literal.h" line="252" column="13" declfile="interpreter/include/toy_literal.h" declline="252" declcolumn="13"/>
+        <location file="interpreter/include/toy_literal.h" line="261" column="13" declfile="interpreter/include/toy_literal.h" declline="261" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="d3/d5f/toy__literal_8h_1a2fa0bea1a678dc230a691aa6e354d35a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>TOY_API void</type>
@@ -1257,7 +1264,7 @@
           <declname>literal</declname>
         </param>
         <briefdescription>
-<para>@???@ </para>
+<para>Wraps a call to Toy_printLiteralCustom, with a printf-stdout wrapper as printFn. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -1273,7 +1280,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interpreter/include/toy_literal.h" line="261" column="14" declfile="interpreter/include/toy_literal.h" declline="261" declcolumn="14"/>
+        <location file="interpreter/include/toy_literal.h" line="270" column="14" declfile="interpreter/include/toy_literal.h" declline="270" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="d3/d5f/toy__literal_8h_1abae5bd712823721a0bbb91bd0f983bac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>TOY_API void</type>
@@ -1288,7 +1295,7 @@
           <type><ref refid="d3/d5f/toy__literal_8h_1a176336391a32bc4eb6e8d776d3e19c35" kindref="member">Toy_PrintFn</ref></type>
         </param>
         <briefdescription>
-<para>@???@ </para>
+<para>Passes the string representation of literal to printFn. This function is not thread safe - due to the loopy and recursive nature of printing compound values, this function uses some globally persistent variables. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -1312,7 +1319,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interpreter/include/toy_literal.h" line="270" column="14" declfile="interpreter/include/toy_literal.h" declline="270" declcolumn="14"/>
+        <location file="interpreter/include/toy_literal.h" line="280" column="14" declfile="interpreter/include/toy_literal.h" declline="280" declcolumn="14"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1467,16 +1474,16 @@
 <codeline lineno="225"><highlight class="normal"></highlight><highlight class="comment">//utils</highlight></codeline>
 <codeline lineno="233" refid="d3/d5f/toy__literal_8h_1a5250042b7c6443d3aded392da08bfaa0" refkind="member"><highlight class="comment"></highlight><highlight class="normal">TOY_API<sp/><ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/><ref refid="d3/d5f/toy__literal_8h_1a5250042b7c6443d3aded392da08bfaa0" kindref="member">Toy_copyLiteral</ref>(<ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/>original);</highlight></codeline>
 <codeline lineno="234"><highlight class="normal"></highlight></codeline>
-<codeline lineno="243" refid="d3/d5f/toy__literal_8h_1ac91521046fa2aa8f462649af6cb302b2" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d3/d5f/toy__literal_8h_1ac91521046fa2aa8f462649af6cb302b2" kindref="member">Toy_literalsAreEqual</ref>(<ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/>lhs,<sp/><ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/>rhs);</highlight></codeline>
-<codeline lineno="244"><highlight class="normal"></highlight></codeline>
-<codeline lineno="252" refid="d3/d5f/toy__literal_8h_1ae3ec8788a9a921e00cd164f38b5eacbe" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d3/d5f/toy__literal_8h_1ae3ec8788a9a921e00cd164f38b5eacbe" kindref="member">Toy_hashLiteral</ref>(<ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/>lit);</highlight></codeline>
-<codeline lineno="253"><highlight class="normal"></highlight></codeline>
-<codeline lineno="254"><highlight class="normal"></highlight><highlight class="comment">//not<sp/>thread-safe</highlight></codeline>
-<codeline lineno="261" refid="d3/d5f/toy__literal_8h_1a2fa0bea1a678dc230a691aa6e354d35a" refkind="member"><highlight class="comment"></highlight><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/d5f/toy__literal_8h_1a2fa0bea1a678dc230a691aa6e354d35a" kindref="member">Toy_printLiteral</ref>(<ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/>literal);</highlight></codeline>
+<codeline lineno="246" refid="d3/d5f/toy__literal_8h_1ac91521046fa2aa8f462649af6cb302b2" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d3/d5f/toy__literal_8h_1ac91521046fa2aa8f462649af6cb302b2" kindref="member">Toy_literalsAreEqual</ref>(<ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/>lhs,<sp/><ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/>rhs);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261" refid="d3/d5f/toy__literal_8h_1ae3ec8788a9a921e00cd164f38b5eacbe" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d3/d5f/toy__literal_8h_1ae3ec8788a9a921e00cd164f38b5eacbe" kindref="member">Toy_hashLiteral</ref>(<ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/>lit);</highlight></codeline>
 <codeline lineno="262"><highlight class="normal"></highlight></codeline>
-<codeline lineno="270" refid="d3/d5f/toy__literal_8h_1abae5bd712823721a0bbb91bd0f983bac" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/d5f/toy__literal_8h_1abae5bd712823721a0bbb91bd0f983bac" kindref="member">Toy_printLiteralCustom</ref>(<ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/>literal,<sp/><ref refid="d3/d5f/toy__literal_8h_1a176336391a32bc4eb6e8d776d3e19c35" kindref="member">Toy_PrintFn</ref>);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="comment">//not<sp/>thread-safe</highlight></codeline>
+<codeline lineno="270" refid="d3/d5f/toy__literal_8h_1a2fa0bea1a678dc230a691aa6e354d35a" refkind="member"><highlight class="comment"></highlight><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/d5f/toy__literal_8h_1a2fa0bea1a678dc230a691aa6e354d35a" kindref="member">Toy_printLiteral</ref>(<ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/>literal);</highlight></codeline>
 <codeline lineno="271"><highlight class="normal"></highlight></codeline>
-<codeline lineno="272"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TOY_LITERAL_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="280" refid="d3/d5f/toy__literal_8h_1abae5bd712823721a0bbb91bd0f983bac" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/d5f/toy__literal_8h_1abae5bd712823721a0bbb91bd0f983bac" kindref="member">Toy_printLiteralCustom</ref>(<ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/>literal,<sp/><ref refid="d3/d5f/toy__literal_8h_1a176336391a32bc4eb6e8d776d3e19c35" kindref="member">Toy_PrintFn</ref>);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TOY_LITERAL_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
     <location file="interpreter/include/toy_literal.h"/>
   </compounddef>

@@ -11,7 +11,7 @@
 
 /**
  * @fn int Toy_private_index(Toy_Interpreter *interpreter, Toy_LiteralArray *arguments)
- * @brief @@???@@ The _index function is a historical oddity - it's used whenever a compound is indexed
+ * @brief The _index function is a historical oddity - it's used whenever a compound is indexed
  *
  * @param interpreter
  * @param arguments

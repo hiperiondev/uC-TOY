@@ -107,25 +107,25 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ac5bc20f329feef204bbd03a9eb3a6535"><td class="memItemLeft" align="right" valign="top">TOY_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d71/toy__reffunction_8h.html#ac5bc20f329feef204bbd03a9eb3a6535">Toy_setRefFunctionAllocatorFn</a> (<a class="el" href="../../d4/d71/toy__reffunction_8h.html#a449b74030a0d110f725ddb841b0b0fc3">Toy_RefFunctionAllocatorFn</a>)</td></tr>
-<tr class="memdesc:ac5bc20f329feef204bbd03a9eb3a6535"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:ac5bc20f329feef204bbd03a9eb3a6535"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conforms to and is invoked by Toy's memory API, and generally shouldn't be used.  <br /></td></tr>
 <tr class="separator:ac5bc20f329feef204bbd03a9eb3a6535"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae483f78001b6088908a89711bc1f8ebe"><td class="memItemLeft" align="right" valign="top">TOY_API <a class="el" href="../../d3/d2c/structToy__RefFunction.html">Toy_RefFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d71/toy__reffunction_8h.html#ae483f78001b6088908a89711bc1f8ebe">Toy_createRefFunction</a> (const void *data, size_t length)</td></tr>
-<tr class="memdesc:ae483f78001b6088908a89711bc1f8ebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:ae483f78001b6088908a89711bc1f8ebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a new <a class="el" href="../../d3/d2c/structToy__RefFunction.html">Toy_RefFunction</a>, containing a copy of data, or NULL on error. This function also sets the returned refFunction's reference counter to 1.  <br /></td></tr>
 <tr class="separator:ae483f78001b6088908a89711bc1f8ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaee055bf74711e1ef602cfa888cad5bd"><td class="memItemLeft" align="right" valign="top">TOY_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d71/toy__reffunction_8h.html#aaee055bf74711e1ef602cfa888cad5bd">Toy_deleteRefFunction</a> (<a class="el" href="../../d3/d2c/structToy__RefFunction.html">Toy_RefFunction</a> *refFunction)</td></tr>
-<tr class="memdesc:aaee055bf74711e1ef602cfa888cad5bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:aaee055bf74711e1ef602cfa888cad5bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reduces the refFunction's reference counter by 1 and, if it reaches 0, frees the memory.  <br /></td></tr>
 <tr class="separator:aaee055bf74711e1ef602cfa888cad5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a189325be94e8fe4a04d947e1ec5a10"><td class="memItemLeft" align="right" valign="top">TOY_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d71/toy__reffunction_8h.html#a1a189325be94e8fe4a04d947e1ec5a10">Toy_countRefFunction</a> (<a class="el" href="../../d3/d2c/structToy__RefFunction.html">Toy_RefFunction</a> *refFunction)</td></tr>
-<tr class="memdesc:a1a189325be94e8fe4a04d947e1ec5a10"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:a1a189325be94e8fe4a04d947e1ec5a10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the total number of references to refFunction, for debugging.  <br /></td></tr>
 <tr class="separator:a1a189325be94e8fe4a04d947e1ec5a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab07959ecc82c2707741ca73886510531"><td class="memItemLeft" align="right" valign="top">TOY_API size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d71/toy__reffunction_8h.html#ab07959ecc82c2707741ca73886510531">Toy_lengthRefFunction</a> (<a class="el" href="../../d3/d2c/structToy__RefFunction.html">Toy_RefFunction</a> *refFunction)</td></tr>
-<tr class="memdesc:ab07959ecc82c2707741ca73886510531"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:ab07959ecc82c2707741ca73886510531"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the length of the underlying bytecode of refFunction.  <br /></td></tr>
 <tr class="separator:ab07959ecc82c2707741ca73886510531"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71c76f610ee897a0b098172108922db3"><td class="memItemLeft" align="right" valign="top">TOY_API <a class="el" href="../../d3/d2c/structToy__RefFunction.html">Toy_RefFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d71/toy__reffunction_8h.html#a71c76f610ee897a0b098172108922db3">Toy_copyRefFunction</a> (<a class="el" href="../../d3/d2c/structToy__RefFunction.html">Toy_RefFunction</a> *refFunction)</td></tr>
-<tr class="memdesc:a71c76f610ee897a0b098172108922db3"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:a71c76f610ee897a0b098172108922db3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increases the reference counter of refFunction by 1, before returning the given pointer.  <br /></td></tr>
 <tr class="separator:a71c76f610ee897a0b098172108922db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace66658823e3a230ca67a56ada2525fe"><td class="memItemLeft" align="right" valign="top">TOY_API <a class="el" href="../../d3/d2c/structToy__RefFunction.html">Toy_RefFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d71/toy__reffunction_8h.html#ace66658823e3a230ca67a56ada2525fe">Toy_deepCopyRefFunction</a> (<a class="el" href="../../d3/d2c/structToy__RefFunction.html">Toy_RefFunction</a> *refFunction)</td></tr>
-<tr class="memdesc:ace66658823e3a230ca67a56ada2525fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:ace66658823e3a230ca67a56ada2525fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Behaves identically to Toy_copyRefFunction, except that it explicitly preforms a deep copy of the internal memory. Using this function should be done carefully, as it incurs a performance penalty that negates the benefit of this module.  <br /></td></tr>
 <tr class="separator:ace66658823e3a230ca67a56ada2525fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -188,7 +188,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Increases the reference counter of refFunction by 1, before returning the given pointer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">refFunction</td><td></td></tr>
@@ -215,7 +215,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Returns the total number of references to refFunction, for debugging. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">refFunction</td><td></td></tr>
@@ -252,7 +252,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Returns a new <a class="el" href="../../d3/d2c/structToy__RefFunction.html">Toy_RefFunction</a>, containing a copy of data, or NULL on error. This function also sets the returned refFunction's reference counter to 1. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td></td></tr>
@@ -280,7 +280,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Behaves identically to Toy_copyRefFunction, except that it explicitly preforms a deep copy of the internal memory. Using this function should be done carefully, as it incurs a performance penalty that negates the benefit of this module. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">refFunction</td><td></td></tr>
@@ -307,7 +307,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Reduces the refFunction's reference counter by 1 and, if it reaches 0, frees the memory. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">refFunction</td><td></td></tr>
@@ -333,7 +333,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Returns the length of the underlying bytecode of refFunction. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">refFunction</td><td></td></tr>
@@ -360,7 +360,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Conforms to and is invoked by Toy's memory API, and generally shouldn't be used. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Toy_RefFunctionAllocatorFn</td><td></td></tr>

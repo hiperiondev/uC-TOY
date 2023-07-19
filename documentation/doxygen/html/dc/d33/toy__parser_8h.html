@@ -99,13 +99,13 @@ Data Structures</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a37fceb423abe4c03b806c4660cef2069"><td class="memItemLeft" align="right" valign="top">TOY_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d33/toy__parser_8h.html#a37fceb423abe4c03b806c4660cef2069">Toy_initParser</a> (<a class="el" href="../../d8/d78/structToy__Parser.html">Toy_Parser</a> *parser, <a class="el" href="../../d9/d6d/structToy__Lexer.html">Toy_Lexer</a> *lexer)</td></tr>
-<tr class="memdesc:a37fceb423abe4c03b806c4660cef2069"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:a37fceb423abe4c03b806c4660cef2069"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a <a class="el" href="../../d8/d78/structToy__Parser.html">Toy_Parser</a>, binding the given <a class="el" href="../../d9/d6d/structToy__Lexer.html">Toy_Lexer</a> to it.  <br /></td></tr>
 <tr class="separator:a37fceb423abe4c03b806c4660cef2069"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2da377e2e61d7b3b0081b1f5aa4e431"><td class="memItemLeft" align="right" valign="top">TOY_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d33/toy__parser_8h.html#ab2da377e2e61d7b3b0081b1f5aa4e431">Toy_freeParser</a> (<a class="el" href="../../d8/d78/structToy__Parser.html">Toy_Parser</a> *parser)</td></tr>
-<tr class="memdesc:ab2da377e2e61d7b3b0081b1f5aa4e431"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:ab2da377e2e61d7b3b0081b1f5aa4e431"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees a <a class="el" href="../../d8/d78/structToy__Parser.html">Toy_Parser</a> once its task is completed.  <br /></td></tr>
 <tr class="separator:ab2da377e2e61d7b3b0081b1f5aa4e431"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe4c894be4a5995a709f500e74dffe2b"><td class="memItemLeft" align="right" valign="top">TOY_API <a class="el" href="../../d3/df7/toy__ast__node_8h.html#a885768195f2ff9c0a631d6cfe226e354">Toy_ASTNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d33/toy__parser_8h.html#abe4c894be4a5995a709f500e74dffe2b">Toy_scanParser</a> (<a class="el" href="../../d8/d78/structToy__Parser.html">Toy_Parser</a> *parser)</td></tr>
-<tr class="memdesc:abe4c894be4a5995a709f500e74dffe2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:abe4c894be4a5995a709f500e74dffe2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an abstract syntax tree representing part of the program, or an error node. The abstract syntax tree must be passed to Toy_writeCompiler and/or Toy_freeASTNode. This function should be called repeatedly until it returns NULL, indicating the end of the program.  <br /></td></tr>
 <tr class="separator:abe4c894be4a5995a709f500e74dffe2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -127,7 +127,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Frees a <a class="el" href="../../d8/d78/structToy__Parser.html">Toy_Parser</a> once its task is completed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">parser</td><td></td></tr>
@@ -163,7 +163,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Initializes a <a class="el" href="../../d8/d78/structToy__Parser.html">Toy_Parser</a>, binding the given <a class="el" href="../../d9/d6d/structToy__Lexer.html">Toy_Lexer</a> to it. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">parser</td><td></td></tr>
@@ -190,7 +190,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Returns an abstract syntax tree representing part of the program, or an error node. The abstract syntax tree must be passed to Toy_writeCompiler and/or Toy_freeASTNode. This function should be called repeatedly until it returns NULL, indicating the end of the program. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">parser</td><td></td></tr>

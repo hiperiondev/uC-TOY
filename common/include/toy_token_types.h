@@ -9,7 +9,7 @@
 
 /**
  * @enum Toy_TokenType
- * @brief @@???@@
+ * @brief Token types
  *
  */
 typedef enum Toy_TokenType {

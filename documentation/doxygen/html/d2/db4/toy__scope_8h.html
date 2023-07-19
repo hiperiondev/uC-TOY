@@ -106,28 +106,28 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a232b2c180394b736fe4d879b64f3f223"><td class="memItemLeft" align="right" valign="top">TOY_API <a class="el" href="../../de/de6/structToy__Scope.html">Toy_Scope</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/toy__scope_8h.html#a232b2c180394b736fe4d879b64f3f223">Toy_pushScope</a> (<a class="el" href="../../de/de6/structToy__Scope.html">Toy_Scope</a> *scope)</td></tr>
-<tr class="memdesc:a232b2c180394b736fe4d879b64f3f223"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:a232b2c180394b736fe4d879b64f3f223"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new Toy_scope with scope as it's ancestor, and returns it.  <br /></td></tr>
 <tr class="separator:a232b2c180394b736fe4d879b64f3f223"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87cb17a86048e3eedb8ae4941f3da131"><td class="memItemLeft" align="right" valign="top">TOY_API <a class="el" href="../../de/de6/structToy__Scope.html">Toy_Scope</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/toy__scope_8h.html#a87cb17a86048e3eedb8ae4941f3da131">Toy_popScope</a> (<a class="el" href="../../de/de6/structToy__Scope.html">Toy_Scope</a> *scope)</td></tr>
-<tr class="memdesc:a87cb17a86048e3eedb8ae4941f3da131"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:a87cb17a86048e3eedb8ae4941f3da131"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees the given scope, and returns it's ancestor.  <br /></td></tr>
 <tr class="separator:a87cb17a86048e3eedb8ae4941f3da131"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ba99595c929450c2bf4be96cdd059f8"><td class="memItemLeft" align="right" valign="top">TOY_API <a class="el" href="../../de/de6/structToy__Scope.html">Toy_Scope</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/toy__scope_8h.html#a8ba99595c929450c2bf4be96cdd059f8">Toy_copyScope</a> (<a class="el" href="../../de/de6/structToy__Scope.html">Toy_Scope</a> *original)</td></tr>
-<tr class="memdesc:a8ba99595c929450c2bf4be96cdd059f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:a8ba99595c929450c2bf4be96cdd059f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies an existing scope, and returns the copy.  <br /></td></tr>
 <tr class="separator:a8ba99595c929450c2bf4be96cdd059f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a007a086b273b0da5bad6d05b9abae37a"><td class="memItemLeft" align="right" valign="top">TOY_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/toy__scope_8h.html#a007a086b273b0da5bad6d05b9abae37a">Toy_declareScopeVariable</a> (<a class="el" href="../../de/de6/structToy__Scope.html">Toy_Scope</a> *scope, <a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> key, <a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> type)</td></tr>
-<tr class="memdesc:a007a086b273b0da5bad6d05b9abae37a"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:a007a086b273b0da5bad6d05b9abae37a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declares a new variable key within scope, giving it the type of type. This function returns true on success, otherwise it returns failure (such as if the given key already exists).  <br /></td></tr>
 <tr class="separator:a007a086b273b0da5bad6d05b9abae37a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79490d8e741f9bd89eb8e191e1f6cc18"><td class="memItemLeft" align="right" valign="top">TOY_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/toy__scope_8h.html#a79490d8e741f9bd89eb8e191e1f6cc18">Toy_isDelcaredScopeVariable</a> (<a class="el" href="../../de/de6/structToy__Scope.html">Toy_Scope</a> *scope, <a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> key)</td></tr>
-<tr class="memdesc:a79490d8e741f9bd89eb8e191e1f6cc18"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:a79490d8e741f9bd89eb8e191e1f6cc18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks to see if a given variable with the name key has been previously declared.  <br /></td></tr>
 <tr class="separator:a79490d8e741f9bd89eb8e191e1f6cc18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a023ad033f64030b23efaa89cabc020f3"><td class="memItemLeft" align="right" valign="top">TOY_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/toy__scope_8h.html#a023ad033f64030b23efaa89cabc020f3">Toy_setScopeVariable</a> (<a class="el" href="../../de/de6/structToy__Scope.html">Toy_Scope</a> *scope, <a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> key, <a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> value, bool constCheck)</td></tr>
-<tr class="memdesc:a023ad033f64030b23efaa89cabc020f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:a023ad033f64030b23efaa89cabc020f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an existing variable named key to the value of value. This function fails if constCheck is true and the given key's type has the constaant flag set. It also fails if the given key doesn't exist. Returns true on success, otherwise it returns false.  <br /></td></tr>
 <tr class="separator:a023ad033f64030b23efaa89cabc020f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9327f1f53a5e5f3fadec3775901ba8f7"><td class="memItemLeft" align="right" valign="top">TOY_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/toy__scope_8h.html#a9327f1f53a5e5f3fadec3775901ba8f7">Toy_getScopeVariable</a> (<a class="el" href="../../de/de6/structToy__Scope.html">Toy_Scope</a> *scope, <a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> key, <a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> *value)</td></tr>
-<tr class="memdesc:a9327f1f53a5e5f3fadec3775901ba8f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:a9327f1f53a5e5f3fadec3775901ba8f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the literal pointed to by value to equal the variable named key. Returns true on success, otherwise it returns false.  <br /></td></tr>
 <tr class="separator:a9327f1f53a5e5f3fadec3775901ba8f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c0f2b71796f3d7d6dbdd713270d9c2e"><td class="memItemLeft" align="right" valign="top">TOY_API <a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/toy__scope_8h.html#a7c0f2b71796f3d7d6dbdd713270d9c2e">Toy_getScopeType</a> (<a class="el" href="../../de/de6/structToy__Scope.html">Toy_Scope</a> *scope, <a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> key)</td></tr>
-<tr class="memdesc:a7c0f2b71796f3d7d6dbdd713270d9c2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:a7c0f2b71796f3d7d6dbdd713270d9c2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a new <a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> representing the type of the variable named key.  <br /></td></tr>
 <tr class="separator:a7c0f2b71796f3d7d6dbdd713270d9c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -166,7 +166,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Copies an existing scope, and returns the copy. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">original</td><td></td></tr>
@@ -209,7 +209,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Declares a new variable key within scope, giving it the type of type. This function returns true on success, otherwise it returns failure (such as if the given key already exists). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scope</td><td></td></tr>
@@ -248,7 +248,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Returns a new <a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> representing the type of the variable named key. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scope</td><td></td></tr>
@@ -292,7 +292,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Sets the literal pointed to by value to equal the variable named key. Returns true on success, otherwise it returns false. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scope</td><td></td></tr>
@@ -331,7 +331,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Checks to see if a given variable with the name key has been previously declared. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scope</td><td></td></tr>
@@ -359,7 +359,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Frees the given scope, and returns it's ancestor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scope</td><td></td></tr>
@@ -386,7 +386,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Creates a new Toy_scope with scope as it's ancestor, and returns it. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scope</td><td></td></tr>
@@ -435,7 +435,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Sets an existing variable named key to the value of value. This function fails if constCheck is true and the given key's type has the constaant flag set. It also fails if the given key doesn't exist. Returns true on success, otherwise it returns false. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scope</td><td></td></tr>

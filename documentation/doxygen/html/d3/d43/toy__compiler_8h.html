@@ -108,16 +108,16 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ae73c00c0016b7a5bc5d9d2e1cab478c5"><td class="memItemLeft" align="right" valign="top">TOY_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d43/toy__compiler_8h.html#ae73c00c0016b7a5bc5d9d2e1cab478c5">Toy_initCompiler</a> (<a class="el" href="../../d3/ddc/structToy__Compiler.html">Toy_Compiler</a> *compiler)</td></tr>
-<tr class="memdesc:ae73c00c0016b7a5bc5d9d2e1cab478c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:ae73c00c0016b7a5bc5d9d2e1cab478c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes the given <a class="el" href="../../d3/ddc/structToy__Compiler.html">Toy_Compiler</a>.  <br /></td></tr>
 <tr class="separator:ae73c00c0016b7a5bc5d9d2e1cab478c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e2deea95f9843a659e8fdef40f7a3b8"><td class="memItemLeft" align="right" valign="top"><a id="a4e2deea95f9843a659e8fdef40f7a3b8" name="a4e2deea95f9843a659e8fdef40f7a3b8"></a>
 TOY_API void&#160;</td><td class="memItemRight" valign="bottom"><b>Toy_writeCompiler</b> (<a class="el" href="../../d3/ddc/structToy__Compiler.html">Toy_Compiler</a> *compiler, <a class="el" href="../../d3/df7/toy__ast__node_8h.html#a885768195f2ff9c0a631d6cfe226e354">Toy_ASTNode</a> *node)</td></tr>
 <tr class="separator:a4e2deea95f9843a659e8fdef40f7a3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac31f3ed708d2f43038fbb435a95a6ce"><td class="memItemLeft" align="right" valign="top">TOY_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d43/toy__compiler_8h.html#aac31f3ed708d2f43038fbb435a95a6ce">Toy_freeCompiler</a> (<a class="el" href="../../d3/ddc/structToy__Compiler.html">Toy_Compiler</a> *compiler)</td></tr>
-<tr class="memdesc:aac31f3ed708d2f43038fbb435a95a6ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:aac31f3ed708d2f43038fbb435a95a6ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees a <a class="el" href="../../d3/ddc/structToy__Compiler.html">Toy_Compiler</a>. Calling this on a compiler which has not been collated will free that compiler as expected - anything written to it will be lost.  <br /></td></tr>
 <tr class="separator:aac31f3ed708d2f43038fbb435a95a6ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae29ddadf9f379737141831d48ccd9a0"><td class="memItemLeft" align="right" valign="top">TOY_API unsigned char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d43/toy__compiler_8h.html#aae29ddadf9f379737141831d48ccd9a0">Toy_collateCompiler</a> (<a class="el" href="../../d3/ddc/structToy__Compiler.html">Toy_Compiler</a> *compiler, size_t *size)</td></tr>
-<tr class="memdesc:aae29ddadf9f379737141831d48ccd9a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:aae29ddadf9f379737141831d48ccd9a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a buffer of bytes, known as "bytecode", created from the given <a class="el" href="../../d3/ddc/structToy__Compiler.html">Toy_Compiler</a>; it also stores the size of the bytecode in the variable pointed to by size. Calling Toy_collateCompiler multiple times on the same compiler will produce undefined behaviour.  <br /></td></tr>
 <tr class="separator:aae29ddadf9f379737141831d48ccd9a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -166,7 +166,7 @@ TOY_API void&#160;</td><td class="memItemRight" valign="bottom"><b>Toy_writeComp
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Returns a buffer of bytes, known as "bytecode", created from the given <a class="el" href="../../d3/ddc/structToy__Compiler.html">Toy_Compiler</a>; it also stores the size of the bytecode in the variable pointed to by size. Calling Toy_collateCompiler multiple times on the same compiler will produce undefined behaviour. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">compiler</td><td></td></tr>
@@ -194,7 +194,7 @@ TOY_API void&#160;</td><td class="memItemRight" valign="bottom"><b>Toy_writeComp
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Frees a <a class="el" href="../../d3/ddc/structToy__Compiler.html">Toy_Compiler</a>. Calling this on a compiler which has not been collated will free that compiler as expected - anything written to it will be lost. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">compiler</td><td></td></tr>
@@ -220,7 +220,7 @@ TOY_API void&#160;</td><td class="memItemRight" valign="bottom"><b>Toy_writeComp
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>initializes the given <a class="el" href="../../d3/ddc/structToy__Compiler.html">Toy_Compiler</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">compiler</td><td></td></tr>

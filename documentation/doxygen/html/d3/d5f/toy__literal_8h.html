@@ -256,19 +256,19 @@ Functions</h2></td></tr>
 <tr class="memdesc:a96c75bc294dcb8e8b5cda583ad4c6e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
 <tr class="separator:a96c75bc294dcb8e8b5cda583ad4c6e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5250042b7c6443d3aded392da08bfaa0"><td class="memItemLeft" align="right" valign="top">TOY_API <a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a5250042b7c6443d3aded392da08bfaa0">Toy_copyLiteral</a> (<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> original)</td></tr>
-<tr class="memdesc:a5250042b7c6443d3aded392da08bfaa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:a5250042b7c6443d3aded392da08bfaa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a copy of the given literal. Literals should never be copied without this function, as it handles a lot of internal memory allocations.  <br /></td></tr>
 <tr class="separator:a5250042b7c6443d3aded392da08bfaa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac91521046fa2aa8f462649af6cb302b2"><td class="memItemLeft" align="right" valign="top">TOY_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#ac91521046fa2aa8f462649af6cb302b2">Toy_literalsAreEqual</a> (<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> lhs, <a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> rhs)</td></tr>
-<tr class="memdesc:ac91521046fa2aa8f462649af6cb302b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:ac91521046fa2aa8f462649af6cb302b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks to see if two given literals are equal. When an integer and a float are compared, the integer is cooerced into a float for the duration of the call. Arrays and dictionaries are equal only if their keys and values all equal. Likewise, types only equal if all subtypes are equal, in order. Functions and opaques are never equal to anything, while values with the type TOY_LITERAL_ANY are always equal.  <br /></td></tr>
 <tr class="separator:ac91521046fa2aa8f462649af6cb302b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3ec8788a9a921e00cd164f38b5eacbe"><td class="memItemLeft" align="right" valign="top">TOY_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#ae3ec8788a9a921e00cd164f38b5eacbe">Toy_hashLiteral</a> (<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> lit)</td></tr>
-<tr class="memdesc:ae3ec8788a9a921e00cd164f38b5eacbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:ae3ec8788a9a921e00cd164f38b5eacbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the hash of a literal, for various purposes. Different hashing algorithms are used for different types, and some types can't be hashed at all. Types that can't be hashed:  <br /></td></tr>
 <tr class="separator:ae3ec8788a9a921e00cd164f38b5eacbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fa0bea1a678dc230a691aa6e354d35a"><td class="memItemLeft" align="right" valign="top">TOY_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#a2fa0bea1a678dc230a691aa6e354d35a">Toy_printLiteral</a> (<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> literal)</td></tr>
-<tr class="memdesc:a2fa0bea1a678dc230a691aa6e354d35a"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:a2fa0bea1a678dc230a691aa6e354d35a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps a call to Toy_printLiteralCustom, with a printf-stdout wrapper as printFn.  <br /></td></tr>
 <tr class="separator:a2fa0bea1a678dc230a691aa6e354d35a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abae5bd712823721a0bbb91bd0f983bac"><td class="memItemLeft" align="right" valign="top">TOY_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5f/toy__literal_8h.html#abae5bd712823721a0bbb91bd0f983bac">Toy_printLiteralCustom</a> (<a class="el" href="../../d3/da0/structToy__Literal.html">Toy_Literal</a> literal, <a class="el" href="../../d3/d5f/toy__literal_8h.html#a176336391a32bc4eb6e8d776d3e19c35">Toy_PrintFn</a>)</td></tr>
-<tr class="memdesc:abae5bd712823721a0bbb91bd0f983bac"><td class="mdescLeft">&#160;</td><td class="mdescRight">@???@  <br /></td></tr>
+<tr class="memdesc:abae5bd712823721a0bbb91bd0f983bac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Passes the string representation of literal to printFn. This function is not thread safe - due to the loopy and recursive nature of printing compound values, this function uses some globally persistent variables.  <br /></td></tr>
 <tr class="separator:abae5bd712823721a0bbb91bd0f983bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -1324,7 +1324,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Returns a copy of the given literal. Literals should never be copied without this function, as it handles a lot of internal memory allocations. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">original</td><td></td></tr>
@@ -1377,7 +1377,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Finds the hash of a literal, for various purposes. Different hashing algorithms are used for different types, and some types can't be hashed at all. Types that can't be hashed: </p>
+<ul>
+<li>all kinds of functions</li>
+<li>type</li>
+<li>opaque</li>
+<li>any In the case of identifiers, their hashes are precomputed on creation and are stored within the literal.</li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lit</td><td></td></tr>
@@ -1414,7 +1420,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Checks to see if two given literals are equal. When an integer and a float are compared, the integer is cooerced into a float for the duration of the call. Arrays and dictionaries are equal only if their keys and values all equal. Likewise, types only equal if all subtypes are equal, in order. Functions and opaques are never equal to anything, while values with the type TOY_LITERAL_ANY are always equal. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lhs</td><td></td></tr>
@@ -1442,7 +1448,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Wraps a call to Toy_printLiteralCustom, with a printf-stdout wrapper as printFn. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">literal</td><td></td></tr>
@@ -1478,7 +1484,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>@???@ </p>
+<p>Passes the string representation of literal to printFn. This function is not thread safe - due to the loopy and recursive nature of printing compound values, this function uses some globally persistent variables. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">literal</td><td></td></tr>

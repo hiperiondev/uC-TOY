@@ -70,7 +70,7 @@
           <declname>source</declname>
         </param>
         <briefdescription>
-<para>@???@ </para>
+<para>Initializes a lexer, binding it to the source parameter; the lexer is now ready to be passed to the parser. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>

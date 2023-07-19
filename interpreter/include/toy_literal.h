@@ -225,7 +225,7 @@ TOY_API Toy_Literal* Toy_private_typePushSubtype(Toy_Literal* lit, Toy_Literal s
 //utils
 /**
  * @fn Toy_Literal Toy_copyLiteral(Toy_Literal original)
- * @brief @@???@@
+ * @brief Returns a copy of the given literal. Literals should never be copied without this function, as it handles a lot of internal memory allocations.
  *
  * @param original
  * @return
@@ -234,7 +234,10 @@ TOY_API Toy_Literal Toy_copyLiteral(Toy_Literal original);
 
 /**
  * @fn bool Toy_literalsAreEqual(Toy_Literal lhs, Toy_Literal rhs)
- * @brief @@???@@
+ * @brief Checks to see if two given literals are equal.
+ *        When an integer and a float are compared, the integer is cooerced into a float for the duration of the call.
+ *        Arrays and dictionaries are equal only if their keys and values all equal. Likewise, types only equal if all subtypes are equal, in order.
+ *        Functions and opaques are never equal to anything, while values with the type TOY_LITERAL_ANY are always equal.
  *
  * @param lhs
  * @param rhs
@@ -244,7 +247,13 @@ TOY_API bool Toy_literalsAreEqual(Toy_Literal lhs, Toy_Literal rhs);
 
 /**
  * @fn int Toy_hashLiteral(Toy_Literal lit)
- * @brief @@???@@
+ * @brief Finds the hash of a literal, for various purposes. Different hashing algorithms are used for different types, and some types can't be hashed at all.
+ *        Types that can't be hashed:
+ *            - all kinds of functions
+ *            - type
+ *            - opaque
+ *            - any
+ *        In the case of identifiers, their hashes are precomputed on creation and are stored within the literal.
  *
  * @param lit
  * @return
@@ -254,7 +263,7 @@ TOY_API int Toy_hashLiteral(Toy_Literal lit);
 //not thread-safe
 /**
  * @fn void Toy_printLiteral(Toy_Literal literal)
- * @brief @@???@@
+ * @brief Wraps a call to Toy_printLiteralCustom, with a printf-stdout wrapper as printFn.
  *
  * @param literal
  */
@@ -262,7 +271,8 @@ TOY_API void Toy_printLiteral(Toy_Literal literal);
 
 /**
  * @fn void Toy_printLiteralCustom(Toy_Literal literal, Toy_PrintFn)
- * @brief @@???@@
+ * @brief Passes the string representation of literal to printFn.
+ *        This function is not thread safe - due to the loopy and recursive nature of printing compound values, this function uses some globally persistent variables.
  *
  * @param literal
  * @param Toy_PrintFn

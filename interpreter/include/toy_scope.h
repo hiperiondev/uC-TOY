@@ -27,7 +27,7 @@ typedef struct Toy_Scope {
 
 /**
  * @fn Toy_Scope* Toy_pushScope(Toy_Scope *scope)
- * @brief @@???@@
+ * @brief Creates a new Toy_scope with scope as it's ancestor, and returns it.
  *
  * @param scope
  * @return
@@ -36,7 +36,7 @@ TOY_API Toy_Scope* Toy_pushScope(Toy_Scope *scope);
 
 /**
  * @fn Toy_Scope* Toy_popScope(Toy_Scope *scope)
- * @brief @@???@@
+ * @brief Frees the given scope, and returns it's ancestor.
  *
  * @param scope
  * @return
@@ -45,7 +45,7 @@ TOY_API Toy_Scope* Toy_popScope(Toy_Scope *scope);
 
 /**
  * @fn Toy_Scope* Toy_copyScope(Toy_Scope *original)
- * @brief @@???@@
+ * @brief Copies an existing scope, and returns the copy.
  *
  * @param original
  * @return
@@ -55,7 +55,8 @@ TOY_API Toy_Scope* Toy_copyScope(Toy_Scope *original);
 //returns false if error
 /**
  * @fn bool Toy_declareScopeVariable(Toy_Scope *scope, Toy_Literal key, Toy_Literal type)
- * @brief @@???@@
+ * @brief Declares a new variable key within scope, giving it the type of type.
+ *        This function returns true on success, otherwise it returns failure (such as if the given key already exists).
  *
  * @param scope
  * @param key
@@ -66,7 +67,7 @@ TOY_API bool Toy_declareScopeVariable(Toy_Scope *scope, Toy_Literal key, Toy_Lit
 
 /**
  * @fn bool Toy_isDelcaredScopeVariable(Toy_Scope *scope, Toy_Literal key)
- * @brief @@???@@
+ * @brief Checks to see if a given variable with the name key has been previously declared.
  *
  * @param scope
  * @param key
@@ -77,7 +78,8 @@ TOY_API bool Toy_isDelcaredScopeVariable(Toy_Scope *scope, Toy_Literal key);
 //return false if undefined
 /**
  * @fn bool Toy_setScopeVariable(Toy_Scope *scope, Toy_Literal key, Toy_Literal value, bool constCheck)
- * @brief @@???@@
+ * @brief Sets an existing variable named key to the value of value. This function fails if constCheck is true and the given key's type has the constaant flag set. It also fails if the given key doesn't exist.
+ *        Returns true on success, otherwise it returns false.
  *
  * @param scope
  * @param key
@@ -89,7 +91,8 @@ TOY_API bool Toy_setScopeVariable(Toy_Scope *scope, Toy_Literal key, Toy_Literal
 
 /**
  * @fn bool Toy_getScopeVariable(Toy_Scope *scope, Toy_Literal key, Toy_Literal *value)
- * @brief @@???@@
+ * @brief Sets the literal pointed to by value to equal the variable named key.
+ *        Returns true on success, otherwise it returns false.
  *
  * @param scope
  * @param key
@@ -100,7 +103,7 @@ TOY_API bool Toy_getScopeVariable(Toy_Scope *scope, Toy_Literal key, Toy_Literal
 
 /**
  * @fn Toy_Literal Toy_getScopeType(Toy_Scope *scope, Toy_Literal key)
- * @brief @@???@@
+ * @brief Returns a new Toy_Literal representing the type of the variable named key.
  *
  * @param scope
  * @param key

@@ -152,7 +152,7 @@
           <declname>dictionary</declname>
         </param>
         <briefdescription>
-<para>@???@ </para>
+<para>Initializes the <ref refid="d9/db5/structToy__LiteralDictionary" kindref="compound">Toy_LiteralDictionary</ref> pointed to by dictionary. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -180,7 +180,7 @@
           <declname>dictionary</declname>
         </param>
         <briefdescription>
-<para>@???@ </para>
+<para>Frees a <ref refid="d9/db5/structToy__LiteralDictionary" kindref="compound">Toy_LiteralDictionary</ref> pointed to by dictionary. Every literal within is passed to Toy_freeLiteral before its memory is released. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -216,7 +216,7 @@
           <declname>value</declname>
         </param>
         <briefdescription>
-<para>@???@ </para>
+<para>Inserts the given key-value pair of literals into dictionary, creating it if it doesn&apos;t exist, or freeing and overwriting it if key is already present. This function may also expand the memory buffer if needed. Literal functions and opaques cannot be used as keys. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -248,7 +248,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interpreter/include/toy_literal_dictionary.h" line="62" column="14" declfile="interpreter/include/toy_literal_dictionary.h" declline="62" declcolumn="14"/>
+        <location file="interpreter/include/toy_literal_dictionary.h" line="63" column="14" declfile="interpreter/include/toy_literal_dictionary.h" declline="63" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="dd/da4/toy__literal__dictionary_8h_1a79eb15e96139f78e6dad70e637a234de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>TOY_API <ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref></type>
@@ -264,7 +264,7 @@
           <declname>key</declname>
         </param>
         <briefdescription>
-<para>@???@ </para>
+<para>Returns the value of the literal within dictionary identified by key, or a null literal if it doesn&apos;t exist. Literal functions and opaques cannot be used as keys. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -290,7 +290,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interpreter/include/toy_literal_dictionary.h" line="72" column="21" declfile="interpreter/include/toy_literal_dictionary.h" declline="72" declcolumn="21"/>
+        <location file="interpreter/include/toy_literal_dictionary.h" line="74" column="21" declfile="interpreter/include/toy_literal_dictionary.h" declline="74" declcolumn="21"/>
       </memberdef>
       <memberdef kind="function" id="dd/da4/toy__literal__dictionary_8h_1a30de52e687510e5a8e8f930ad23fa708" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>TOY_API void</type>
@@ -306,7 +306,7 @@
           <declname>key</declname>
         </param>
         <briefdescription>
-<para>@???@ </para>
+<para>Removes the key-value pair of literals from dictionary identified by key, if it exists. Literal functions and opaques cannot be used as keys. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -330,7 +330,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interpreter/include/toy_literal_dictionary.h" line="81" column="14" declfile="interpreter/include/toy_literal_dictionary.h" declline="81" declcolumn="14"/>
+        <location file="interpreter/include/toy_literal_dictionary.h" line="84" column="14" declfile="interpreter/include/toy_literal_dictionary.h" declline="84" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="dd/da4/toy__literal__dictionary_8h_1ad00ff343089d2c8284c4691492022d2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>TOY_API bool</type>
@@ -346,7 +346,7 @@
           <declname>key</declname>
         </param>
         <briefdescription>
-<para>@???@ </para>
+<para>Returns true if the key-value pair identified by key exists within dictionary, otherwise it returns false. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -372,7 +372,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interpreter/include/toy_literal_dictionary.h" line="91" column="14" declfile="interpreter/include/toy_literal_dictionary.h" declline="91" declcolumn="14"/>
+        <location file="interpreter/include/toy_literal_dictionary.h" line="94" column="14" declfile="interpreter/include/toy_literal_dictionary.h" declline="94" declcolumn="14"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -407,15 +407,15 @@
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>
 <codeline lineno="52" refid="dd/da4/toy__literal__dictionary_8h_1ab737491ee33ccade8aae3424860d336f" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dd/da4/toy__literal__dictionary_8h_1ab737491ee33ccade8aae3424860d336f" kindref="member">Toy_freeLiteralDictionary</ref>(<ref refid="d9/db5/structToy__LiteralDictionary" kindref="compound">Toy_LiteralDictionary</ref><sp/>*dictionary);</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
-<codeline lineno="62" refid="dd/da4/toy__literal__dictionary_8h_1ae9f9b0cf8cd32cf9129516ab5ecbade1" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dd/da4/toy__literal__dictionary_8h_1ae9f9b0cf8cd32cf9129516ab5ecbade1" kindref="member">Toy_setLiteralDictionary</ref>(<ref refid="d9/db5/structToy__LiteralDictionary" kindref="compound">Toy_LiteralDictionary</ref><sp/>*dictionary,<sp/><ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/>key,<sp/><ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/>value);</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"></highlight></codeline>
-<codeline lineno="72" refid="dd/da4/toy__literal__dictionary_8h_1a79eb15e96139f78e6dad70e637a234de" refkind="member"><highlight class="normal">TOY_API<sp/><ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/><ref refid="dd/da4/toy__literal__dictionary_8h_1a79eb15e96139f78e6dad70e637a234de" kindref="member">Toy_getLiteralDictionary</ref>(<ref refid="d9/db5/structToy__LiteralDictionary" kindref="compound">Toy_LiteralDictionary</ref><sp/>*dictionary,<sp/><ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/>key);</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight></codeline>
-<codeline lineno="81" refid="dd/da4/toy__literal__dictionary_8h_1a30de52e687510e5a8e8f930ad23fa708" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dd/da4/toy__literal__dictionary_8h_1a30de52e687510e5a8e8f930ad23fa708" kindref="member">Toy_removeLiteralDictionary</ref>(<ref refid="d9/db5/structToy__LiteralDictionary" kindref="compound">Toy_LiteralDictionary</ref><sp/>*dictionary,<sp/><ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/>key);</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"></highlight></codeline>
-<codeline lineno="91" refid="dd/da4/toy__literal__dictionary_8h_1ad00ff343089d2c8284c4691492022d2c" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dd/da4/toy__literal__dictionary_8h_1ad00ff343089d2c8284c4691492022d2c" kindref="member">Toy_existsLiteralDictionary</ref>(<ref refid="d9/db5/structToy__LiteralDictionary" kindref="compound">Toy_LiteralDictionary</ref><sp/>*dictionary,<sp/><ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/>key);</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"></highlight></codeline>
-<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TOY_LITERAL_DICTIONARY_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="63" refid="dd/da4/toy__literal__dictionary_8h_1ae9f9b0cf8cd32cf9129516ab5ecbade1" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dd/da4/toy__literal__dictionary_8h_1ae9f9b0cf8cd32cf9129516ab5ecbade1" kindref="member">Toy_setLiteralDictionary</ref>(<ref refid="d9/db5/structToy__LiteralDictionary" kindref="compound">Toy_LiteralDictionary</ref><sp/>*dictionary,<sp/><ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/>key,<sp/><ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/>value);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="dd/da4/toy__literal__dictionary_8h_1a79eb15e96139f78e6dad70e637a234de" refkind="member"><highlight class="normal">TOY_API<sp/><ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/><ref refid="dd/da4/toy__literal__dictionary_8h_1a79eb15e96139f78e6dad70e637a234de" kindref="member">Toy_getLiteralDictionary</ref>(<ref refid="d9/db5/structToy__LiteralDictionary" kindref="compound">Toy_LiteralDictionary</ref><sp/>*dictionary,<sp/><ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/>key);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="dd/da4/toy__literal__dictionary_8h_1a30de52e687510e5a8e8f930ad23fa708" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dd/da4/toy__literal__dictionary_8h_1a30de52e687510e5a8e8f930ad23fa708" kindref="member">Toy_removeLiteralDictionary</ref>(<ref refid="d9/db5/structToy__LiteralDictionary" kindref="compound">Toy_LiteralDictionary</ref><sp/>*dictionary,<sp/><ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/>key);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="dd/da4/toy__literal__dictionary_8h_1ad00ff343089d2c8284c4691492022d2c" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dd/da4/toy__literal__dictionary_8h_1ad00ff343089d2c8284c4691492022d2c" kindref="member">Toy_existsLiteralDictionary</ref>(<ref refid="d9/db5/structToy__LiteralDictionary" kindref="compound">Toy_LiteralDictionary</ref><sp/>*dictionary,<sp/><ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/>key);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TOY_LITERAL_DICTIONARY_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
     <location file="interpreter/include/toy_literal_dictionary.h"/>
   </compounddef>

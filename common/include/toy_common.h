@@ -11,16 +11,16 @@
 #include <stddef.h>
 #include <stdint.h>
 
-#define TOY_VERSION_MAJOR 1 /**< TOY_VERSION_MAJOR */
-#define TOY_VERSION_MINOR 1 /**< TOY_VERSION_MINOR */
-#define TOY_VERSION_PATCH 6 /**< TOY_VERSION_PATCH */
+#define TOY_VERSION_MAJOR 1 /**< current major version of Toy */
+#define TOY_VERSION_MINOR 1 /**< current minor version of Toy */
+#define TOY_VERSION_PATCH 6 /**< current patch version of Toy */
 
 //platform/compiler-specific instructions
 #if defined(__linux__) || defined(__MINGW32__) || defined(__GNUC__)
 
 /**
  * @def TOY_API
- * @brief @@???@@
+ * @brief This definition of this macro is platform-dependant, and used to enable cross-platform compilation of shared and static libraries.
  *
  */
 #define TOY_API extern

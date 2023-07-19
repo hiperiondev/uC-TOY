@@ -162,7 +162,7 @@
           <declname>func</declname>
         </param>
         <briefdescription>
-<para>@???@ </para>
+<para>Will inject the given native function func into the <ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref>&apos;s current scope, with the name passed as name. Both the name and function will be converted into literals internally before being stored. It will return true on success, otherwise it will return false. The primary use of this function is within hooks. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -196,7 +196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interpreter/include/toy_interpreter.h" line="59" column="14" declfile="interpreter/include/toy_interpreter.h" declline="59" declcolumn="14"/>
+        <location file="interpreter/include/toy_interpreter.h" line="60" column="14" declfile="interpreter/include/toy_interpreter.h" declline="60" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="dc/dcc/toy__interpreter_8h_1aad12d0d2f6d24a75f8bb1c491751a013" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>TOY_API bool</type>
@@ -216,7 +216,7 @@
           <declname>hook</declname>
         </param>
         <briefdescription>
-<para>@???@ </para>
+<para>Will inject the given native function hook into the <ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref>&apos;s hook cache, with the name passed in as name. Both the name and the function will be converted into literals internally before being stored. It will return true on success, otherwise it will return false. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -250,7 +250,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interpreter/include/toy_interpreter.h" line="70" column="14" declfile="interpreter/include/toy_interpreter.h" declline="70" declcolumn="14"/>
+        <location file="interpreter/include/toy_interpreter.h" line="71" column="14" declfile="interpreter/include/toy_interpreter.h" declline="71" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="dc/dcc/toy__interpreter_8h_1af7bfaf21d66121d0ab5449ab293d9271" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>TOY_API bool</type>
@@ -274,7 +274,7 @@
           <declname>returns</declname>
         </param>
         <briefdescription>
-<para>@???@ </para>
+<para>Calls a <ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref> which contains a function, with the arguments to that function passed in as arguments and the results stored in returns. It returns true on success, otherwise it returns false. The literal func can be either a native function or a Toy function, but it won&apos;t execute a hook. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -316,7 +316,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interpreter/include/toy_interpreter.h" line="82" column="14" declfile="interpreter/include/toy_interpreter.h" declline="82" declcolumn="14"/>
+        <location file="interpreter/include/toy_interpreter.h" line="84" column="14" declfile="interpreter/include/toy_interpreter.h" declline="84" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="dc/dcc/toy__interpreter_8h_1aba99d0f920cb5bf608389765ed642d00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>TOY_API bool</type>
@@ -340,7 +340,7 @@
           <declname>returns</declname>
         </param>
         <briefdescription>
-<para>@???@ </para>
+<para>Utility function that will find a Toy_literal within the <ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref>&apos;s scope with a name that matches name, and will invoke it using Toy_callLiteralFn (passing in arguments and returns as expected). </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -382,7 +382,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interpreter/include/toy_interpreter.h" line="94" column="14" declfile="interpreter/include/toy_interpreter.h" declline="94" declcolumn="14"/>
+        <location file="interpreter/include/toy_interpreter.h" line="96" column="14" declfile="interpreter/include/toy_interpreter.h" declline="96" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="dc/dcc/toy__interpreter_8h_1aace0eea619550a37252620c15d242c65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>TOY_API bool</type>
@@ -398,7 +398,7 @@
           <declname>literalPtr</declname>
         </param>
         <briefdescription>
-<para>@???@ </para>
+<para>Sometimes, native functions will receive <ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref> identifiers instead of the values - the values can be retreived from the given interpreter&apos;s scope using the following pattern: <ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref> foobarIdn = foobar; if (<ref refid="d3/d5f/toy__literal_8h_1a1d715b3f1a82754ee0bd2c037b995274" kindref="member">TOY_IS_IDENTIFIER(foobar)</ref> &amp;&amp; Toy_parseIdentifierToValue(interpreter, &amp;foobar)) { freeLiteral(foobarIdn); //remember to free the identifier }. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -424,7 +424,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interpreter/include/toy_interpreter.h" line="105" column="14" declfile="interpreter/include/toy_interpreter.h" declline="105" declcolumn="14"/>
+        <location file="interpreter/include/toy_interpreter.h" line="111" column="14" declfile="interpreter/include/toy_interpreter.h" declline="111" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="dc/dcc/toy__interpreter_8h_1ae17c959e281f12cf9726538bc0cdd9a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>TOY_API void</type>
@@ -440,7 +440,7 @@
           <declname>printOutput</declname>
         </param>
         <briefdescription>
-<para>@???@ </para>
+<para>This function sets the function called by the print keyword. By default, the following wrapper is used: static void printWrapper(const char* output) { printf(&quot;%s\n&quot;, output); }. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -464,7 +464,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interpreter/include/toy_interpreter.h" line="114" column="14" declfile="interpreter/include/toy_interpreter.h" declline="114" declcolumn="14"/>
+        <location file="interpreter/include/toy_interpreter.h" line="123" column="14" declfile="interpreter/include/toy_interpreter.h" declline="123" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="dc/dcc/toy__interpreter_8h_1a67cfb38a79db92d0ee6938e82a99273d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>TOY_API void</type>
@@ -480,7 +480,7 @@
           <declname>assertOutput</declname>
         </param>
         <briefdescription>
-<para>@???@ </para>
+<para>Sets the function called by the assert keyword on failure. By default, the following wrapper is used: static void assertWrapper(const char* output) { fprintf(stderr, &quot;Assertion failure: %s\n&quot;, output); }. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -504,7 +504,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interpreter/include/toy_interpreter.h" line="123" column="14" declfile="interpreter/include/toy_interpreter.h" declline="123" declcolumn="14"/>
+        <location file="interpreter/include/toy_interpreter.h" line="135" column="14" declfile="interpreter/include/toy_interpreter.h" declline="135" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="dc/dcc/toy__interpreter_8h_1afb7992b14204638895b6a8c121d7bd5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>TOY_API void</type>
@@ -520,7 +520,7 @@
           <declname>errorOutput</declname>
         </param>
         <briefdescription>
-<para>@???@ </para>
+<para>Sets the function called when an error occurs within the interpreter. By default, the following wrapper is used: static void errorWrapper(const char* output) { fprintf(stderr, &quot;%s&quot;, output); //no newline }. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -544,7 +544,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interpreter/include/toy_interpreter.h" line="132" column="14" declfile="interpreter/include/toy_interpreter.h" declline="132" declcolumn="14"/>
+        <location file="interpreter/include/toy_interpreter.h" line="147" column="14" declfile="interpreter/include/toy_interpreter.h" declline="147" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="dc/dcc/toy__interpreter_8h_1a0e1097c83258bcf4db018ee2cd4b7df4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>TOY_API void</type>
@@ -556,7 +556,7 @@
           <declname>interpreter</declname>
         </param>
         <briefdescription>
-<para>@???@ </para>
+<para>Initializes the <ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref>. It allocates memory for internal systems such as the stack, and zeroes-out systems that have yet to be invoked. Internally, it also invokes Toy_resetInterpreter to initialize the environment. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -572,7 +572,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interpreter/include/toy_interpreter.h" line="141" column="14" declfile="interpreter/include/toy_interpreter.h" declline="141" declcolumn="14"/>
+        <location file="interpreter/include/toy_interpreter.h" line="156" column="14" declfile="interpreter/include/toy_interpreter.h" declline="156" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="dc/dcc/toy__interpreter_8h_1a6866721f7636a5c5c9cd06565d8b65cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>TOY_API void</type>
@@ -592,7 +592,7 @@
           <declname>length</declname>
         </param>
         <briefdescription>
-<para>@???@ </para>
+<para>Takes a <ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref> and bytecode (as well as the length of the bytecode), checks its version information, parses and un-flattens the literal cache, and executes the compiled program stored in the bytecode. This function also consumes the bytecode, so the bytecode argument is no longer valid after calls. If the given bytecode&apos;s embedded version is not compatible with the current interpreter, then this function will refuse to execute. Re-using a <ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref> instance without first resetting it is possible (that&apos;s how the repl works), however doing so may have unintended consequences if the scripts are not intended to be used in such a way. Any variables declared will persist. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -624,7 +624,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interpreter/include/toy_interpreter.h" line="151" column="14" declfile="interpreter/include/toy_interpreter.h" declline="151" declcolumn="14"/>
+        <location file="interpreter/include/toy_interpreter.h" line="168" column="14" declfile="interpreter/include/toy_interpreter.h" declline="168" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="dc/dcc/toy__interpreter_8h_1afd58b578f89fce99c1462fe0e78870e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>TOY_API void</type>
@@ -636,9 +636,18 @@
           <declname>interpreter</declname>
         </param>
         <briefdescription>
-<para>@???@ </para>
+<para>Frees any environment that the scripts have built up, and generates a new one. It also injects several globally available functions: </para>
         </briefdescription>
         <detaileddescription>
+<para><itemizedlist>
+<listitem><para>set</para>
+</listitem><listitem><para>get</para>
+</listitem><listitem><para>push</para>
+</listitem><listitem><para>pop</para>
+</listitem><listitem><para>length</para>
+</listitem><listitem><para>clear</para>
+</listitem></itemizedlist>
+</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>interpreter</parametername>
@@ -652,7 +661,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interpreter/include/toy_interpreter.h" line="159" column="14" declfile="interpreter/include/toy_interpreter.h" declline="159" declcolumn="14"/>
+        <location file="interpreter/include/toy_interpreter.h" line="182" column="14" declfile="interpreter/include/toy_interpreter.h" declline="182" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="dc/dcc/toy__interpreter_8h_1add7aa4a348b6b0ac3775014653bd816a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>TOY_API void</type>
@@ -664,7 +673,7 @@
           <declname>interpreter</declname>
         </param>
         <briefdescription>
-<para>@???@ </para>
+<para>Frees a <ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref>, clearing all of the memory used within. That interpreter is no longer valid for use, and must be re-initialized. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -680,7 +689,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="interpreter/include/toy_interpreter.h" line="167" column="14" declfile="interpreter/include/toy_interpreter.h" declline="167" declcolumn="14"/>
+        <location file="interpreter/include/toy_interpreter.h" line="190" column="14" declfile="interpreter/include/toy_interpreter.h" declline="190" declcolumn="14"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -724,33 +733,33 @@
 <codeline lineno="47" refid="dc/dcc/toy__interpreter_8h_1ae0b4ea5e1c9ef5a658456a15f5cf52bb" refkind="member"><highlight class="normal">}<sp/><ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref>;</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//native<sp/>API</highlight></codeline>
-<codeline lineno="59" refid="dc/dcc/toy__interpreter_8h_1af2533ca2ff39ed6095dc7e3e6b5effdb" refkind="member"><highlight class="comment"></highlight><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dc/dcc/toy__interpreter_8h_1af2533ca2ff39ed6095dc7e3e6b5effdb" kindref="member">Toy_injectNativeFn</ref>(<ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref><sp/>*interpreter,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/><ref refid="d3/d5f/toy__literal_8h_1a75c718108573cac8d200bf51870c522b" kindref="member">Toy_NativeFn</ref><sp/>func);</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"></highlight></codeline>
-<codeline lineno="70" refid="dc/dcc/toy__interpreter_8h_1aad12d0d2f6d24a75f8bb1c491751a013" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dc/dcc/toy__interpreter_8h_1aad12d0d2f6d24a75f8bb1c491751a013" kindref="member">Toy_injectNativeHook</ref>(<ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref><sp/>*interpreter,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/><ref refid="d3/d5f/toy__literal_8h_1a6569b94d4c6ef28b9c1f948fdd14fc4a" kindref="member">Toy_HookFn</ref><sp/>hook);</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"></highlight></codeline>
-<codeline lineno="82" refid="dc/dcc/toy__interpreter_8h_1af7bfaf21d66121d0ab5449ab293d9271" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dc/dcc/toy__interpreter_8h_1af7bfaf21d66121d0ab5449ab293d9271" kindref="member">Toy_callLiteralFn</ref>(<ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref><sp/>*interpreter,<sp/><ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/>func,<sp/><ref refid="d5/d6a/structToy__LiteralArray" kindref="compound">Toy_LiteralArray</ref><sp/>*arguments,<sp/><ref refid="d5/d6a/structToy__LiteralArray" kindref="compound">Toy_LiteralArray</ref><sp/>*returns);</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"></highlight></codeline>
-<codeline lineno="94" refid="dc/dcc/toy__interpreter_8h_1aba99d0f920cb5bf608389765ed642d00" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dc/dcc/toy__interpreter_8h_1aba99d0f920cb5bf608389765ed642d00" kindref="member">Toy_callFn</ref>(<ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref><sp/>*interpreter,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/><ref refid="d5/d6a/structToy__LiteralArray" kindref="compound">Toy_LiteralArray</ref><sp/>*arguments,<sp/><ref refid="d5/d6a/structToy__LiteralArray" kindref="compound">Toy_LiteralArray</ref><sp/>*returns);</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"></highlight></codeline>
-<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">//utilities<sp/>for<sp/>the<sp/>host<sp/>program</highlight></codeline>
-<codeline lineno="105" refid="dc/dcc/toy__interpreter_8h_1aace0eea619550a37252620c15d242c65" refkind="member"><highlight class="comment"></highlight><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dc/dcc/toy__interpreter_8h_1aace0eea619550a37252620c15d242c65" kindref="member">Toy_parseIdentifierToValue</ref>(<ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref><sp/>*interpreter,<sp/><ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/>*literalPtr);</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"></highlight></codeline>
-<codeline lineno="114" refid="dc/dcc/toy__interpreter_8h_1ae17c959e281f12cf9726538bc0cdd9a1" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/dcc/toy__interpreter_8h_1ae17c959e281f12cf9726538bc0cdd9a1" kindref="member">Toy_setInterpreterPrint</ref>(<ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref><sp/>*interpreter,<sp/><ref refid="d3/d5f/toy__literal_8h_1a176336391a32bc4eb6e8d776d3e19c35" kindref="member">Toy_PrintFn</ref><sp/>printOutput);</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"></highlight></codeline>
-<codeline lineno="123" refid="dc/dcc/toy__interpreter_8h_1a67cfb38a79db92d0ee6938e82a99273d" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/dcc/toy__interpreter_8h_1a67cfb38a79db92d0ee6938e82a99273d" kindref="member">Toy_setInterpreterAssert</ref>(<ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref><sp/>*interpreter,<sp/><ref refid="d3/d5f/toy__literal_8h_1a176336391a32bc4eb6e8d776d3e19c35" kindref="member">Toy_PrintFn</ref><sp/>assertOutput);</highlight></codeline>
+<codeline lineno="60" refid="dc/dcc/toy__interpreter_8h_1af2533ca2ff39ed6095dc7e3e6b5effdb" refkind="member"><highlight class="comment"></highlight><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dc/dcc/toy__interpreter_8h_1af2533ca2ff39ed6095dc7e3e6b5effdb" kindref="member">Toy_injectNativeFn</ref>(<ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref><sp/>*interpreter,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/><ref refid="d3/d5f/toy__literal_8h_1a75c718108573cac8d200bf51870c522b" kindref="member">Toy_NativeFn</ref><sp/>func);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="dc/dcc/toy__interpreter_8h_1aad12d0d2f6d24a75f8bb1c491751a013" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dc/dcc/toy__interpreter_8h_1aad12d0d2f6d24a75f8bb1c491751a013" kindref="member">Toy_injectNativeHook</ref>(<ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref><sp/>*interpreter,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/><ref refid="d3/d5f/toy__literal_8h_1a6569b94d4c6ef28b9c1f948fdd14fc4a" kindref="member">Toy_HookFn</ref><sp/>hook);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="dc/dcc/toy__interpreter_8h_1af7bfaf21d66121d0ab5449ab293d9271" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dc/dcc/toy__interpreter_8h_1af7bfaf21d66121d0ab5449ab293d9271" kindref="member">Toy_callLiteralFn</ref>(<ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref><sp/>*interpreter,<sp/><ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/>func,<sp/><ref refid="d5/d6a/structToy__LiteralArray" kindref="compound">Toy_LiteralArray</ref><sp/>*arguments,<sp/><ref refid="d5/d6a/structToy__LiteralArray" kindref="compound">Toy_LiteralArray</ref><sp/>*returns);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="dc/dcc/toy__interpreter_8h_1aba99d0f920cb5bf608389765ed642d00" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dc/dcc/toy__interpreter_8h_1aba99d0f920cb5bf608389765ed642d00" kindref="member">Toy_callFn</ref>(<ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref><sp/>*interpreter,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/><ref refid="d5/d6a/structToy__LiteralArray" kindref="compound">Toy_LiteralArray</ref><sp/>*arguments,<sp/><ref refid="d5/d6a/structToy__LiteralArray" kindref="compound">Toy_LiteralArray</ref><sp/>*returns);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">//utilities<sp/>for<sp/>the<sp/>host<sp/>program</highlight></codeline>
+<codeline lineno="111" refid="dc/dcc/toy__interpreter_8h_1aace0eea619550a37252620c15d242c65" refkind="member"><highlight class="comment"></highlight><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dc/dcc/toy__interpreter_8h_1aace0eea619550a37252620c15d242c65" kindref="member">Toy_parseIdentifierToValue</ref>(<ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref><sp/>*interpreter,<sp/><ref refid="d3/da0/structToy__Literal" kindref="compound">Toy_Literal</ref><sp/>*literalPtr);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="dc/dcc/toy__interpreter_8h_1ae17c959e281f12cf9726538bc0cdd9a1" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/dcc/toy__interpreter_8h_1ae17c959e281f12cf9726538bc0cdd9a1" kindref="member">Toy_setInterpreterPrint</ref>(<ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref><sp/>*interpreter,<sp/><ref refid="d3/d5f/toy__literal_8h_1a176336391a32bc4eb6e8d776d3e19c35" kindref="member">Toy_PrintFn</ref><sp/>printOutput);</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"></highlight></codeline>
-<codeline lineno="132" refid="dc/dcc/toy__interpreter_8h_1afb7992b14204638895b6a8c121d7bd5b" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/dcc/toy__interpreter_8h_1afb7992b14204638895b6a8c121d7bd5b" kindref="member">Toy_setInterpreterError</ref>(<ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref><sp/>*interpreter,<sp/><ref refid="d3/d5f/toy__literal_8h_1a176336391a32bc4eb6e8d776d3e19c35" kindref="member">Toy_PrintFn</ref><sp/>errorOutput);</highlight></codeline>
-<codeline lineno="133"><highlight class="normal"></highlight></codeline>
-<codeline lineno="134"><highlight class="normal"></highlight><highlight class="comment">//main<sp/>access</highlight></codeline>
-<codeline lineno="141" refid="dc/dcc/toy__interpreter_8h_1a0e1097c83258bcf4db018ee2cd4b7df4" refkind="member"><highlight class="comment"></highlight><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/dcc/toy__interpreter_8h_1a0e1097c83258bcf4db018ee2cd4b7df4" kindref="member">Toy_initInterpreter</ref>(<ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref><sp/>*interpreter);<sp/></highlight><highlight class="comment">//start<sp/>of<sp/>program</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="142"><highlight class="normal"></highlight></codeline>
-<codeline lineno="151" refid="dc/dcc/toy__interpreter_8h_1a6866721f7636a5c5c9cd06565d8b65cd" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/dcc/toy__interpreter_8h_1a6866721f7636a5c5c9cd06565d8b65cd" kindref="member">Toy_runInterpreter</ref>(<ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref><sp/>*interpreter,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*bytecode,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>length);<sp/></highlight><highlight class="comment">//run<sp/>the<sp/>code</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="152"><highlight class="normal"></highlight></codeline>
-<codeline lineno="159" refid="dc/dcc/toy__interpreter_8h_1afd58b578f89fce99c1462fe0e78870e0" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/dcc/toy__interpreter_8h_1afd58b578f89fce99c1462fe0e78870e0" kindref="member">Toy_resetInterpreter</ref>(<ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref><sp/>*interpreter);<sp/></highlight><highlight class="comment">//use<sp/>this<sp/>to<sp/>reset<sp/>the<sp/>interpreter&apos;s<sp/>environment<sp/>between<sp/>runs</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="160"><highlight class="normal"></highlight></codeline>
-<codeline lineno="167" refid="dc/dcc/toy__interpreter_8h_1add7aa4a348b6b0ac3775014653bd816a" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/dcc/toy__interpreter_8h_1add7aa4a348b6b0ac3775014653bd816a" kindref="member">Toy_freeInterpreter</ref>(<ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref><sp/>*interpreter);<sp/></highlight><highlight class="comment">//end<sp/>of<sp/>program</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="168"><highlight class="normal"></highlight></codeline>
-<codeline lineno="169"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TOY_INTERPRETER_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="135" refid="dc/dcc/toy__interpreter_8h_1a67cfb38a79db92d0ee6938e82a99273d" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/dcc/toy__interpreter_8h_1a67cfb38a79db92d0ee6938e82a99273d" kindref="member">Toy_setInterpreterAssert</ref>(<ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref><sp/>*interpreter,<sp/><ref refid="d3/d5f/toy__literal_8h_1a176336391a32bc4eb6e8d776d3e19c35" kindref="member">Toy_PrintFn</ref><sp/>assertOutput);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147" refid="dc/dcc/toy__interpreter_8h_1afb7992b14204638895b6a8c121d7bd5b" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/dcc/toy__interpreter_8h_1afb7992b14204638895b6a8c121d7bd5b" kindref="member">Toy_setInterpreterError</ref>(<ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref><sp/>*interpreter,<sp/><ref refid="d3/d5f/toy__literal_8h_1a176336391a32bc4eb6e8d776d3e19c35" kindref="member">Toy_PrintFn</ref><sp/>errorOutput);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="comment">//main<sp/>access</highlight></codeline>
+<codeline lineno="156" refid="dc/dcc/toy__interpreter_8h_1a0e1097c83258bcf4db018ee2cd4b7df4" refkind="member"><highlight class="comment"></highlight><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/dcc/toy__interpreter_8h_1a0e1097c83258bcf4db018ee2cd4b7df4" kindref="member">Toy_initInterpreter</ref>(<ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref><sp/>*interpreter);<sp/></highlight><highlight class="comment">//start<sp/>of<sp/>program</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="dc/dcc/toy__interpreter_8h_1a6866721f7636a5c5c9cd06565d8b65cd" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/dcc/toy__interpreter_8h_1a6866721f7636a5c5c9cd06565d8b65cd" kindref="member">Toy_runInterpreter</ref>(<ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref><sp/>*interpreter,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*bytecode,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>length);<sp/></highlight><highlight class="comment">//run<sp/>the<sp/>code</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182" refid="dc/dcc/toy__interpreter_8h_1afd58b578f89fce99c1462fe0e78870e0" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/dcc/toy__interpreter_8h_1afd58b578f89fce99c1462fe0e78870e0" kindref="member">Toy_resetInterpreter</ref>(<ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref><sp/>*interpreter);<sp/></highlight><highlight class="comment">//use<sp/>this<sp/>to<sp/>reset<sp/>the<sp/>interpreter&apos;s<sp/>environment<sp/>between<sp/>runs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190" refid="dc/dcc/toy__interpreter_8h_1add7aa4a348b6b0ac3775014653bd816a" refkind="member"><highlight class="normal">TOY_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/dcc/toy__interpreter_8h_1add7aa4a348b6b0ac3775014653bd816a" kindref="member">Toy_freeInterpreter</ref>(<ref refid="de/da4/structToy__Interpreter" kindref="compound">Toy_Interpreter</ref><sp/>*interpreter);<sp/></highlight><highlight class="comment">//end<sp/>of<sp/>program</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TOY_INTERPRETER_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
     <location file="interpreter/include/toy_interpreter.h"/>
   </compounddef>
