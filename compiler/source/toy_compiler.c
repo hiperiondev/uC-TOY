@@ -6,8 +6,8 @@
 #include "toy_literal.h"
 #include "toy_literal_array.h"
 #include "toy_literal_dictionary.h"
-#include "toy_console_colors.h"
 #include "toy_repl_common.h"
+#include "toy_console_colors.h"
 
 void Toy_initCompiler(Toy_Compiler *compiler) {
     Toy_initLiteralArray(&compiler->literalCache);
@@ -46,7 +46,7 @@ static int writeLiteralTypeToCache(Toy_LiteralArray *literalCache, Toy_Literal l
     }
 
     //optimisation: check if exactly this literal array exists
-    int index = Toy_findLiteralIndex(literalCache, literal);
+    int index = Toy_private_findLiteralIndex(literalCache, literal);
     if (index < 0) {
         index = Toy_pushLiteralArray(literalCache, literal);
     }
@@ -72,7 +72,7 @@ static int writeNodeCompoundToCache(Toy_Compiler *compiler, Toy_ASTNode *node) {
             switch (node->compound.nodes[i].pair.left->type) {
                 case TOY_AST_NODE_LITERAL: {
                     //keys are literals
-                    int key = Toy_findLiteralIndex(&compiler->literalCache, node->compound.nodes[i].pair.left->atomic.literal);
+                    int key = Toy_private_findLiteralIndex(&compiler->literalCache, node->compound.nodes[i].pair.left->atomic.literal);
                     if (key < 0) {
                         key = Toy_pushLiteralArray(&compiler->literalCache, node->compound.nodes[i].pair.left->atomic.literal);
                     }
@@ -101,7 +101,7 @@ static int writeNodeCompoundToCache(Toy_Compiler *compiler, Toy_ASTNode *node) {
             switch (node->compound.nodes[i].pair.right->type) {
                 case TOY_AST_NODE_LITERAL: {
                     //values are literals
-                    int val = Toy_findLiteralIndex(&compiler->literalCache, node->compound.nodes[i].pair.right->atomic.literal);
+                    int val = Toy_private_findLiteralIndex(&compiler->literalCache, node->compound.nodes[i].pair.right->atomic.literal);
                     if (val < 0) {
                         val = Toy_pushLiteralArray(&compiler->literalCache, node->compound.nodes[i].pair.right->atomic.literal);
                     }
@@ -140,7 +140,7 @@ static int writeNodeCompoundToCache(Toy_Compiler *compiler, Toy_ASTNode *node) {
             switch (node->compound.nodes[i].type) {
                 case TOY_AST_NODE_LITERAL: {
                     //values
-                    int val = Toy_findLiteralIndex(&compiler->literalCache, node->compound.nodes[i].atomic.literal);
+                    int val = Toy_private_findLiteralIndex(&compiler->literalCache, node->compound.nodes[i].atomic.literal);
                     if (val < 0) {
                         val = Toy_pushLiteralArray(&compiler->literalCache, node->compound.nodes[i].atomic.literal);
                     }
@@ -227,7 +227,7 @@ static int writeNodeCollectionToCache(Toy_Compiler *compiler, Toy_ASTNode *node)
 
 static int writeLiteralToCompiler(Toy_Compiler *compiler, Toy_Literal literal) {
     //get the index
-    int index = Toy_findLiteralIndex(&compiler->literalCache, literal);
+    int index = Toy_private_findLiteralIndex(&compiler->literalCache, literal);
 
     if (index < 0) {
         if (TOY_IS_TYPE(literal)) {
@@ -553,7 +553,7 @@ static Toy_Opcode Toy_writeCompilerWithJumps(Toy_Compiler *compiler, Toy_ASTNode
             }
 
             //write each piece of the declaration to the bytecode
-            int identifierIndex = Toy_findLiteralIndex(&compiler->literalCache, node->varDecl.identifier);
+            int identifierIndex = Toy_private_findLiteralIndex(&compiler->literalCache, node->varDecl.identifier);
             if (identifierIndex < 0) {
                 identifierIndex = Toy_pushLiteralArray(&compiler->literalCache, node->varDecl.identifier);
             }
@@ -599,7 +599,7 @@ static Toy_Opcode Toy_writeCompilerWithJumps(Toy_Compiler *compiler, Toy_ASTNode
             Toy_Literal fnLiteral = ((Toy_Literal ) { .as = { .generic = fnCompiler }, .type = TOY_LITERAL_FUNCTION_INTERMEDIATE } );
 
             //push the name
-            int identifierIndex = Toy_findLiteralIndex(&compiler->literalCache, node->fnDecl.identifier);
+            int identifierIndex = Toy_private_findLiteralIndex(&compiler->literalCache, node->fnDecl.identifier);
             if (identifierIndex < 0) {
                 identifierIndex = Toy_pushLiteralArray(&compiler->literalCache, node->fnDecl.identifier);
             }
@@ -648,14 +648,14 @@ static Toy_Opcode Toy_writeCompilerWithJumps(Toy_Compiler *compiler, Toy_ASTNode
                 if (node->fnCall.arguments->fnCollection.nodes[i].type != TOY_AST_NODE_LITERAL) {
                     Toy_Opcode override = Toy_writeCompilerWithJumps(compiler, &node->fnCall.arguments->fnCollection.nodes[i], breakAddressesPtr,
                             continueAddressesPtr, jumpOffsets, rootNode);
-                    if (override != TOY_OP_EOF) {                //compensate for indexing & dot notation being screwy
+                    if (override != TOY_OP_EOF) {				//compensate for indexing & dot notation being screwy
                         compiler->bytecode[compiler->count++] = (unsigned char) override; //1 byte
                     }
                     continue;
                 }
 
                 //write each argument to the bytecode
-                int argumentsIndex = Toy_findLiteralIndex(&compiler->literalCache, node->fnCall.arguments->fnCollection.nodes[i].atomic.literal);
+                int argumentsIndex = Toy_private_findLiteralIndex(&compiler->literalCache, node->fnCall.arguments->fnCollection.nodes[i].atomic.literal);
                 if (argumentsIndex < 0) {
                     argumentsIndex = Toy_pushLiteralArray(&compiler->literalCache, node->fnCall.arguments->fnCollection.nodes[i].atomic.literal);
                 }
@@ -676,7 +676,7 @@ static Toy_Opcode Toy_writeCompilerWithJumps(Toy_Compiler *compiler, Toy_ASTNode
 
             //push the argument COUNT to the top of the stack
             Toy_Literal argumentsCountLiteral = TOY_TO_INTEGER_LITERAL(node->fnCall.argumentCount); //argumentCount is set elsewhere to support dot operator
-            int argumentsCountIndex = Toy_findLiteralIndex(&compiler->literalCache, argumentsCountLiteral);
+            int argumentsCountIndex = Toy_private_findLiteralIndex(&compiler->literalCache, argumentsCountLiteral);
             if (argumentsCountIndex < 0) {
                 argumentsCountIndex = Toy_pushLiteralArray(&compiler->literalCache, argumentsCountLiteral);
             }
@@ -702,7 +702,7 @@ static Toy_Opcode Toy_writeCompilerWithJumps(Toy_Compiler *compiler, Toy_ASTNode
         case TOY_AST_NODE_IF: {
             //process the condition
             Toy_Opcode override = Toy_writeCompilerWithJumps(compiler, node->pathIf.condition, breakAddressesPtr, continueAddressesPtr, jumpOffsets, rootNode);
-            if (override != TOY_OP_EOF) {            //compensate for indexing & dot notation being screwy
+            if (override != TOY_OP_EOF) {			//compensate for indexing & dot notation being screwy
                 compiler->bytecode[compiler->count++] = (unsigned char) override; //1 byte
             }
 
